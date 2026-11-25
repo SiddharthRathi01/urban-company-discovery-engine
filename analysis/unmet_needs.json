@@ -1,0 +1,1632 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "unmet_needs": [
+  {
+   "unmet_need_id": "N02",
+   "name": "Fast, fair refunds and payment-failure recovery",
+   "definition": "Refunds delayed or partial, money deducted without a booking, double charges.",
+   "n_reviews": 121,
+   "pct_of_dataset": 4.8,
+   "by_source": {
+    "Google Play Store": 50,
+    "Reddit": 6,
+    "PissedConsumer": 43,
+    "ConsumerComplaints.in": 22
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 3,
+     "pct": 2.5
+    },
+    "Negative": {
+     "n": 110,
+     "pct": 90.9
+    },
+    "Neutral": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Mixed": {
+     "n": 8,
+     "pct": 6.6
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 27,
+    "AC Service & Repair": 12,
+    "Salon & Beauty": 5,
+    "Pest Control": 5,
+    "Appliance Repair": 5
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 4,
+    "Brand / authorised service centre": 2,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 85.1,
+    "non_return_stated_or_signalled": 38,
+    "stated_return_but_negative": 3,
+    "switching_or_warning_signals_pct": 31.4,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.95,
+   "linked_opportunity": "O3",
+   "review_ids": [
+    "CC-0004",
+    "CC-0014",
+    "CC-0021",
+    "CC-0027",
+    "CC-0028",
+    "CC-0035",
+    "CC-0041",
+    "CC-0042",
+    "CC-0045",
+    "CC-0050",
+    "CC-0060",
+    "CC-0063",
+    "CC-0065",
+    "CC-0071",
+    "CC-0089",
+    "CC-0103",
+    "CC-0115",
+    "CC-0117",
+    "CC-0127",
+    "CC-0134",
+    "CC-0137",
+    "CC-0157",
+    "GP-0004",
+    "GP-0054",
+    "GP-0126",
+    "GP-0137",
+    "GP-0140",
+    "GP-0179",
+    "GP-0192",
+    "GP-0202",
+    "GP-0295",
+    "GP-0324",
+    "GP-0326",
+    "GP-0386",
+    "GP-0387",
+    "GP-0407",
+    "GP-0432",
+    "GP-0454",
+    "GP-0460",
+    "GP-0466",
+    "GP-0476",
+    "GP-0479",
+    "GP-0483",
+    "GP-0530",
+    "GP-0553",
+    "GP-0562",
+    "GP-0563",
+    "GP-0602",
+    "GP-0619",
+    "GP-0694",
+    "GP-0834",
+    "GP-0946",
+    "GP-1163",
+    "GP-1330",
+    "GP-1332",
+    "GP-1420",
+    "GP-1523",
+    "GP-1531",
+    "GP-1554",
+    "GP-1571",
+    "GP-1575",
+    "GP-1609",
+    "GP-1618",
+    "GP-1845",
+    "GP-1900",
+    "GP-1911",
+    "GP-1953",
+    "GP-1956",
+    "GP-1965",
+    "GP-1995",
+    "GP-2030",
+    "GP-2055",
+    "PC-0004",
+    "PC-0005",
+    "PC-0006",
+    "PC-0010",
+    "PC-0013",
+    "PC-0015",
+    "PC-0016",
+    "PC-0017",
+    "PC-0021",
+    "PC-0024",
+    "PC-0026",
+    "PC-0035",
+    "PC-0036",
+    "PC-0038",
+    "PC-0048",
+    "PC-0053",
+    "PC-0057",
+    "PC-0064",
+    "PC-0065",
+    "PC-0066",
+    "PC-0073",
+    "PC-0075",
+    "PC-0081",
+    "PC-0089",
+    "PC-0092",
+    "PC-0094",
+    "PC-0110",
+    "PC-0112",
+    "PC-0121",
+    "PC-0122",
+    "PC-0123",
+    "PC-0124",
+    "PC-0130",
+    "PC-0137",
+    "PC-0146",
+    "PC-0155",
+    "PC-0159",
+    "PC-0161",
+    "PC-0162",
+    "PC-0167",
+    "PC-0169",
+    "PC-0173",
+    "PC-0174",
+    "RD-0035",
+    "RD-0112",
+    "RD-0161",
+    "RD-0164",
+    "RD-0203",
+    "RD-0229"
+   ],
+   "evidence_ids": [
+    "EV010",
+    "EV208",
+    "EV209"
+   ],
+   "rank_by_frequency": 1
+  },
+  {
+   "unmet_need_id": "N01",
+   "name": "Reachable human support (call/phone/helpline instead of bot)",
+   "definition": "Customers cannot reach a person: no phone number, a chatbot that loops, no escalation.",
+   "n_reviews": 88,
+   "pct_of_dataset": 3.5,
+   "by_source": {
+    "Google Play Store": 57,
+    "Reddit": 5,
+    "PissedConsumer": 20,
+    "ConsumerComplaints.in": 6
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 2,
+     "pct": 2.3
+    },
+    "Negative": {
+     "n": 77,
+     "pct": 87.5
+    },
+    "Neutral": {
+     "n": 2,
+     "pct": 2.3
+    },
+    "Mixed": {
+     "n": 7,
+     "pct": 8.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Water Purifier / RO": 8,
+    "Home Cleaning": 6,
+    "Appliance Repair": 6,
+    "AC Service & Repair": 6,
+    "Massage & Spa": 4
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 7,
+    "Brand / authorised service centre": 3,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 86.4,
+    "non_return_stated_or_signalled": 22,
+    "stated_return_but_negative": 0,
+    "switching_or_warning_signals_pct": 25.0,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.8,
+   "linked_opportunity": "O2",
+   "review_ids": [
+    "CC-0005",
+    "CC-0044",
+    "CC-0060",
+    "CC-0107",
+    "CC-0117",
+    "CC-0135",
+    "GP-0054",
+    "GP-0233",
+    "GP-0240",
+    "GP-0245",
+    "GP-0246",
+    "GP-0341",
+    "GP-0395",
+    "GP-0402",
+    "GP-0437",
+    "GP-0453",
+    "GP-0464",
+    "GP-0480",
+    "GP-0541",
+    "GP-0552",
+    "GP-0638",
+    "GP-0675",
+    "GP-0720",
+    "GP-0723",
+    "GP-0725",
+    "GP-1023",
+    "GP-1059",
+    "GP-1068",
+    "GP-1107",
+    "GP-1170",
+    "GP-1172",
+    "GP-1173",
+    "GP-1208",
+    "GP-1212",
+    "GP-1220",
+    "GP-1317",
+    "GP-1326",
+    "GP-1362",
+    "GP-1395",
+    "GP-1415",
+    "GP-1457",
+    "GP-1484",
+    "GP-1492",
+    "GP-1512",
+    "GP-1543",
+    "GP-1558",
+    "GP-1563",
+    "GP-1567",
+    "GP-1581",
+    "GP-1582",
+    "GP-1599",
+    "GP-1644",
+    "GP-1652",
+    "GP-1653",
+    "GP-1880",
+    "GP-1900",
+    "GP-1914",
+    "GP-1922",
+    "GP-1924",
+    "GP-1970",
+    "GP-1992",
+    "GP-2013",
+    "GP-2016",
+    "PC-0017",
+    "PC-0026",
+    "PC-0051",
+    "PC-0052",
+    "PC-0061",
+    "PC-0069",
+    "PC-0089",
+    "PC-0096",
+    "PC-0099",
+    "PC-0102",
+    "PC-0103",
+    "PC-0104",
+    "PC-0115",
+    "PC-0134",
+    "PC-0139",
+    "PC-0142",
+    "PC-0156",
+    "PC-0158",
+    "PC-0161",
+    "PC-0166",
+    "RD-0011",
+    "RD-0018",
+    "RD-0035",
+    "RD-0127",
+    "RD-0189"
+   ],
+   "evidence_ids": [
+    "EV205",
+    "EV206",
+    "EV207"
+   ],
+   "rank_by_frequency": 2
+  },
+  {
+   "unmet_need_id": "N03",
+   "name": "Warranty / rework / after-sales that is honoured",
+   "definition": "Warranty refused, expired in days, or rework not scheduled; Native purifier after-sales gaps.",
+   "n_reviews": 84,
+   "pct_of_dataset": 3.3,
+   "by_source": {
+    "Google Play Store": 25,
+    "Reddit": 13,
+    "PissedConsumer": 18,
+    "ConsumerComplaints.in": 28
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 6,
+     "pct": 7.1
+    },
+    "Negative": {
+     "n": 69,
+     "pct": 82.1
+    },
+    "Neutral": {
+     "n": 5,
+     "pct": 6.0
+    },
+    "Mixed": {
+     "n": 4,
+     "pct": 4.8
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "AC Service & Repair": 21,
+    "Home Cleaning": 12,
+    "Appliance Repair": 12,
+    "Water Purifier / RO": 11,
+    "Pest Control": 5
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Brand / authorised service centre": 6,
+    "Local / independent professionals": 3,
+    "Neighbours / friends / family / colleagues": 2
+   },
+   "return_relevance": {
+    "non_return_pct": 85.7,
+    "non_return_stated_or_signalled": 23,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 27.4,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.75,
+   "linked_opportunity": "O5",
+   "review_ids": [
+    "CC-0005",
+    "CC-0006",
+    "CC-0022",
+    "CC-0025",
+    "CC-0026",
+    "CC-0036",
+    "CC-0037",
+    "CC-0040",
+    "CC-0048",
+    "CC-0049",
+    "CC-0062",
+    "CC-0068",
+    "CC-0069",
+    "CC-0070",
+    "CC-0072",
+    "CC-0074",
+    "CC-0079",
+    "CC-0085",
+    "CC-0100",
+    "CC-0105",
+    "CC-0107",
+    "CC-0112",
+    "CC-0121",
+    "CC-0125",
+    "CC-0135",
+    "CC-0140",
+    "CC-0142",
+    "CC-0150",
+    "GP-0053",
+    "GP-0061",
+    "GP-0066",
+    "GP-0428",
+    "GP-0460",
+    "GP-0461",
+    "GP-0482",
+    "GP-0510",
+    "GP-0563",
+    "GP-0577",
+    "GP-0638",
+    "GP-0765",
+    "GP-1083",
+    "GP-1245",
+    "GP-1295",
+    "GP-1370",
+    "GP-1435",
+    "GP-1460",
+    "GP-1540",
+    "GP-1662",
+    "GP-1758",
+    "GP-1856",
+    "GP-1973",
+    "GP-2065",
+    "GP-2120",
+    "PC-0004",
+    "PC-0010",
+    "PC-0030",
+    "PC-0032",
+    "PC-0042",
+    "PC-0045",
+    "PC-0060",
+    "PC-0072",
+    "PC-0100",
+    "PC-0118",
+    "PC-0130",
+    "PC-0134",
+    "PC-0136",
+    "PC-0137",
+    "PC-0152",
+    "PC-0171",
+    "PC-0172",
+    "PC-0173",
+    "RD-0003",
+    "RD-0004",
+    "RD-0011",
+    "RD-0012",
+    "RD-0018",
+    "RD-0035",
+    "RD-0050",
+    "RD-0089",
+    "RD-0112",
+    "RD-0169",
+    "RD-0200",
+    "RD-0212",
+    "RD-0278"
+   ],
+   "evidence_ids": [
+    "EV012",
+    "EV210",
+    "EV211"
+   ],
+   "rank_by_frequency": 3
+  },
+  {
+   "unmet_need_id": "N12",
+   "name": "App usability, location handling and information clarity",
+   "definition": "App bugs, location fetching problems, unclear package inclusions.",
+   "n_reviews": 67,
+   "pct_of_dataset": 2.7,
+   "by_source": {
+    "Google Play Store": 46,
+    "Reddit": 3,
+    "PissedConsumer": 9,
+    "ConsumerComplaints.in": 9
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 7,
+     "pct": 10.4
+    },
+    "Negative": {
+     "n": 51,
+     "pct": 76.1
+    },
+    "Neutral": {
+     "n": 2,
+     "pct": 3.0
+    },
+    "Mixed": {
+     "n": 7,
+     "pct": 10.4
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 10,
+    "Salon & Beauty": 5,
+    "AC Service & Repair": 4,
+    "Water Purifier / RO": 2,
+    "Pest Control": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 5,
+    "Brand / authorised service centre": 3,
+    "NoBroker": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 73.1,
+    "non_return_stated_or_signalled": 16,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 23.9,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.6,
+   "linked_opportunity": "O6",
+   "review_ids": [
+    "CC-0002",
+    "CC-0011",
+    "CC-0052",
+    "CC-0055",
+    "CC-0062",
+    "CC-0072",
+    "CC-0077",
+    "CC-0128",
+    "CC-0154",
+    "GP-0060",
+    "GP-0136",
+    "GP-0237",
+    "GP-0296",
+    "GP-0377",
+    "GP-0410",
+    "GP-0450",
+    "GP-0534",
+    "GP-0562",
+    "GP-0571",
+    "GP-0580",
+    "GP-0708",
+    "GP-0809",
+    "GP-0961",
+    "GP-0998",
+    "GP-1030",
+    "GP-1042",
+    "GP-1062",
+    "GP-1170",
+    "GP-1182",
+    "GP-1211",
+    "GP-1305",
+    "GP-1313",
+    "GP-1317",
+    "GP-1320",
+    "GP-1344",
+    "GP-1353",
+    "GP-1362",
+    "GP-1516",
+    "GP-1520",
+    "GP-1533",
+    "GP-1545",
+    "GP-1550",
+    "GP-1552",
+    "GP-1564",
+    "GP-1597",
+    "GP-1634",
+    "GP-1657",
+    "GP-1663",
+    "GP-1900",
+    "GP-1924",
+    "GP-1934",
+    "GP-1970",
+    "GP-1994",
+    "GP-2117",
+    "GP-2123",
+    "PC-0019",
+    "PC-0058",
+    "PC-0069",
+    "PC-0098",
+    "PC-0102",
+    "PC-0109",
+    "PC-0112",
+    "PC-0125",
+    "PC-0140",
+    "RD-0091",
+    "RD-0137",
+    "RD-0171"
+   ],
+   "evidence_ids": [
+    "EV213",
+    "EV234",
+    "EV235"
+   ],
+   "rank_by_frequency": 4
+  },
+  {
+   "unmet_need_id": "N04",
+   "name": "Reliable arrival: no last-minute cancellation, ETA, alternate professional",
+   "definition": "Customers want confirmation, ETA updates and a replacement when a professional cancels or is late.",
+   "n_reviews": 62,
+   "pct_of_dataset": 2.5,
+   "by_source": {
+    "Google Play Store": 27,
+    "Reddit": 7,
+    "PissedConsumer": 22,
+    "ConsumerComplaints.in": 6
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 3,
+     "pct": 4.8
+    },
+    "Negative": {
+     "n": 52,
+     "pct": 83.9
+    },
+    "Neutral": {
+     "n": 1,
+     "pct": 1.6
+    },
+    "Mixed": {
+     "n": 6,
+     "pct": 9.7
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "AC Service & Repair": 11,
+    "Appliance Repair": 7,
+    "Home Cleaning": 6,
+    "Water Purifier / RO": 4,
+    "Salon & Beauty": 3
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Brand / authorised service centre": 4,
+    "Neighbours / friends / family / colleagues": 3,
+    "Local / independent professionals": 2,
+    "NoBroker": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 79.0,
+    "non_return_stated_or_signalled": 15,
+    "stated_return_but_negative": 3,
+    "switching_or_warning_signals_pct": 24.2,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.65,
+   "linked_opportunity": "O1",
+   "review_ids": [
+    "CC-0036",
+    "CC-0041",
+    "CC-0054",
+    "CC-0055",
+    "CC-0128",
+    "CC-0136",
+    "GP-0072",
+    "GP-0136",
+    "GP-0298",
+    "GP-0345",
+    "GP-0386",
+    "GP-0455",
+    "GP-0482",
+    "GP-0571",
+    "GP-0588",
+    "GP-0647",
+    "GP-0798",
+    "GP-0856",
+    "GP-1042",
+    "GP-1283",
+    "GP-1320",
+    "GP-1374",
+    "GP-1451",
+    "GP-1453",
+    "GP-1459",
+    "GP-1480",
+    "GP-1511",
+    "GP-1523",
+    "GP-1654",
+    "GP-1904",
+    "GP-1953",
+    "GP-2004",
+    "GP-2113",
+    "PC-0005",
+    "PC-0008",
+    "PC-0015",
+    "PC-0021",
+    "PC-0024",
+    "PC-0030",
+    "PC-0037",
+    "PC-0038",
+    "PC-0042",
+    "PC-0044",
+    "PC-0047",
+    "PC-0056",
+    "PC-0058",
+    "PC-0065",
+    "PC-0079",
+    "PC-0095",
+    "PC-0123",
+    "PC-0134",
+    "PC-0153",
+    "PC-0161",
+    "PC-0171",
+    "PC-0172",
+    "RD-0112",
+    "RD-0115",
+    "RD-0137",
+    "RD-0157",
+    "RD-0171",
+    "RD-0173",
+    "RD-0187"
+   ],
+   "evidence_ids": [
+    "EV212",
+    "EV213",
+    "EV214"
+   ],
+   "rank_by_frequency": 5
+  },
+  {
+   "unmet_need_id": "N07",
+   "name": "Professional training / tools / consumables / 2-person jobs",
+   "definition": "Untrained professionals, missing tools or consumables, one person sent for a two-person job.",
+   "n_reviews": 61,
+   "pct_of_dataset": 2.4,
+   "by_source": {
+    "Google Play Store": 41,
+    "Reddit": 7,
+    "PissedConsumer": 11,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 20,
+     "pct": 32.8
+    },
+    "Negative": {
+     "n": 33,
+     "pct": 54.1
+    },
+    "Neutral": {
+     "n": 5,
+     "pct": 8.2
+    },
+    "Mixed": {
+     "n": 3,
+     "pct": 4.9
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 13,
+    "Salon & Beauty": 7,
+    "Appliance Repair": 7,
+    "AC Service & Repair": 7,
+    "Electrician": 3
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Brand / authorised service centre": 2,
+    "Local / independent professionals": 2,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 47.5,
+    "non_return_stated_or_signalled": 7,
+    "stated_return_but_negative": 4,
+    "switching_or_warning_signals_pct": 11.5,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.6,
+   "linked_opportunity": "O6",
+   "review_ids": [
+    "CC-0097",
+    "CC-0156",
+    "GP-0050",
+    "GP-0120",
+    "GP-0122",
+    "GP-0229",
+    "GP-0373",
+    "GP-0378",
+    "GP-0538",
+    "GP-0566",
+    "GP-0595",
+    "GP-0640",
+    "GP-0651",
+    "GP-0676",
+    "GP-0739",
+    "GP-0752",
+    "GP-0844",
+    "GP-0910",
+    "GP-1184",
+    "GP-1244",
+    "GP-1264",
+    "GP-1357",
+    "GP-1489",
+    "GP-1527",
+    "GP-1548",
+    "GP-1596",
+    "GP-1639",
+    "GP-1642",
+    "GP-1693",
+    "GP-1703",
+    "GP-1745",
+    "GP-1801",
+    "GP-1867",
+    "GP-1909",
+    "GP-1929",
+    "GP-1934",
+    "GP-1961",
+    "GP-1981",
+    "GP-1999",
+    "GP-2011",
+    "GP-2033",
+    "GP-2065",
+    "GP-2096",
+    "PC-0039",
+    "PC-0043",
+    "PC-0062",
+    "PC-0076",
+    "PC-0094",
+    "PC-0099",
+    "PC-0107",
+    "PC-0127",
+    "PC-0139",
+    "PC-0168",
+    "PC-0174",
+    "RD-0012",
+    "RD-0074",
+    "RD-0112",
+    "RD-0171",
+    "RD-0251",
+    "RD-0253",
+    "RD-0272"
+   ],
+   "evidence_ids": [
+    "EV220",
+    "EV221",
+    "EV222"
+   ],
+   "rank_by_frequency": 6
+  },
+  {
+   "unmet_need_id": "N11",
+   "name": "Coverage in tier-2/3 cities and more localities",
+   "definition": "Areas and cities where the service is unavailable.",
+   "n_reviews": 45,
+   "pct_of_dataset": 1.8,
+   "by_source": {
+    "Google Play Store": 24,
+    "Reddit": 18,
+    "PissedConsumer": 0,
+    "ConsumerComplaints.in": 3
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 8,
+     "pct": 17.8
+    },
+    "Negative": {
+     "n": 14,
+     "pct": 31.1
+    },
+    "Neutral": {
+     "n": 22,
+     "pct": 48.9
+    },
+    "Mixed": {
+     "n": 1,
+     "pct": 2.2
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 8,
+    "Salon & Beauty": 7,
+    "Water Purifier / RO": 5,
+    "AC Service & Repair": 4,
+    "Plumbing": 3
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 4,
+    "Brand / authorised service centre": 3,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 28.9,
+    "non_return_stated_or_signalled": 3,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 6.7,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.6,
+   "linked_opportunity": "O8",
+   "review_ids": [
+    "CC-0076",
+    "CC-0109",
+    "CC-0125",
+    "GP-0523",
+    "GP-0556",
+    "GP-0850",
+    "GP-0864",
+    "GP-1028",
+    "GP-1046",
+    "GP-1245",
+    "GP-1333",
+    "GP-1334",
+    "GP-1382",
+    "GP-1403",
+    "GP-1411",
+    "GP-1447",
+    "GP-1472",
+    "GP-1558",
+    "GP-1574",
+    "GP-1763",
+    "GP-1785",
+    "GP-1964",
+    "GP-1985",
+    "GP-2054",
+    "GP-2067",
+    "GP-2076",
+    "GP-2085",
+    "RD-0006",
+    "RD-0007",
+    "RD-0018",
+    "RD-0046",
+    "RD-0059",
+    "RD-0102",
+    "RD-0110",
+    "RD-0140",
+    "RD-0156",
+    "RD-0162",
+    "RD-0172",
+    "RD-0178",
+    "RD-0181",
+    "RD-0194",
+    "RD-0196",
+    "RD-0240",
+    "RD-0243",
+    "RD-0245"
+   ],
+   "evidence_ids": [
+    "EV231",
+    "EV232",
+    "EV233"
+   ],
+   "rank_by_frequency": 7
+  },
+  {
+   "unmet_need_id": "N08",
+   "name": "Flexible / granular packages (single bathroom, add-ons, partial jobs, longer duration)",
+   "definition": "Small-home and small-job needs: single-bathroom cleaning, per-task jobs, extending time, custom requests.",
+   "n_reviews": 44,
+   "pct_of_dataset": 1.7,
+   "by_source": {
+    "Google Play Store": 32,
+    "Reddit": 5,
+    "PissedConsumer": 5,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 13,
+     "pct": 29.5
+    },
+    "Negative": {
+     "n": 21,
+     "pct": 47.7
+    },
+    "Neutral": {
+     "n": 6,
+     "pct": 13.6
+    },
+    "Mixed": {
+     "n": 4,
+     "pct": 9.1
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 17,
+    "Carpentry": 3,
+    "Massage & Spa": 2,
+    "Salon & Beauty": 1,
+    "Electrician": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 4,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 47.7,
+    "non_return_stated_or_signalled": 7,
+    "stated_return_but_negative": 3,
+    "switching_or_warning_signals_pct": 15.9,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.65,
+   "linked_opportunity": "O7",
+   "review_ids": [
+    "CC-0126",
+    "CC-0160",
+    "GP-0019",
+    "GP-0048",
+    "GP-0394",
+    "GP-0431",
+    "GP-0524",
+    "GP-0602",
+    "GP-0636",
+    "GP-0727",
+    "GP-0840",
+    "GP-0852",
+    "GP-0936",
+    "GP-0975",
+    "GP-0991",
+    "GP-0996",
+    "GP-1021",
+    "GP-1269",
+    "GP-1323",
+    "GP-1333",
+    "GP-1411",
+    "GP-1423",
+    "GP-1490",
+    "GP-1526",
+    "GP-1601",
+    "GP-1628",
+    "GP-1814",
+    "GP-1837",
+    "GP-1878",
+    "GP-1917",
+    "GP-1962",
+    "GP-1982",
+    "GP-2064",
+    "GP-2081",
+    "PC-0111",
+    "PC-0125",
+    "PC-0146",
+    "PC-0150",
+    "PC-0154",
+    "RD-0047",
+    "RD-0059",
+    "RD-0123",
+    "RD-0138",
+    "RD-0141"
+   ],
+   "evidence_ids": [
+    "EV041",
+    "EV223",
+    "EV224"
+   ],
+   "rank_by_frequency": 8
+  },
+  {
+   "unmet_need_id": "N05",
+   "name": "Fair cancellation / reschedule policy",
+   "definition": "Cancellation fees charged even when the professional cancels or is late.",
+   "n_reviews": 40,
+   "pct_of_dataset": 1.6,
+   "by_source": {
+    "Google Play Store": 23,
+    "Reddit": 2,
+    "PissedConsumer": 12,
+    "ConsumerComplaints.in": 3
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 1,
+     "pct": 2.5
+    },
+    "Negative": {
+     "n": 37,
+     "pct": 92.5
+    },
+    "Neutral": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Mixed": {
+     "n": 2,
+     "pct": 5.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 7,
+    "AC Service & Repair": 3,
+    "Massage & Spa": 2,
+    "Plumbing": 2,
+    "Salon & Beauty": 2
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Brand / authorised service centre": 2,
+    "Local / independent professionals": 1,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 92.5,
+    "non_return_stated_or_signalled": 11,
+    "stated_return_but_negative": 2,
+    "switching_or_warning_signals_pct": 27.5,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.85,
+   "linked_opportunity": "O1",
+   "review_ids": [
+    "CC-0004",
+    "CC-0035",
+    "CC-0124",
+    "GP-0060",
+    "GP-0068",
+    "GP-0179",
+    "GP-0286",
+    "GP-0336",
+    "GP-0397",
+    "GP-0533",
+    "GP-0675",
+    "GP-0692",
+    "GP-0720",
+    "GP-0946",
+    "GP-1011",
+    "GP-1112",
+    "GP-1191",
+    "GP-1204",
+    "GP-1363",
+    "GP-1397",
+    "GP-1531",
+    "GP-1559",
+    "GP-1563",
+    "GP-1584",
+    "GP-1589",
+    "GP-2030",
+    "PC-0006",
+    "PC-0019",
+    "PC-0026",
+    "PC-0038",
+    "PC-0052",
+    "PC-0064",
+    "PC-0070",
+    "PC-0074",
+    "PC-0139",
+    "PC-0145",
+    "PC-0161",
+    "PC-0164",
+    "RD-0167",
+    "RD-0251"
+   ],
+   "evidence_ids": [
+    "EV215",
+    "EV216",
+    "EV209"
+   ],
+   "rank_by_frequency": 9
+  },
+  {
+   "unmet_need_id": "N06",
+   "name": "Upfront total price / no surprise charges",
+   "definition": "Prices that change between quote, app and bill; hidden fees; unclear inclusions.",
+   "n_reviews": 34,
+   "pct_of_dataset": 1.3,
+   "by_source": {
+    "Google Play Store": 26,
+    "Reddit": 4,
+    "PissedConsumer": 3,
+    "ConsumerComplaints.in": 1
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 11,
+     "pct": 32.4
+    },
+    "Negative": {
+     "n": 15,
+     "pct": 44.1
+    },
+    "Neutral": {
+     "n": 2,
+     "pct": 5.9
+    },
+    "Mixed": {
+     "n": 6,
+     "pct": 17.6
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Appliance Repair": 4,
+    "Home Cleaning": 4,
+    "AC Service & Repair": 4,
+    "Electrician": 2,
+    "Painting": 2
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 3,
+    "NoBroker": 2,
+    "Justdial / Sulekha / other directories": 2,
+    "Brand / authorised service centre": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 52.9,
+    "non_return_stated_or_signalled": 8,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 23.5,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.6,
+   "linked_opportunity": "O4",
+   "review_ids": [
+    "CC-0043",
+    "GP-0290",
+    "GP-0385",
+    "GP-0403",
+    "GP-0509",
+    "GP-0567",
+    "GP-0607",
+    "GP-0610",
+    "GP-1082",
+    "GP-1145",
+    "GP-1156",
+    "GP-1274",
+    "GP-1295",
+    "GP-1297",
+    "GP-1311",
+    "GP-1331",
+    "GP-1388",
+    "GP-1530",
+    "GP-1556",
+    "GP-1621",
+    "GP-1804",
+    "GP-1809",
+    "GP-1895",
+    "GP-1923",
+    "GP-2047",
+    "GP-2078",
+    "GP-2136",
+    "PC-0009",
+    "PC-0058",
+    "PC-0085",
+    "RD-0053",
+    "RD-0112",
+    "RD-0115",
+    "RD-0118"
+   ],
+   "evidence_ids": [
+    "EV217",
+    "EV218",
+    "EV219"
+   ],
+   "rank_by_frequency": 10
+  },
+  {
+   "unmet_need_id": "N09",
+   "name": "Choice of professional / continuity / gender / language",
+   "definition": "Customers want to choose or re-book the same professional, a female technician, or a language match.",
+   "n_reviews": 33,
+   "pct_of_dataset": 1.3,
+   "by_source": {
+    "Google Play Store": 18,
+    "Reddit": 5,
+    "PissedConsumer": 8,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 5,
+     "pct": 15.2
+    },
+    "Negative": {
+     "n": 22,
+     "pct": 66.7
+    },
+    "Neutral": {
+     "n": 1,
+     "pct": 3.0
+    },
+    "Mixed": {
+     "n": 5,
+     "pct": 15.2
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "AC Service & Repair": 4,
+    "Salon & Beauty": 2,
+    "Plumbing": 2,
+    "Home Cleaning": 2,
+    "Water Purifier / RO": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Brand / authorised service centre": 2,
+    "Neighbours / friends / family / colleagues": 2,
+    "Local / independent professionals": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 66.7,
+    "non_return_stated_or_signalled": 5,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 15.2,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.5,
+   "linked_opportunity": "O9",
+   "review_ids": [
+    "CC-0011",
+    "CC-0105",
+    "GP-0336",
+    "GP-0675",
+    "GP-0744",
+    "GP-0801",
+    "GP-0880",
+    "GP-1021",
+    "GP-1137",
+    "GP-1227",
+    "GP-1269",
+    "GP-1320",
+    "GP-1331",
+    "GP-1504",
+    "GP-1599",
+    "GP-1707",
+    "GP-1903",
+    "GP-1916",
+    "GP-2005",
+    "GP-2113",
+    "PC-0032",
+    "PC-0036",
+    "PC-0128",
+    "PC-0129",
+    "PC-0158",
+    "PC-0171",
+    "PC-0172",
+    "PC-0173",
+    "RD-0017",
+    "RD-0051",
+    "RD-0089",
+    "RD-0137",
+    "RD-0222"
+   ],
+   "evidence_ids": [
+    "EV225",
+    "EV226",
+    "EV227"
+   ],
+   "rank_by_frequency": 11
+  },
+  {
+   "unmet_need_id": "N10",
+   "name": "New service categories requested",
+   "definition": "Services customers ask Urban Company to add (cooking, home organising, heat-pump, blender repair, bridal makeup).",
+   "n_reviews": 18,
+   "pct_of_dataset": 0.7,
+   "by_source": {
+    "Google Play Store": 13,
+    "Reddit": 4,
+    "PissedConsumer": 1,
+    "ConsumerComplaints.in": 0
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 3,
+     "pct": 16.7
+    },
+    "Negative": {
+     "n": 5,
+     "pct": 27.8
+    },
+    "Neutral": {
+     "n": 9,
+     "pct": 50.0
+    },
+    "Mixed": {
+     "n": 1,
+     "pct": 5.6
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Home Cleaning": 2,
+    "Salon & Beauty": 2,
+    "AC Service & Repair": 2,
+    "Plumbing": 1,
+    "Native Smart Lock / Products": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "Local / independent professionals": 2,
+    "Neighbours / friends / family / colleagues": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 22.2,
+    "non_return_stated_or_signalled": 0,
+    "stated_return_but_negative": 0,
+    "switching_or_warning_signals_pct": 0.0,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.6,
+   "linked_opportunity": "O7",
+   "review_ids": [
+    "GP-0116",
+    "GP-0556",
+    "GP-0850",
+    "GP-1094",
+    "GP-1210",
+    "GP-1310",
+    "GP-1383",
+    "GP-1501",
+    "GP-1529",
+    "GP-1535",
+    "GP-1544",
+    "GP-1830",
+    "GP-1963",
+    "PC-0021",
+    "RD-0098",
+    "RD-0215",
+    "RD-0240",
+    "RD-0255"
+   ],
+   "evidence_ids": [
+    "EV228",
+    "EV229",
+    "EV230"
+   ],
+   "rank_by_frequency": 12
+  },
+  {
+   "unmet_need_id": "N13",
+   "name": "Payment flexibility (pay after service / cash / COD)",
+   "definition": "Pay-after-service or cash options requested; advance payment resented after cancellations.",
+   "n_reviews": 14,
+   "pct_of_dataset": 0.6,
+   "by_source": {
+    "Google Play Store": 8,
+    "Reddit": 0,
+    "PissedConsumer": 4,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Negative": {
+     "n": 12,
+     "pct": 85.7
+    },
+    "Neutral": {
+     "n": 1,
+     "pct": 7.1
+    },
+    "Mixed": {
+     "n": 1,
+     "pct": 7.1
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Appliance Repair": 2,
+    "Painting": 1,
+    "Home Cleaning": 1,
+    "AC Service & Repair": 1,
+    "Electrician": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {
+    "NoBroker": 1
+   },
+   "return_relevance": {
+    "non_return_pct": 78.6,
+    "non_return_stated_or_signalled": 2,
+    "stated_return_but_negative": 1,
+    "switching_or_warning_signals_pct": 14.3,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.7,
+   "linked_opportunity": "O3",
+   "review_ids": [
+    "CC-0003",
+    "CC-0106",
+    "GP-0126",
+    "GP-0370",
+    "GP-1059",
+    "GP-1130",
+    "GP-1389",
+    "GP-1455",
+    "GP-1554",
+    "GP-1640",
+    "PC-0024",
+    "PC-0027",
+    "PC-0042",
+    "PC-0174"
+   ],
+   "evidence_ids": [
+    "EV021",
+    "EV236",
+    "EV237"
+   ],
+   "rank_by_frequency": 13
+  },
+  {
+   "unmet_need_id": "N14",
+   "name": "Rating pressure / tip prompts from professionals",
+   "definition": "Professionals ask for five stars; tips added before the job is done.",
+   "n_reviews": 10,
+   "pct_of_dataset": 0.4,
+   "by_source": {
+    "Google Play Store": 9,
+    "Reddit": 0,
+    "PissedConsumer": 1,
+    "ConsumerComplaints.in": 0
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Negative": {
+     "n": 10,
+     "pct": 100.0
+    },
+    "Neutral": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Mixed": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "service_categories": {
+    "Salon & Beauty": 2,
+    "Appliance Repair": 1,
+    "AC Service & Repair": 1,
+    "Home Cleaning": 1
+   },
+   "alternatives_mentioned_in_these_reviews_rule_based": {},
+   "return_relevance": {
+    "non_return_pct": 80.0,
+    "non_return_stated_or_signalled": 2,
+    "stated_return_but_negative": 0,
+    "switching_or_warning_signals_pct": 20.0,
+    "baseline_switching_or_warning_signals_pct": 12.3
+   },
+   "rule_precision_estimate": 0.9,
+   "linked_opportunity": "O6",
+   "review_ids": [
+    "GP-0463",
+    "GP-0675",
+    "GP-0895",
+    "GP-0921",
+    "GP-1074",
+    "GP-1087",
+    "GP-1264",
+    "GP-1610",
+    "GP-1664",
+    "PC-0133"
+   ],
+   "evidence_ids": [
+    "EV238",
+    "EV239",
+    "EV240"
+   ],
+   "rank_by_frequency": 14
+  }
+ ],
+ "method": "Fourteen need types were derived from recurring requests and frustrations (phrase scans and reading); each is a rule-based flag. Counts are indicative: rule_precision_estimate is the share of 6-8 randomly read matches that really expressed the need.",
+ "illustrative_evidence_ids": [
+  "EV241",
+  "EV242",
+  "EV041",
+  "EV243",
+  "EV244",
+  "EV245",
+  "EV246",
+  "EV247",
+  "EV248",
+  "EV249",
+  "EV250",
+  "EV251"
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "source_dataset": {
+  "file": "output/urban_company_reviews_master.csv",
+  "sha256": "887873527ba4afa74e06e5f6a4d07f021887ec85038697887d516b4d16b2ac0f",
+  "reviews": 2527
+ },
+ "files": {
+  "overview.json": 4933,
+  "themes.json": 62425,
+  "findings.json": 27018,
+  "questions.json": 30010,
+  "behaviour.json": 75559,
+  "alternatives.json": 11140,
+  "segments.json": 204964,
+  "unmet_needs.json": 33074,
+  "opportunities.json": 83983,
+  "evidence.json": 549246,
+  "limitations.json": 3987,
+  "reviews.json": 2813693,
+  "trust.json": 12019
+ },
+ "evidence_items": 370,
+ "id_scheme": {
+  "themes": "T1-T5",
+  "findings": "F1-F3",
+  "opportunities": "O1-O9",
+  "unmet_needs": "N01-N14",
+  "alternatives": "A1-A4",
+  "questions": "Q1-Q8",
+  "evidence": "EV001...",
+  "reviews": "record_id from the master"
+ },
+ "method": "Phrase-rule coding of every review (26 codes: 22 problems and 4 kinds of praise, return-behaviour classes, alternatives and 14 unmet needs), with the matched text read and checked by an AI-assisted analyst; every count and score is computed in code. The same engine runs live on an uploaded file, where an LLM reads each comment."
+}

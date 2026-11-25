@@ -1,0 +1,2388 @@
+{
+ "schema_version": "2.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "summary": {
+  "classified": 2193,
+  "classified_pct": 86.8,
+  "target_pct": 70,
+  "target_met": true,
+  "return": 1119,
+  "return_pct": 44.3,
+  "non_return": 1074,
+  "non_return_pct": 42.5,
+  "insufficient": 334,
+  "insufficient_pct": 13.2,
+  "by_basis": {
+   "Stated": {
+    "n": 111,
+    "pct_of_dataset": 4.4
+   },
+   "Signalled": {
+    "n": 747,
+    "pct_of_dataset": 29.6
+   },
+   "Inferred": {
+    "n": 1335,
+    "pct_of_dataset": 52.8
+   }
+  },
+  "by_confidence_of_classified": {
+   "High": {
+    "n": 111,
+    "pct_of_classified": 5.1
+   },
+   "Medium": {
+    "n": 1423,
+    "pct_of_classified": 64.9
+   },
+   "Low": {
+    "n": 659,
+    "pct_of_classified": 30.1
+   }
+  }
+ },
+ "definitions": {
+  "Return": "Likely to book again: the reviewer says so, praises and recommends with trust, or has a clearly positive experience (and star rating where there is one).",
+  "Non-Return": "Unlikely to book again: the reviewer says so, advises others not to use the app, mentions switching, expresses distrust, or has a clearly negative experience.",
+  "Insufficient Evidence": "Neutral, mixed, or contradictory (for example positive wording with a one-star rating): no clear signal either way."
+ },
+ "basis_definitions": {
+  "Stated": "The reviewer says it in the first person: repeat or ongoing use, will book again, will not return, has switched or uninstalled (each read and confirmed by hand).",
+  "Signalled": "No direct statement, but a clear signal: advises others not to use the app, mentions switching, distrust, or recommends and trusts.",
+  "Inferred": "Neither of the above: the overall sentiment decides (Positive -> Return, Negative -> Non-Return); mixed or neutral reviews only when the star rating is clearly 4-5 or 1-2. A contradiction between wording and rating stays Insufficient."
+ },
+ "caution": "Return and Non-Return are predictions from what customers wrote. Inferred labels rest on sentiment alone, so comparisons that use them partly restate sentiment; the Stated and Signalled groups are the stronger evidence.",
+ "distribution": [
+  {
+   "class": "Return",
+   "n": 1119,
+   "pct_of_dataset": 44.3,
+   "by_basis": {
+    "Stated": 92,
+    "Signalled": 456,
+    "Inferred": 571
+   }
+  },
+  {
+   "class": "Non-Return",
+   "n": 1074,
+   "pct_of_dataset": 42.5,
+   "by_basis": {
+    "Stated": 19,
+    "Signalled": 291,
+    "Inferred": 764
+   }
+  },
+  {
+   "class": "Insufficient Evidence",
+   "n": 334,
+   "pct_of_dataset": 13.2,
+   "by_basis": {
+    "Inferred": 134
+   }
+  }
+ ],
+ "classes": {
+  "Return": {
+   "class": "Return",
+   "n": 1119,
+   "pct_of_dataset": 44.3,
+   "by_basis": {
+    "Stated": 92,
+    "Signalled": 456,
+    "Inferred": 571
+   },
+   "by_confidence": {
+    "High": 92,
+    "Medium": 803,
+    "Low": 224
+   },
+   "by_source": {
+    "Google Play Store": 1098,
+    "Reddit": 10,
+    "PissedConsumer": 9,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 870,
+     "pct": 77.7
+    },
+    "Negative": {
+     "n": 27,
+     "pct": 2.4
+    },
+    "Neutral": {
+     "n": 64,
+     "pct": 5.7
+    },
+    "Mixed": {
+     "n": 155,
+     "pct": 13.9
+    },
+    "Uncertain": {
+     "n": 3,
+     "pct": 0.3
+    }
+   },
+   "reasons": {
+    "reports repeat or ongoing use": 68,
+    "positive experience": 360,
+    "neutral wording with a high star rating": 62,
+    "expresses satisfaction, trust or recommends": 456,
+    "states intent to book again / prefers same professional": 24,
+    "mixed wording with a high star rating": 146,
+    "uncertain wording with a high star rating": 3
+   },
+   "theme_prevalence": {
+    "T1": {
+     "n": 36,
+     "pct_of_class": 3.2
+    },
+    "T2": {
+     "n": 79,
+     "pct_of_class": 7.1
+    },
+    "T3": {
+     "n": 48,
+     "pct_of_class": 4.3
+    },
+    "T4": {
+     "n": 684,
+     "pct_of_class": 61.1
+    },
+    "T5": {
+     "n": 48,
+     "pct_of_class": 4.3
+    }
+   },
+   "stated_records": [
+    {
+     "review_id": "CC-0039",
+     "original_review_id": "3526804",
+     "source": "ConsumerComplaints.in",
+     "source_url": "https://www.consumercomplaints.in/urban-company-fraud-by-urban-company-ac-parts-stolen-damaged-c3526804",
+     "review_date": "2025-03-29",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV056",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "CC-0113",
+     "original_review_id": "2960268",
+     "source": "ConsumerComplaints.in",
+     "source_url": "https://www.consumercomplaints.in/urban-company-painting-c2960268",
+     "review_date": "2021-08-16",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV057",
+     "themes": [
+      "T1",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0081",
+     "original_review_id": "db4c8730-b24e-4413-9493-5162531ca6dd",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=db4c8730-b24e-4413-9493-5162531ca6dd",
+     "review_date": "2026-11-22",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV058",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0085",
+     "original_review_id": "1dba0814-b152-4c17-ae82-080aa57e9362",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=1dba0814-b152-4c17-ae82-080aa57e9362",
+     "review_date": "2026-11-22",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV059",
+     "themes": []
+    },
+    {
+     "review_id": "GP-0329",
+     "original_review_id": "9f2d065e-1854-4cee-b8a9-35c96bca3904",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9f2d065e-1854-4cee-b8a9-35c96bca3904",
+     "review_date": "2026-11-17",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV060",
+     "themes": [
+      "T1",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0468",
+     "original_review_id": "0514b65c-33b5-4c06-993c-6872d7723311",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0514b65c-33b5-4c06-993c-6872d7723311",
+     "review_date": "2026-11-13",
+     "rating": "4.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV061",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0550",
+     "original_review_id": "04b96891-cccd-4702-8679-352c9206e103",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=04b96891-cccd-4702-8679-352c9206e103",
+     "review_date": "2026-11-08",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV062",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0564",
+     "original_review_id": "675c2127-9663-4e48-a48d-eb0c682bb35e",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=675c2127-9663-4e48-a48d-eb0c682bb35e",
+     "review_date": "2026-11-07",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV063",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0588",
+     "original_review_id": "fb9b45bd-25c7-4ad7-9e58-95554cea8e21",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=fb9b45bd-25c7-4ad7-9e58-95554cea8e21",
+     "review_date": "2026-11-05",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV064",
+     "themes": [
+      "T1",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0609",
+     "original_review_id": "e4eb4601-665b-4a7f-855c-fe7cc030c6c1",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=e4eb4601-665b-4a7f-855c-fe7cc030c6c1",
+     "review_date": "2026-11-04",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV065",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0616",
+     "original_review_id": "07ee5a8d-10c6-493b-ac34-3c58b091aace",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=07ee5a8d-10c6-493b-ac34-3c58b091aace",
+     "review_date": "2026-11-04",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV066",
+     "themes": []
+    },
+    {
+     "review_id": "GP-0640",
+     "original_review_id": "23c15fe3-2513-4125-a7ea-722ed5df488a",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=23c15fe3-2513-4125-a7ea-722ed5df488a",
+     "review_date": "2026-11-02",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV067",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0746",
+     "original_review_id": "b81518d0-71d3-43b4-a830-4f8820ddb986",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=b81518d0-71d3-43b4-a830-4f8820ddb986",
+     "review_date": "2026-10-26",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV068",
+     "themes": []
+    },
+    {
+     "review_id": "GP-0766",
+     "original_review_id": "0db17509-9052-49ec-bea6-44ae9c2b3530",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0db17509-9052-49ec-bea6-44ae9c2b3530",
+     "review_date": "2026-10-24",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV069",
+     "themes": [
+      "T2",
+      "T5"
+     ]
+    },
+    {
+     "review_id": "GP-0775",
+     "original_review_id": "cdb432bb-ad24-4dd4-9fde-ea237cf8f414",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=cdb432bb-ad24-4dd4-9fde-ea237cf8f414",
+     "review_date": "2026-10-24",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV070",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0826",
+     "original_review_id": "90820d41-7a1d-4b55-904e-23a5f40fe2fb",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=90820d41-7a1d-4b55-904e-23a5f40fe2fb",
+     "review_date": "2026-10-20",
+     "rating": "4.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV071",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0830",
+     "original_review_id": "959a853c-3c53-4485-9f86-2c1ba38cc9d7",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=959a853c-3c53-4485-9f86-2c1ba38cc9d7",
+     "review_date": "2026-10-20",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV072",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0844",
+     "original_review_id": "3d4b8698-8f8e-45ac-a46f-22464b5d59d5",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=3d4b8698-8f8e-45ac-a46f-22464b5d59d5",
+     "review_date": "2026-10-18",
+     "rating": "2.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV073",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0867",
+     "original_review_id": "5b541956-cdc3-44ac-85e3-4a076905603f",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=5b541956-cdc3-44ac-85e3-4a076905603f",
+     "review_date": "2026-10-17",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV074",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0939",
+     "original_review_id": "db16b41d-781d-44df-b53f-bd3bca1aea2d",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=db16b41d-781d-44df-b53f-bd3bca1aea2d",
+     "review_date": "2026-10-11",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV075",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0942",
+     "original_review_id": "e619ff16-2f98-4db5-8f18-3d3a6daa66fc",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=e619ff16-2f98-4db5-8f18-3d3a6daa66fc",
+     "review_date": "2026-10-11",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV076",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1004",
+     "original_review_id": "fd64eda2-8812-4a2f-9f20-bf380e702557",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=fd64eda2-8812-4a2f-9f20-bf380e702557",
+     "review_date": "2026-10-05",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV077",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1043",
+     "original_review_id": "9aeec54b-9e30-482d-afe8-356f785ca500",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9aeec54b-9e30-482d-afe8-356f785ca500",
+     "review_date": "2026-10-01",
+     "rating": "4.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV078",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1044",
+     "original_review_id": "9d219646-3ed4-4abc-ac58-fe632af2772e",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9d219646-3ed4-4abc-ac58-fe632af2772e",
+     "review_date": "2026-10-01",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV079",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1092",
+     "original_review_id": "b456bb9c-668e-4acb-be2b-0fe675e19b40",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=b456bb9c-668e-4acb-be2b-0fe675e19b40",
+     "review_date": "2026-09-25",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV080",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1223",
+     "original_review_id": "bba3cf89-7700-4a04-86e2-b13e830fddc5",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=bba3cf89-7700-4a04-86e2-b13e830fddc5",
+     "review_date": "2026-09-11",
+     "rating": "5.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV081",
+     "themes": [
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1233",
+     "original_review_id": "547178a4-862a-4ae0-98cb-529f7e7e48c2",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=547178a4-862a-4ae0-98cb-529f7e7e48c2",
+     "review_date": "2026-09-09",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV082",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1269",
+     "original_review_id": "3f4bad6d-5ab1-41c3-805e-2f64c3a83518",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=3f4bad6d-5ab1-41c3-805e-2f64c3a83518",
+     "review_date": "2026-09-02",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV083",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1273",
+     "original_review_id": "cf85c16b-c7b4-41a4-98ba-22b297cffd31",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=cf85c16b-c7b4-41a4-98ba-22b297cffd31",
+     "review_date": "2026-09-02",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV084",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1276",
+     "original_review_id": "e3962189-1fbf-4cae-8ad7-3a2e4ec6196f",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=e3962189-1fbf-4cae-8ad7-3a2e4ec6196f",
+     "review_date": "2026-08-31",
+     "rating": "2.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV085",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1309",
+     "original_review_id": "2fb97575-7daa-433c-8d75-88da97d3a0c0",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2fb97575-7daa-433c-8d75-88da97d3a0c0",
+     "review_date": "2026-08-20",
+     "rating": "4.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV086",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1327",
+     "original_review_id": "6eef7681-75df-4f3c-ade1-088b9c61989b",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=6eef7681-75df-4f3c-ade1-088b9c61989b",
+     "review_date": "2026-07-30",
+     "rating": "4.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV087",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1404",
+     "original_review_id": "b5e47b59-aa33-4603-b3e9-1a8526918836",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=b5e47b59-aa33-4603-b3e9-1a8526918836",
+     "review_date": "2026-03-05",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV088",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1412",
+     "original_review_id": "fa8e63f7-662e-47cb-ac52-c831dbd37620",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=fa8e63f7-662e-47cb-ac52-c831dbd37620",
+     "review_date": "2026-02-05",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV089",
+     "themes": [
+      "T2"
+     ]
+    },
+    {
+     "review_id": "GP-1427",
+     "original_review_id": "454f7877-b05c-42fb-97c9-1d408f269aa4",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=454f7877-b05c-42fb-97c9-1d408f269aa4",
+     "review_date": "2025-12-10",
+     "rating": "4.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV090",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1452",
+     "original_review_id": "d10345b1-fcb1-4b14-a3f4-9bc927fec77a",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=d10345b1-fcb1-4b14-a3f4-9bc927fec77a",
+     "review_date": "2025-09-26",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV091",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1511",
+     "original_review_id": "0602473c-b023-4a59-9c14-450b9167d03e",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0602473c-b023-4a59-9c14-450b9167d03e",
+     "review_date": "2025-03-05",
+     "rating": "4.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV092",
+     "themes": [
+      "T1",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1625",
+     "original_review_id": "50bb12da-59c0-4c11-b6b1-b6024f2f4b70",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=50bb12da-59c0-4c11-b6b1-b6024f2f4b70",
+     "review_date": "2023-04-09",
+     "rating": "3.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV093",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1668",
+     "original_review_id": "2b8fc1f5-4a88-49bf-875e-f5351edc5556",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2b8fc1f5-4a88-49bf-875e-f5351edc5556",
+     "review_date": "2026-11-11",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV094",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1729",
+     "original_review_id": "d7924abd-8174-48b8-8bbe-975abb973286",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=d7924abd-8174-48b8-8bbe-975abb973286",
+     "review_date": "2026-09-01",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV095",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1742",
+     "original_review_id": "170f7d40-49e7-45ff-a287-6e602c7711d8",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=170f7d40-49e7-45ff-a287-6e602c7711d8",
+     "review_date": "2026-08-22",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV096",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1745",
+     "original_review_id": "ef95a3de-505d-4c90-bb10-494903cfdc1c",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=ef95a3de-505d-4c90-bb10-494903cfdc1c",
+     "review_date": "2026-08-21",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV097",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1746",
+     "original_review_id": "2f4815ff-198e-4608-b04d-67c39ce1e19d",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2f4815ff-198e-4608-b04d-67c39ce1e19d",
+     "review_date": "2026-08-18",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV098",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1753",
+     "original_review_id": "a65f970f-7da7-4166-becc-702e72bcf684",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=a65f970f-7da7-4166-becc-702e72bcf684",
+     "review_date": "2026-08-14",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV099",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1774",
+     "original_review_id": "2b87f1ee-4a53-4214-b0c9-03709897aec9",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2b87f1ee-4a53-4214-b0c9-03709897aec9",
+     "review_date": "2026-07-28",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV100",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1784",
+     "original_review_id": "d38a6edc-b868-402e-a22c-5fb6660a2618",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=d38a6edc-b868-402e-a22c-5fb6660a2618",
+     "review_date": "2026-07-11",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV101",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1794",
+     "original_review_id": "7ffa63d4-ff61-4bde-837e-acbded6943e8",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=7ffa63d4-ff61-4bde-837e-acbded6943e8",
+     "review_date": "2026-06-30",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV102",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1827",
+     "original_review_id": "2481b152-68b1-4578-acec-c16388f1a751",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2481b152-68b1-4578-acec-c16388f1a751",
+     "review_date": "2026-05-08",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV103",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1837",
+     "original_review_id": "69e4d002-3355-49e5-aa83-428ad55bdaf2",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=69e4d002-3355-49e5-aa83-428ad55bdaf2",
+     "review_date": "2026-01-04",
+     "rating": "4.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV104",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1844",
+     "original_review_id": "397170b7-0f36-4699-a1ea-e4d610f40da8",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=397170b7-0f36-4699-a1ea-e4d610f40da8",
+     "review_date": "2025-10-13",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV105",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1853",
+     "original_review_id": "6515e100-6927-4361-8f0a-1a33ef059cc9",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=6515e100-6927-4361-8f0a-1a33ef059cc9",
+     "review_date": "2025-06-17",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV106",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1862",
+     "original_review_id": "36687403-f901-42f6-ba0a-f08c6aa20ba5",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=36687403-f901-42f6-ba0a-f08c6aa20ba5",
+     "review_date": "2025-03-17",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV107",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1874",
+     "original_review_id": "0cecbdd9-9adf-4823-8b95-226e2566c7dd",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0cecbdd9-9adf-4823-8b95-226e2566c7dd",
+     "review_date": "2024-09-22",
+     "rating": "4.0",
+     "sentiment_label": "Mixed",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV108",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1895",
+     "original_review_id": "bbbc79da-3d37-4204-9447-60b342c4c7bb",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=bbbc79da-3d37-4204-9447-60b342c4c7bb",
+     "review_date": "2024-04-25",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV109",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1907",
+     "original_review_id": "073a4332-9d74-498b-925c-5e10c8e0f80c",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=073a4332-9d74-498b-925c-5e10c8e0f80c",
+     "review_date": "2023-11-19",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV110",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1910",
+     "original_review_id": "f0105cd7-e426-40a3-88c1-c703fc0866c9",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=f0105cd7-e426-40a3-88c1-c703fc0866c9",
+     "review_date": "2023-10-14",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV111",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1921",
+     "original_review_id": "fa8f9832-3da1-4491-abee-d7593155fb22",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=fa8f9832-3da1-4491-abee-d7593155fb22",
+     "review_date": "2023-05-02",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV112",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1932",
+     "original_review_id": "999770c9-b484-4607-a35a-9b3ac92801db",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=999770c9-b484-4607-a35a-9b3ac92801db",
+     "review_date": "2022-11-11",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV113",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1975",
+     "original_review_id": "0cfa1564-c2a3-4ab7-96e7-3f4923e0a1d8",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0cfa1564-c2a3-4ab7-96e7-3f4923e0a1d8",
+     "review_date": "2021-08-28",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV114",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1980",
+     "original_review_id": "3118cd81-5253-4f3e-8fbe-f84ac5feda10",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=3118cd81-5253-4f3e-8fbe-f84ac5feda10",
+     "review_date": "2021-07-27",
+     "rating": "5.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV115",
+     "themes": []
+    },
+    {
+     "review_id": "GP-1988",
+     "original_review_id": "2a5ab9e5-65cb-44ed-8289-6f8d86add813",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2a5ab9e5-65cb-44ed-8289-6f8d86add813",
+     "review_date": "2021-05-27",
+     "rating": "5.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV116",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2012",
+     "original_review_id": "6eb3f067-5036-46da-bee1-20492f80e442",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=6eb3f067-5036-46da-bee1-20492f80e442",
+     "review_date": "2020-12-16",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV117",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2021",
+     "original_review_id": "95eb759a-1e51-49ce-8b39-91dddc8f9393",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=95eb759a-1e51-49ce-8b39-91dddc8f9393",
+     "review_date": "2020-10-10",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV118",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2033",
+     "original_review_id": "6b8aa386-9c83-46f4-a4ab-8759051fab0f",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=6b8aa386-9c83-46f4-a4ab-8759051fab0f",
+     "review_date": "2020-08-19",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV119",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2037",
+     "original_review_id": "40600f27-0f15-4d5c-9f5b-3018f89eb667",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=40600f27-0f15-4d5c-9f5b-3018f89eb667",
+     "review_date": "2020-08-08",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV120",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2038",
+     "original_review_id": "22d9c569-796b-4325-b5ff-f62a9a5c4ed6",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=22d9c569-796b-4325-b5ff-f62a9a5c4ed6",
+     "review_date": "2020-08-08",
+     "rating": "5.0",
+     "sentiment_label": "Mixed",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV121",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2049",
+     "original_review_id": "5b9df153-3ef7-44bd-ac30-64f56fab2505",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=5b9df153-3ef7-44bd-ac30-64f56fab2505",
+     "review_date": "2020-07-03",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV122",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2052",
+     "original_review_id": "ecc01a59-af80-473f-9641-3eb1276011f4",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=ecc01a59-af80-473f-9641-3eb1276011f4",
+     "review_date": "2020-05-26",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV123",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2060",
+     "original_review_id": "db03d6a1-1ac9-47b1-b6ec-050f093cbf04",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=db03d6a1-1ac9-47b1-b6ec-050f093cbf04",
+     "review_date": "2020-03-20",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV124",
+     "themes": []
+    },
+    {
+     "review_id": "GP-2065",
+     "original_review_id": "d4a5b1c2-391e-43f9-a7e7-8f6334895ec0",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=d4a5b1c2-391e-43f9-a7e7-8f6334895ec0",
+     "review_date": "2020-01-06",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV125",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2072",
+     "original_review_id": "53e3eaf1-f35a-48b3-8445-adb7f0e74cc4",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=53e3eaf1-f35a-48b3-8445-adb7f0e74cc4",
+     "review_date": "2019-10-26",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV126",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2079",
+     "original_review_id": "a6fbc699-d7ea-421f-93ef-25db72dc17b6",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=a6fbc699-d7ea-421f-93ef-25db72dc17b6",
+     "review_date": "2019-10-05",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV127",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2114",
+     "original_review_id": "c26d29f2-d6ba-4235-90bf-ec9789d6ea08",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=c26d29f2-d6ba-4235-90bf-ec9789d6ea08",
+     "review_date": "2019-04-06",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV128",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2128",
+     "original_review_id": "0b99fd53-d949-488a-83f6-2c2d99bdc6ca",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0b99fd53-d949-488a-83f6-2c2d99bdc6ca",
+     "review_date": "2018-12-15",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV129",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2139",
+     "original_review_id": "9f713a79-9cfe-42d6-8881-99515121689e",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9f713a79-9cfe-42d6-8881-99515121689e",
+     "review_date": "2018-09-30",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV130",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-2140",
+     "original_review_id": "e44198e7-e9e3-4713-8c94-68c9070239cd",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=e44198e7-e9e3-4713-8c94-68c9070239cd",
+     "review_date": "2018-09-21",
+     "rating": "5.0",
+     "sentiment_label": "Positive",
+     "reason": "states intent to book again / prefers same professional",
+     "evidence_id": "EV131",
+     "themes": []
+    },
+    {
+     "review_id": "PC-0006",
+     "original_review_id": "7601291",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/my-bathroom-cleaning-got-cancelled-because-of-my-service-provider-202611067601291.html",
+     "review_date": "2026-11-06",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV132",
+     "themes": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0027",
+     "original_review_id": "7192351",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/fraud-company-urban-company-202605017192351.html",
+     "review_date": "2026-05-01",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV133",
+     "themes": [
+      "T1",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0040",
+     "original_review_id": "7026775",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/complaint-regarding-a-professional-behaviour-202512317026775.html",
+     "review_date": "2025-12-31",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV134",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0107",
+     "original_review_id": "5292626",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/bathroom-bad-cleaning-service-202311065292626.html",
+     "review_date": "2023-11-06",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV135",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0108",
+     "original_review_id": "5289076",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/passed-personal-comments-202311055289076.html",
+     "review_date": "2023-11-05",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV136",
+     "themes": [
+      "T1",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0125",
+     "original_review_id": "5145491",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/unprofessional-behaviour-from-service-providor-202309255145491.html",
+     "review_date": "2023-09-25",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV137",
+     "themes": [
+      "T1",
+      "T4",
+      "T5"
+     ]
+    },
+    {
+     "review_id": "PC-0148",
+     "original_review_id": "4424942",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/complaint-against-a-damaging-service-rendered-by-your-staff-pinky-dey-banik-202303094424942.html",
+     "review_date": "2023-03-09",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV138",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0150",
+     "original_review_id": "4377632",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/pest-control-ants-cockroaches-and-general-pest-control-202302184377632.html",
+     "review_date": "2023-02-18",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV139",
+     "themes": []
+    },
+    {
+     "review_id": "PC-0151",
+     "original_review_id": "4371981",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/worst-tv-service-ever-202302164371981.html",
+     "review_date": "2023-02-16",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV140",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0017",
+     "original_review_id": "1vsgs6x",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/delhi/comments/1vsgs6x/is_there_a_way_to_request_a_different_service/",
+     "review_date": "2026-08-19",
+     "rating": null,
+     "sentiment_label": "Neutral",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV141",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0053",
+     "original_review_id": "1tkv5yd",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/delhi/comments/1tkv5yd/my_honest_urbancompany_review/",
+     "review_date": "2026-05-22",
+     "rating": null,
+     "sentiment_label": "Positive",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV142",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0112",
+     "original_review_id": "1ptjpnb",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/gurgaon/comments/1ptjpnb/urban_company_is_a_place_full_of_gross/",
+     "review_date": "2025-12-23",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV143",
+     "themes": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0165",
+     "original_review_id": "1lllwhn",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/delhi/comments/1lllwhn/whats_the_biggest_issue_youve_faced_using_apps/",
+     "review_date": "2025-06-27",
+     "rating": null,
+     "sentiment_label": "Neutral",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV144",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0181",
+     "original_review_id": "1jyq6ba",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/Bhopal/comments/1jyq6ba/ac_service_scam/",
+     "review_date": "2025-04-14",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV145",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0229",
+     "original_review_id": "1e5eu46",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/gurgaon/comments/1e5eu46/litigation_against_urban_company_yesno/",
+     "review_date": "2024-07-17",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV146",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0251",
+     "original_review_id": "15vbgo4",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/gurgaon/comments/15vbgo4/is_urban_company_now_a_pyramid_scheme/",
+     "review_date": "2023-08-19",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "reports repeat or ongoing use",
+     "evidence_id": "EV147",
+     "themes": [
+      "T1",
+      "T2",
+      "T4"
+     ]
+    }
+   ],
+   "signalled_reasons": {
+    "expresses satisfaction, trust or recommends": {
+     "n": 456,
+     "pct_of_dataset": 18.0,
+     "evidence_ids": [
+      "EV051",
+      "EV166",
+      "EV167"
+     ]
+    }
+   },
+   "inferred_evidence_ids": [
+    "EV168",
+    "EV169",
+    "EV170"
+   ],
+   "representative_evidence_ids": [
+    "EV077",
+    "EV079",
+    "EV066",
+    "EV076",
+    "EV065",
+    "EV059",
+    "EV063",
+    "EV072",
+    "EV086",
+    "EV180"
+   ],
+   "at_risk_loyal_customers_evidence_ids": [
+    "EV060",
+    "EV082",
+    "EV064",
+    "EV085",
+    "EV057",
+    "EV181"
+   ]
+  },
+  "Non-Return": {
+   "class": "Non-Return",
+   "n": 1074,
+   "pct_of_dataset": 42.5,
+   "by_basis": {
+    "Stated": 19,
+    "Signalled": 291,
+    "Inferred": 764
+   },
+   "by_confidence": {
+    "High": 19,
+    "Medium": 620,
+    "Low": 435
+   },
+   "by_source": {
+    "Google Play Store": 645,
+    "Reddit": 119,
+    "PissedConsumer": 153,
+    "ConsumerComplaints.in": 157
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 21,
+     "pct": 2.0
+    },
+    "Negative": {
+     "n": 956,
+     "pct": 89.0
+    },
+    "Neutral": {
+     "n": 60,
+     "pct": 5.6
+    },
+    "Mixed": {
+     "n": 35,
+     "pct": 3.3
+    },
+    "Uncertain": {
+     "n": 2,
+     "pct": 0.2
+    }
+   },
+   "reasons": {
+    "advises others not to use the app": 95,
+    "expresses distrust or a safety/honesty concern": 104,
+    "negative experience": 734,
+    "previously a repeat customer": 8,
+    "mentions switching to or comparing with alternatives": 92,
+    "uncertain wording with a low star rating": 2,
+    "states will not return / has switched / uninstalled": 11,
+    "neutral wording with a low star rating": 7,
+    "mixed wording with a low star rating": 21
+   },
+   "theme_prevalence": {
+    "T1": {
+     "n": 248,
+     "pct_of_class": 23.1
+    },
+    "T2": {
+     "n": 223,
+     "pct_of_class": 20.8
+    },
+    "T3": {
+     "n": 372,
+     "pct_of_class": 34.6
+    },
+    "T4": {
+     "n": 514,
+     "pct_of_class": 47.9
+    },
+    "T5": {
+     "n": 87,
+     "pct_of_class": 8.1
+    }
+   },
+   "stated_records": [
+    {
+     "review_id": "CC-0064",
+     "original_review_id": "3474350",
+     "source": "ConsumerComplaints.in",
+     "source_url": "https://www.consumercomplaints.in/urban-company-fraud-c3474350",
+     "review_date": "2023-10-06",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV148",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0370",
+     "original_review_id": "2d3ec9e1-4233-4c69-a5cb-0aa6f223459b",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2d3ec9e1-4233-4c69-a5cb-0aa6f223459b",
+     "review_date": "2026-11-16",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV021",
+     "themes": [
+      "T1",
+      "T5"
+     ]
+    },
+    {
+     "review_id": "GP-0435",
+     "original_review_id": "0816d784-d125-469a-8f92-046eb3546cb0",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=0816d784-d125-469a-8f92-046eb3546cb0",
+     "review_date": "2026-11-14",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV149",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-0452",
+     "original_review_id": "7a7f218d-a409-4251-8163-0194606437c9",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=7a7f218d-a409-4251-8163-0194606437c9",
+     "review_date": "2026-11-13",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV150",
+     "themes": []
+    },
+    {
+     "review_id": "GP-0621",
+     "original_review_id": "2060ae74-c82b-4367-b89a-f5dff42063f1",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2060ae74-c82b-4367-b89a-f5dff42063f1",
+     "review_date": "2026-11-03",
+     "rating": "3.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV151",
+     "themes": [
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "GP-1245",
+     "original_review_id": "9f42a5be-5e9f-4c20-be13-95bd13ae5841",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9f42a5be-5e9f-4c20-be13-95bd13ae5841",
+     "review_date": "2026-09-07",
+     "rating": "2.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV152",
+     "themes": [
+      "T3"
+     ]
+    },
+    {
+     "review_id": "GP-1319",
+     "original_review_id": "7b7f3c55-a253-4f5d-8c24-a84640685a54",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=7b7f3c55-a253-4f5d-8c24-a84640685a54",
+     "review_date": "2026-08-08",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV153",
+     "themes": [
+      "T3"
+     ]
+    },
+    {
+     "review_id": "PC-0019",
+     "original_review_id": "7341773",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/i-am-a-frequent-user-of-urban-clap-202607197341773.html",
+     "review_date": "2026-07-19",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV154",
+     "themes": [
+      "T1",
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0046",
+     "original_review_id": "6685246",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/unprofessional-behaviour-and-faulty-app-202506116685246.html",
+     "review_date": "2025-06-11",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV155",
+     "themes": [
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0053",
+     "original_review_id": "6517316",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/incomplete-pest-control-service-refund-not-credited-202503266517316.html",
+     "review_date": "2025-03-26",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV156",
+     "themes": [
+      "T1",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0071",
+     "original_review_id": "5811001",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/poor-ac-service-202404225811001.html",
+     "review_date": "2024-04-22",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV157",
+     "themes": [
+      "T1",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0113",
+     "original_review_id": "5268393",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/make-new-booking-202310295268393.html",
+     "review_date": "2023-10-29",
+     "rating": "4.2",
+     "sentiment_label": "Mixed",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV158",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0116",
+     "original_review_id": "5237946",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/unprofessional-behaviour-202310205237946.html",
+     "review_date": "2023-10-20",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV159",
+     "themes": [
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0122",
+     "original_review_id": "5153130",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/scamming-with-customers-money-202309275153130.html",
+     "review_date": "2023-09-27",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV160",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0123",
+     "original_review_id": "5153298",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/refund-not-completed-yet-already-11-days-over-202309275153298.html",
+     "review_date": "2023-09-27",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV161",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0124",
+     "original_review_id": "5145287",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/refund-202309255145287.html",
+     "review_date": "2023-09-25",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV162",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0126",
+     "original_review_id": "5143039",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/cheats-and-fake-employees-202309245143039.html",
+     "review_date": "2023-09-24",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV163",
+     "themes": [
+      "T2",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "PC-0161",
+     "original_review_id": "4137804",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/worst-services-of-urban-company-202211114137804.html",
+     "review_date": "2022-11-11",
+     "rating": "1.0",
+     "sentiment_label": "Negative",
+     "reason": "states will not return / has switched / uninstalled",
+     "evidence_id": "EV164",
+     "themes": [
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+     ]
+    },
+    {
+     "review_id": "RD-0125",
+     "original_review_id": "1okno7f",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/pune/comments/1okno7f/is_it_just_me_or_the_quality_of_service/",
+     "review_date": "2025-10-31",
+     "rating": null,
+     "sentiment_label": "Negative",
+     "reason": "previously a repeat customer",
+     "evidence_id": "EV165",
+     "themes": [
+      "T2",
+      "T3",
+      "T4"
+     ]
+    }
+   ],
+   "signalled_reasons": {
+    "advises others not to use the app": {
+     "n": 95,
+     "pct_of_dataset": 3.8,
+     "evidence_ids": [
+      "EV171",
+      "EV172",
+      "EV173"
+     ]
+    },
+    "expresses distrust or a safety/honesty concern": {
+     "n": 104,
+     "pct_of_dataset": 4.1,
+     "evidence_ids": [
+      "EV017",
+      "EV174",
+      "EV175"
+     ]
+    },
+    "mentions switching to or comparing with alternatives": {
+     "n": 92,
+     "pct_of_dataset": 3.6,
+     "evidence_ids": [
+      "EV176",
+      "EV001",
+      "EV177"
+     ]
+    }
+   },
+   "inferred_evidence_ids": [
+    "EV014",
+    "EV178",
+    "EV179"
+   ],
+   "representative_evidence_ids": [
+    "EV148",
+    "EV151",
+    "EV159",
+    "EV157",
+    "EV164",
+    "EV149",
+    "EV021",
+    "EV153",
+    "EV160",
+    "EV182",
+    "EV183"
+   ]
+  },
+  "Insufficient Evidence": {
+   "class": "Insufficient Evidence",
+   "n": 334,
+   "pct_of_dataset": 13.2,
+   "by_basis": {
+    "Inferred": 134
+   },
+   "by_confidence": {
+    "Low": 334
+   },
+   "by_source": {
+    "Google Play Store": 207,
+    "Reddit": 122,
+    "PissedConsumer": 3,
+    "ConsumerComplaints.in": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 3,
+     "pct": 0.9
+    },
+    "Negative": {
+     "n": 131,
+     "pct": 39.2
+    },
+    "Neutral": {
+     "n": 146,
+     "pct": 43.7
+    },
+    "Mixed": {
+     "n": 51,
+     "pct": 15.3
+    },
+    "Uncertain": {
+     "n": 3,
+     "pct": 0.9
+    }
+   },
+   "reasons": {
+    "no clear positive or negative signal": 200,
+    "negative wording but a high star rating": 131,
+    "positive wording but a low star rating": 3
+   },
+   "theme_prevalence": {
+    "T1": {
+     "n": 37,
+     "pct_of_class": 11.1
+    },
+    "T2": {
+     "n": 52,
+     "pct_of_class": 15.6
+    },
+    "T3": {
+     "n": 48,
+     "pct_of_class": 14.4
+    },
+    "T4": {
+     "n": 95,
+     "pct_of_class": 28.4
+    },
+    "T5": {
+     "n": 26,
+     "pct_of_class": 7.8
+    }
+   },
+   "review_ids_note": "Use /reviews?return_class=Insufficient Evidence to read them."
+  }
+ },
+ "patterns": [
+  "86.8% of reviews (2,193 of 2,527) could be placed as Return (1,119, 44.3%) or Non-Return (1,074, 42.5%); 334 (13.2%) stay Insufficient Evidence because they are neutral questions or give no clear positive or negative signal.",
+  "How sure we are: 111 reviews (4.4%) say it in the first person (Stated, high confidence); 747 (29.6%) advise against using the app, mention switching, express distrust or recommend with trust (Signalled, medium); 1,335 (52.8%) are inferred from how positive or negative the review is, and from the star rating where there is one (Inferred, medium or low).",
+  "Return is mostly about people: of the 548 Return reviews with Stated or Signalled evidence, 80.5% are about professional quality, punctuality or trust (T4). Non-Return with Stated or Signalled evidence is mostly about recourse (40.0% recourse failures, T3), reliability (22.6%, T1) and price (25.5%, T2).",
+  "36 of the 92 customers who say they came back are themselves Negative or Mixed: some are loyal but unhappy, so a repeat history is not the same as satisfaction.",
+  "Source mix shapes what is visible: complaint sites contribute 310 of the 1,074 Non-Return reviews and none of the Return reviews; Google Play supplies 1098 of the 1,119 Return reviews.",
+  "These are predictions from public text, not observed repeat-booking rates. Customers who simply stopped booking leave no review, so the true non-return share is probably higher than the share shown here."
+ ],
+ "stated_returners_dissatisfied": {
+  "n": 36,
+  "of": 92,
+  "pct": 39.1
+ },
+ "comparison": {
+  "groups": {
+   "all": 2527,
+   "return": 1119,
+   "non_return": 1074,
+   "return_stated_signalled": 548,
+   "non_return_stated_signalled": 310
+  },
+  "theme_prevalence_pct": {
+   "T1": {
+    "all": 12.7,
+    "return": 3.2,
+    "non_return": 23.1,
+    "return_stated_signalled": 2.2,
+    "non_return_stated_signalled": 22.6
+   },
+   "T2": {
+    "all": 14.0,
+    "return": 7.1,
+    "non_return": 20.8,
+    "return_stated_signalled": 6.2,
+    "non_return_stated_signalled": 25.5
+   },
+   "T3": {
+    "all": 18.5,
+    "return": 4.3,
+    "non_return": 34.6,
+    "return_stated_signalled": 4.0,
+    "non_return_stated_signalled": 40.0
+   },
+   "T4": {
+    "all": 51.2,
+    "return": 61.1,
+    "non_return": 47.9,
+    "return_stated_signalled": 80.5,
+    "non_return_stated_signalled": 71.9
+   },
+   "T5": {
+    "all": 6.4,
+    "return": 4.3,
+    "non_return": 8.1,
+    "return_stated_signalled": 4.0,
+    "non_return_stated_signalled": 6.5
+   }
+  },
+  "prevalence_pct": {
+   "cancelled": {
+    "label": "Cancelled by the company or professional",
+    "all": 5.0,
+    "return": 1.1,
+    "non_return": 9.6,
+    "return_stated_signalled": 1.1,
+    "non_return_stated_signalled": 10.3
+   },
+   "no_show": {
+    "label": "Professional did not show up",
+    "all": 3.2,
+    "return": 0.5,
+    "non_return": 6.7,
+    "return_stated_signalled": 0.4,
+    "non_return_stated_signalled": 5.5
+   },
+   "late": {
+    "label": "Late or delayed",
+    "all": 3.5,
+    "return": 1.4,
+    "non_return": 6.0,
+    "return_stated_signalled": 1.3,
+    "non_return_stated_signalled": 5.8
+   },
+   "price_high": {
+    "label": "Prices too high or rising",
+    "all": 7.9,
+    "return": 4.2,
+    "non_return": 10.6,
+    "return_stated_signalled": 3.1,
+    "non_return_stated_signalled": 11.6
+   },
+   "fees_charges": {
+    "label": "Platform, visit and cancellation fees; policy rigidity",
+    "all": 5.3,
+    "return": 2.3,
+    "non_return": 9.0,
+    "return_stated_signalled": 2.6,
+    "non_return_stated_signalled": 10.6
+   },
+   "overcharge_upsell": {
+    "label": "Extra charges and parts upselling",
+    "all": 3.4,
+    "return": 1.6,
+    "non_return": 5.5,
+    "return_stated_signalled": 1.8,
+    "non_return_stated_signalled": 8.4
+   },
+   "support_unreachable": {
+    "label": "Support unreachable (bot, no number)",
+    "all": 7.4,
+    "return": 1.6,
+    "non_return": 14.2,
+    "return_stated_signalled": 0.9,
+    "non_return_stated_signalled": 14.5
+   },
+   "refund_payment": {
+    "label": "Refund and payment problems",
+    "all": 4.9,
+    "return": 1.1,
+    "non_return": 9.6,
+    "return_stated_signalled": 1.1,
+    "non_return_stated_signalled": 12.6
+   },
+   "unresolved": {
+    "label": "Complaint unresolved, no follow-up",
+    "all": 3.6,
+    "return": 0.4,
+    "non_return": 7.4,
+    "return_stated_signalled": 0.7,
+    "non_return_stated_signalled": 10.6
+   },
+   "warranty_rework": {
+    "label": "Warranty and rework not honoured",
+    "all": 3.9,
+    "return": 0.4,
+    "non_return": 8.4,
+    "return_stated_signalled": 0.7,
+    "non_return_stated_signalled": 10.3
+   },
+   "poor_quality": {
+    "label": "Poor or incomplete work",
+    "all": 9.7,
+    "return": 2.9,
+    "non_return": 17.9,
+    "return_stated_signalled": 2.9,
+    "non_return_stated_signalled": 21.6
+   },
+   "damage_theft": {
+    "label": "Damage or theft",
+    "all": 2.8,
+    "return": 0.8,
+    "non_return": 5.6,
+    "return_stated_signalled": 1.1,
+    "non_return_stated_signalled": 8.4
+   },
+   "conduct_safety": {
+    "label": "Rude conduct, safety, rating pressure",
+    "all": 3.9,
+    "return": 1.3,
+    "non_return": 7.2,
+    "return_stated_signalled": 1.6,
+    "non_return_stated_signalled": 12.3
+   },
+   "trust_fraud": {
+    "label": "Trust, fraud or dishonesty",
+    "all": 5.6,
+    "return": 0.7,
+    "non_return": 12.3,
+    "return_stated_signalled": 1.3,
+    "non_return_stated_signalled": 38.7
+   },
+   "pos_quality_pro": {
+    "label": "Skilled, professional, courteous work (positive)",
+    "all": 34.4,
+    "return": 54.5,
+    "non_return": 18.5,
+    "return_stated_signalled": 73.2,
+    "non_return_stated_signalled": 29.0
+   },
+   "pos_punctual": {
+    "label": "Punctual and prompt (positive)",
+    "all": 8.4,
+    "return": 12.2,
+    "non_return": 5.9,
+    "return_stated_signalled": 19.0,
+    "non_return_stated_signalled": 6.1
+   },
+   "pos_convenience": {
+    "label": "Convenience and ease (positive)",
+    "all": 8.9,
+    "return": 10.8,
+    "non_return": 8.0,
+    "return_stated_signalled": 15.5,
+    "non_return_stated_signalled": 14.2
+   },
+   "pos_support_resolution": {
+    "label": "Support or resolution that worked (positive)",
+    "all": 6.6,
+    "return": 6.2,
+    "non_return": 7.8,
+    "return_stated_signalled": 8.9,
+    "non_return_stated_signalled": 12.6
+   }
+  },
+  "return_share_by_segment": {
+   "service_category": [
+    {
+     "segment": "Home Cleaning",
+     "n": 298,
+     "return_pct": 32.9,
+     "non_return_pct": 55.0,
+     "insufficient_pct": 12.1,
+     "return_pct_of_classified": 37.4
+    },
+    {
+     "segment": "AC Service & Repair",
+     "n": 150,
+     "return_pct": 29.3,
+     "non_return_pct": 61.3,
+     "insufficient_pct": 9.3,
+     "return_pct_of_classified": 32.4
+    },
+    {
+     "segment": "Salon & Beauty",
+     "n": 145,
+     "return_pct": 46.2,
+     "non_return_pct": 35.9,
+     "insufficient_pct": 17.9,
+     "return_pct_of_classified": 56.3
+    },
+    {
+     "segment": "Water Purifier / RO",
+     "n": 87,
+     "return_pct": 12.6,
+     "non_return_pct": 56.3,
+     "insufficient_pct": 31.0,
+     "return_pct_of_classified": 18.3
+    },
+    {
+     "segment": "Appliance Repair",
+     "n": 82,
+     "return_pct": 23.2,
+     "non_return_pct": 73.2,
+     "insufficient_pct": 3.7,
+     "return_pct_of_classified": 24.1
+    },
+    {
+     "segment": "Plumbing",
+     "n": 44,
+     "return_pct": 45.5,
+     "non_return_pct": 47.7,
+     "insufficient_pct": 6.8,
+     "return_pct_of_classified": 48.8
+    },
+    {
+     "segment": "Massage & Spa",
+     "n": 43,
+     "return_pct": 41.9,
+     "non_return_pct": 30.2,
+     "insufficient_pct": 27.9,
+     "return_pct_of_classified": 58.1
+    },
+    {
+     "segment": "Electrician",
+     "n": 32,
+     "return_pct": 25.0,
+     "non_return_pct": 56.2,
+     "insufficient_pct": 18.8,
+     "return_pct_of_classified": 30.8
+    },
+    {
+     "segment": "Painting",
+     "n": 32,
+     "return_pct": 18.8,
+     "non_return_pct": 62.5,
+     "insufficient_pct": 18.8,
+     "return_pct_of_classified": 23.1
+    },
+    {
+     "segment": "Pest Control",
+     "n": 32,
+     "return_pct": 18.8,
+     "non_return_pct": 59.4,
+     "insufficient_pct": 21.9,
+     "return_pct_of_classified": 24.0
+    }
+   ],
+   "source": [
+    {
+     "segment": "Google Play Store",
+     "n": 1950,
+     "return_pct": 56.3,
+     "non_return_pct": 33.1,
+     "insufficient_pct": 10.6,
+     "return_pct_of_classified": 63.0
+    },
+    {
+     "segment": "Reddit",
+     "n": 251,
+     "return_pct": 4.0,
+     "non_return_pct": 47.4,
+     "insufficient_pct": 48.6,
+     "return_pct_of_classified": 7.8
+    },
+    {
+     "segment": "PissedConsumer",
+     "n": 165,
+     "return_pct": 5.5,
+     "non_return_pct": 92.7,
+     "insufficient_pct": 1.8,
+     "return_pct_of_classified": 5.6
+    },
+    {
+     "segment": "ConsumerComplaints.in",
+     "n": 161,
+     "return_pct": 1.2,
+     "non_return_pct": 97.5,
+     "insufficient_pct": 1.2,
+     "return_pct_of_classified": 1.3
+    }
+   ],
+   "city": [
+    {
+     "segment": "Delhi",
+     "n": 42,
+     "return_pct": 2.4,
+     "non_return_pct": 78.6,
+     "insufficient_pct": 19.0,
+     "return_pct_of_classified": 2.9
+    },
+    {
+     "segment": "Gurugram",
+     "n": 25,
+     "return_pct": 8.0,
+     "non_return_pct": 60.0,
+     "insufficient_pct": 32.0,
+     "return_pct_of_classified": 11.8
+    },
+    {
+     "segment": "Hyderabad",
+     "n": 19,
+     "return_pct": 5.3,
+     "non_return_pct": 84.2,
+     "insufficient_pct": 10.5,
+     "return_pct_of_classified": 5.9
+    },
+    {
+     "segment": "Bengaluru",
+     "n": 17,
+     "return_pct": 11.8,
+     "non_return_pct": 88.2,
+     "insufficient_pct": 0.0,
+     "return_pct_of_classified": 11.8
+    }
+   ]
+  },
+  "caution": "The all-classified groups include Inferred labels, which come from sentiment, so some of the gap restates sentiment. The Stated + Signalled groups are smaller but do not rest on sentiment alone.",
+  "top_leaving_drivers": [
+   {
+    "issue": "Trust, fraud or dishonesty",
+    "code": "trust_fraud",
+    "non_return_pct": 38.7,
+    "return_pct": 1.3,
+    "gap_points": 37.4
+   },
+   {
+    "issue": "Poor or incomplete work",
+    "code": "poor_quality",
+    "non_return_pct": 21.6,
+    "return_pct": 2.9,
+    "gap_points": 18.7
+   },
+   {
+    "issue": "Support unreachable (bot, no number)",
+    "code": "support_unreachable",
+    "non_return_pct": 14.5,
+    "return_pct": 0.9,
+    "gap_points": 13.6
+   },
+   {
+    "issue": "Refund and payment problems",
+    "code": "refund_payment",
+    "non_return_pct": 12.6,
+    "return_pct": 1.1,
+    "gap_points": 11.5
+   },
+   {
+    "issue": "Rude conduct, safety, rating pressure",
+    "code": "conduct_safety",
+    "non_return_pct": 12.3,
+    "return_pct": 1.6,
+    "gap_points": 10.7
+   },
+   {
+    "issue": "Complaint unresolved, no follow-up",
+    "code": "unresolved",
+    "non_return_pct": 10.6,
+    "return_pct": 0.7,
+    "gap_points": 9.9
+   }
+  ],
+  "top_staying_drivers": [
+   {
+    "issue": "Skilled, professional, courteous work (positive)",
+    "code": "pos_quality_pro",
+    "return_pct": 73.2,
+    "non_return_pct": 29.0,
+    "gap_points": 44.2
+   },
+   {
+    "issue": "Punctual and prompt (positive)",
+    "code": "pos_punctual",
+    "return_pct": 19.0,
+    "non_return_pct": 6.1,
+    "gap_points": 12.9
+   },
+   {
+    "issue": "Convenience and ease (positive)",
+    "code": "pos_convenience",
+    "return_pct": 15.5,
+    "non_return_pct": 14.2,
+    "gap_points": 1.3
+   },
+   {
+    "issue": "Support or resolution that worked (positive)",
+    "code": "pos_support_resolution",
+    "return_pct": 8.9,
+    "non_return_pct": 12.6,
+    "gap_points": -3.7
+   }
+  ]
+ }
+}

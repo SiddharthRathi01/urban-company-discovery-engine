@@ -1,0 +1,69 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "dataset_characteristics": {
+  "negative_representation": {
+   "negative_pct": 44.1,
+   "positive_pct": 35.4,
+   "complaint_platform_reviews": 326,
+   "complaint_platform_pct": 12.9,
+   "note": "PissedConsumer and ConsumerComplaints contain complaints by design (98% Negative). Customers who never complained or never came back leave no trace."
+  },
+  "google_play_dominance": {
+   "n": 1950,
+   "pct": 77.2,
+   "note": "Pooled percentages mostly describe Google Play app reviews, which are short (median 15 words) and about the app and service in general."
+  },
+  "missing_city_and_category": {
+   "city_missing_pct": 92.6,
+   "category_missing_pct": 60.3,
+   "note": "Segment comparisons by city and category use a minority of reviews; city is a keyword tag from the review text, not a profile field."
+  },
+  "return_evidence": {
+   "return": 1119,
+   "non_return": 1074,
+   "classified_pct": 86.8,
+   "stated_pct": 4.4,
+   "signalled_pct": 29.6,
+   "inferred_pct": 52.8,
+   "insufficient_pct": 13.2,
+   "note": "Return and Non-Return are predictions from public text, mostly from sentiment. They are not an observed repeat-booking rate; customers who never came back leave no review."
+  },
+  "reddit_text": {
+   "posts": 251,
+   "title_only_posts": 25,
+   "median_words": 64,
+   "note": "Reddit posts are questions and requests more than reviews; no star ratings; permalinks could not be machine-verified; comments are not covered (posts only)."
+  },
+  "source_coverage": {
+   "apple_app_store_excluded": 500,
+   "reason": "no individual review URL",
+   "older_complaint_site_entries_excluded": 346,
+   "trustpilot": "blocked",
+   "youtube": "no API key",
+   "note": "Excluded sources could change the balance of themes, in particular Apple App Store reviews."
+  },
+  "time_skew": {
+   "reviews_in_2026_pct": 61.3,
+   "note": "Most reviews are recent; older sentiment is under-represented."
+  },
+  "no_star_ratings": {
+   "reviews_without_rating": 485,
+   "pct": 19.2
+  }
+ },
+ "method_limitations": {
+  "coding": "Issue, return, alternative and need flags are phrase rules, not a trained classifier; they can miss paraphrases and mis-fire on similar words. Measured precision (6-8 random matches per code): cancelled by the company or professional 88%, professional did not show up 88%, late or delayed 88%, no slots / professional unavailable 100%, prices too high or rising 88%, platform, visit and cancellation fees; policy rigidity 100%, extra charges and parts upselling 100%, support unreachable 75%, refund and payment problems 100%, complaint unresolved, no follow-up 88%, poor or incomplete work 88%, damage or theft 88%, rude conduct, safety, rating pressure 88%, trust, fraud or dishonesty 100%.",
+  "sentiment": "Sentiment labels come from a lexicon draft plus analyst review of unclear cases (97% agreement on a 150-review check); they are not human-validated.",
+  "multi_label_counting": "Theme counts overlap by design; do not add them.",
+  "small_groups": "Only 111 reviews state return behaviour in the first person; household and discovery evidence are only a few dozen reviews. These are too small for statistical claims.",
+  "no_llm": "These results were not produced by an LLM. An LLM backend (backend/) exists for the upload workflow and later steps.",
+  "not_validated": "Step 3 (Golden Set, human labelling, accuracy and agreement) has not been run."
+ },
+ "interpretation_guidance": [
+  "Use theme percentages as relative importance within complaints and reviews, not as the share of all Urban Company customers affected.",
+  "Treat Return and Non-Return labels as predictions from public text, not as rates; the stated and signalled groups are the stronger evidence.",
+  "Prefer equal-weight source comparisons when judging whether a pattern is general or specific to complaint sites."
+ ]
+}

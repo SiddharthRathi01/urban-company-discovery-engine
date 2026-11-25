@@ -1,0 +1,600 @@
+{
+ "summary": {
+  "rows": 20,
+  "analysed": 20,
+  "match_counts": {
+   "Full match": 16,
+   "Partial match": 2,
+   "Non-match": 2,
+   "Not analysed": 0
+  },
+  "sentiment": {
+   "compared": 20,
+   "agree": 16,
+   "agreement_pct": 80.0,
+   "agreement_pct_excluding_mixed": 88.9,
+   "kappa": 0.701,
+   "confusion": {
+    "Positive": {
+     "Positive": 6,
+     "Negative": 0,
+     "Neutral": 0,
+     "Mixed": 1,
+     "Unclear": 0
+    },
+    "Negative": {
+     "Positive": 0,
+     "Negative": 8,
+     "Neutral": 0,
+     "Mixed": 0,
+     "Unclear": 0
+    },
+    "Neutral": {
+     "Positive": 1,
+     "Negative": 0,
+     "Neutral": 2,
+     "Mixed": 0,
+     "Unclear": 0
+    },
+    "Mixed": {
+     "Positive": 0,
+     "Negative": 1,
+     "Neutral": 1,
+     "Mixed": 0,
+     "Unclear": 0
+    },
+    "Unclear": {
+     "Positive": 0,
+     "Negative": 0,
+     "Neutral": 0,
+     "Mixed": 0,
+     "Unclear": 0
+    }
+   }
+  },
+  "return": {
+   "compared": 20,
+   "agree": 18,
+   "agreement_pct": 90.0,
+   "agreement_pct_when_both_classified": 100.0,
+   "both_classified": 15,
+   "kappa": 0.844,
+   "confusion": {
+    "Return": {
+     "Return": 7,
+     "Non-Return": 0,
+     "Insufficient Evidence": 0
+    },
+    "Non-Return": {
+     "Return": 0,
+     "Non-Return": 8,
+     "Insufficient Evidence": 0
+    },
+    "Insufficient Evidence": {
+     "Return": 1,
+     "Non-Return": 1,
+     "Insufficient Evidence": 3
+    }
+   }
+  },
+  "caution": "Agreement with these labels measures how often the engine and the labeller agree. It is an accuracy estimate only if the golden set is a representative sample labelled independently of the engine."
+ },
+ "rows": [
+  {
+   "row_id": "ROW-00001",
+   "review_id": "GP-0852",
+   "review_text": "everything is great, but there should be an option for miscellaneous work, wherein you put your individual request, not all options are usually available in the app",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Coverage gaps, missing services and app friction",
+   "rating": "4",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2108f329-25f9-4145-8169-439a7f97252e",
+   "source": "Google Play Store",
+   "engine_sentiment": "Mixed",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "limited service options",
+    "app features"
+   ],
+   "engine_problem": "lack of option for miscellaneous or individual service requests",
+   "engine_evidence_quote": "everything is great, but there should be an option for miscellaneous work",
+   "sentiment_match": false,
+   "return_match": true,
+   "match_status": "Partial match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00002",
+   "review_id": "CC-0139",
+   "review_text": "Unprofessional service Address:\nKolkata\nToday i booked professional for my bathroom cleaning. I made payment online, instead of that after 5 hrs the assigned person called me and refused to give service at the end moment and put me on big trouble. They reschedule it on its own time and which was after 2 days, didn’t bother whether that will be suitable for me or not.\nRidiculous.\nAnd even its so corrupted that the service person encourage you to make payment by...",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Unreliable fulfilment",
+   "rating": "",
+   "source_url": "https://www.consumercomplaints.in/urban-company-unprofessional-service-c2739455",
+   "source": "ConsumerComplaints.in",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "unprofessional service",
+    "last minute cancellation"
+   ],
+   "engine_problem": "professional refused service at the last moment after online payment",
+   "engine_evidence_quote": "the assigned person called me and refused to give service at the end moment and put me on big trouble.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00003",
+   "review_id": "GP-1887",
+   "review_text": "Good behaviour, Punctual in time, Service was Good,Well dressed with company shirt",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Service quality, conduct and trust",
+   "rating": "4",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=f2307967-90b0-44d5-8c08-a9cf07bf4e1d",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "professional behavior",
+    "punctuality"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "Good behaviour, Punctual in time, Service was Good,Well dressed with company shirt",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00004",
+   "review_id": "GP-1924",
+   "review_text": "Thought, it'd be some fake company for not mentioning their customer care number,but the people are highly professional and friendly natured",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "4",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=db622d5e-e3ea-4027-96e0-1e1f40021840",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "professional staff",
+    "customer support"
+   ],
+   "engine_problem": "customer care number not mentioned",
+   "engine_evidence_quote": "the people are highly professional and friendly natured",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00005",
+   "review_id": "RD-0190",
+   "review_text": "Need Window-Ac mechanic Hi guys, can you all suggest some window-ac mechanics cuz in urbanclap it's not listed for window-ac per se. Do drop your suggestions. Thanks!",
+   "human_sentiment": "Neutral",
+   "human_return": "Insufficient Evidence",
+   "human_theme": "Coverage gaps, missing services and app friction",
+   "rating": "",
+   "source_url": "https://www.reddit.com/r/Chennai/comments/1j8la4e/need_windowac_mechanic/",
+   "source": "Reddit",
+   "engine_sentiment": "Neutral",
+   "engine_return": "Insufficient Evidence",
+   "engine_return_basis": "None",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "missing service category"
+   ],
+   "engine_problem": "window-ac mechanic is not listed in the app",
+   "engine_evidence_quote": "in urbanclap it's not listed for window-ac per se.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00006",
+   "review_id": "GP-0953",
+   "review_text": "yes it is true excellent service is being provided by urban clap.",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Service quality, conduct and trust",
+   "rating": "5",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=1631f725-1439-48d1-8093-458196d72cf0",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "excellent service"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "yes it is true excellent service is being provided by urban clap.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00007",
+   "review_id": "CC-0082",
+   "review_text": "I am not able to book slots Address:\nChennai\nIt's been almost 2 months, for any service i want to book they are not giving me slots. Any salon service. there is no way to contact the customer service to report this complain also\nI am very disappointed need an action to be taken immediately...",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Coverage gaps, missing services and app friction",
+   "rating": "",
+   "source_url": "https://www.consumercomplaints.in/urban-company-i-am-not-able-to-book-slots-c3339227",
+   "source": "ConsumerComplaints.in",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "slot availability",
+    "customer service access"
+   ],
+   "engine_problem": "Unable to book service slots for almost 2 months and no customer service contact.",
+   "engine_evidence_quote": "It's been almost 2 months, for any service i want to book they are not giving me slots.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00008",
+   "review_id": "GP-0058",
+   "review_text": "Stay away from their Spa sessions , they are just going to treat you as their ginni pig ! horrible horrible support",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "1",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=43582ef1-c85a-4b67-ad13-662ab7a72dcb",
+   "source": "Google Play Store",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Signalled",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "spa service",
+    "poor support"
+   ],
+   "engine_problem": "Poor spa session quality and horrible customer support.",
+   "engine_evidence_quote": "Stay away from their Spa sessions , they are just going to treat you as their ginni pig !",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00009",
+   "review_id": "RD-0138",
+   "review_text": "Urban Company: 3200/- minimum order???? I tried to book a sofa cleaning with Urban Company in Delhi and faced a 3200/- minimum order policy! This is absurd, I’m not going to hire plumbers and electricians when I don’t need them 🤦🏻‍♂️",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Price, fees and policy rigidity",
+   "rating": "",
+   "source_url": "https://www.reddit.com/r/delhi/comments/1nrle6g/urban_company_3200_minimum_order/",
+   "source": "Reddit",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Stated",
+   "engine_return_confidence": "High",
+   "engine_themes": [
+    "high minimum order",
+    "pricing policy"
+   ],
+   "engine_problem": "High minimum order value for sofa cleaning services.",
+   "engine_evidence_quote": "This is absurd, I’m not going to hire plumbers and electricians when I don’t need them",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00010",
+   "review_id": "CC-0067",
+   "review_text": "Cleaning of washing machine Address:\n38 Dent Mission Road, C/O Galaxy Apartment, Block B, 2nd Floor . PS Ekbalpore\nI want my washing machine to cleaning service . Inform me the cleaning service rate....",
+   "human_sentiment": "Neutral",
+   "human_return": "Insufficient Evidence",
+   "human_theme": "Price, fees and policy rigidity",
+   "rating": "",
+   "source_url": "https://www.consumercomplaints.in/urban-company-cleaning-of-washing-machine-c3465063",
+   "source": "ConsumerComplaints.in",
+   "engine_sentiment": "Neutral",
+   "engine_return": "Insufficient Evidence",
+   "engine_return_basis": "None",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "service inquiry"
+   ],
+   "engine_problem": "Customer is inquiring about washing machine cleaning service rates.",
+   "engine_evidence_quote": "I want my washing machine to cleaning service . Inform me the cleaning service rate....",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00011",
+   "review_id": "GP-0116",
+   "review_text": "In this app can you please add cooking for food options is best for users",
+   "human_sentiment": "Neutral",
+   "human_return": "Insufficient Evidence",
+   "human_theme": "Coverage gaps, missing services and app friction",
+   "rating": "5",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=9941be6c-aad0-4153-8496-1260d117e793",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "feature request"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "In this app can you please add cooking for food options is best for users",
+   "sentiment_match": false,
+   "return_match": false,
+   "match_status": "Non-match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00012",
+   "review_id": "PC-0149",
+   "review_text": "Want to complaint about the bad service Firstly these UC Company doesn't have not display it's CS Customers Service no reasons better know to them ..If customer want to complain about the bad services they provide no option ..It's UB technical team is fraud they don't respond when you call there pvt no& Company not bother to share it's no ..I got my panting working done it's been done so pathetic that not even a months the paint started to fading out & when tried to contact the painting team it's been a month they are dodging..I request guys don't get painting work done by UC they are absolutely unprofessionals .Pathetic & unprofessional service",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "1.1",
+   "source_url": "https://urban-company.pissedconsumer.com/want-to-complaint-about-the-bad-service-202302234388723.html",
+   "source": "PissedConsumer",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Signalled",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "poor service quality",
+    "customer service access"
+   ],
+   "engine_problem": "Poor painting quality and inability to contact customer service for complaints.",
+   "engine_evidence_quote": "I request guys don't get painting work done by UC they are absolutely unprofessionals .",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00013",
+   "review_id": "GP-1756",
+   "review_text": "till now I took sofa cleaning, mattress cleaning, pest control, massage services from urban company all were good..all attendants were genuine and professional and they maintain cleanliness",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Service quality, conduct and trust",
+   "rating": "5",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=1ecc0388-5ec1-4872-909b-ea6f9131dfa3",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Stated",
+   "engine_return_confidence": "High",
+   "engine_themes": [
+    "service quality",
+    "professionalism"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "all attendants were genuine and professional and they maintain cleanliness",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00014",
+   "review_id": "PC-0152",
+   "review_text": "Professional is not picking up the call My TV is not working on Sunday so I have applied for tv repair machanic on Sunday...he come in our house on Monday afternoon and tell us that the mother board is not working it needs to be replaced..and took TV in his workshop...on Tuesday afternoon he delivered the TV and it's working fine...but today again having the same problem so I called him again and claim the service warranty...but till time he is not come to home for repair nither picking the call...I am very pissed of the service provides by urban clap...there is no call center who help us on our querie... please allign the technician asap...",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "",
+   "source_url": "https://urban-company.pissedconsumer.com/professional-is-not-picking-up-the-call-202302104358792.html",
+   "source": "PissedConsumer",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Stated",
+   "engine_return_confidence": "High",
+   "engine_themes": [
+    "repair failure",
+    "poor communication"
+   ],
+   "engine_problem": "technician not responding to warranty claim calls after failed repair",
+   "engine_evidence_quote": "but today again having the same problem so I called him again and claim the service warranty...but till time he is not come to home for repair nither picking the call...",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00015",
+   "review_id": "GP-2051",
+   "review_text": "I have used this service for first time in Bangalore. It's just wow professional was on time evey thing she maintained and carried were branded. I took service on May 30 and result is Excellent. I can feel the difference easily.. would definitely recommend to others.",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "5",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=65b1f5b9-b3a0-4a54-af5f-0979120a944a",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Signalled",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "punctuality",
+    "service quality"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "professional was on time evey thing she maintained and carried were branded.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00016",
+   "review_id": "RD-0126",
+   "review_text": "Cleaning services in Delhi? I live alone and home gets v v messy, need some affordable house cleaning which isn’t as weirdly priced as urban company. Please help, gareeb ki dua lagegi 💪",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Price, fees and policy rigidity",
+   "rating": "",
+   "source_url": "https://www.reddit.com/r/delhi/comments/1ojt3c7/cleaning_services_in_delhi/",
+   "source": "Reddit",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "high price"
+   ],
+   "engine_problem": "cleaning services are priced too high",
+   "engine_evidence_quote": "need some affordable house cleaning which isn’t as weirdly priced as urban company.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00017",
+   "review_id": "GP-1028",
+   "review_text": "I have given 3 stars because the kitchen-related cleaning services available in my area are very limited. Please add more kitchen cleaning and related services so that customers in my area have more options to choose from. I would really appreciate it if you could expand these services.",
+   "human_sentiment": "Mixed",
+   "human_return": "Insufficient Evidence",
+   "human_theme": "Coverage gaps, missing services and app friction",
+   "rating": "3",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=a540c008-6a26-4fe7-b032-727b895f03ed",
+   "source": "Google Play Store",
+   "engine_sentiment": "Neutral",
+   "engine_return": "Insufficient Evidence",
+   "engine_return_basis": "None",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "limited service variety"
+   ],
+   "engine_problem": "limited kitchen-related cleaning services available in the area",
+   "engine_evidence_quote": "the kitchen-related cleaning services available in my area are very limited.",
+   "sentiment_match": false,
+   "return_match": true,
+   "match_status": "Partial match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00018",
+   "review_id": "GP-0941",
+   "review_text": "UC has solved our all problems, they have heartily taken up all our headaches . Thanks UC for coming and helping the society with your unbelievable services.",
+   "human_sentiment": "Positive",
+   "human_return": "Return",
+   "human_theme": "Service quality, conduct and trust",
+   "rating": "5",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=848bdddd-7b2a-440c-af90-a810622f04b3",
+   "source": "Google Play Store",
+   "engine_sentiment": "Positive",
+   "engine_return": "Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "service quality"
+   ],
+   "engine_problem": null,
+   "engine_evidence_quote": "UC has solved our all problems, they have heartily taken up all our headaches .",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00019",
+   "review_id": "GP-1127",
+   "review_text": "when we book in package... per month 3 services... it won't be at the right time as we booked.. it always reschedule the timing n worker",
+   "human_sentiment": "Mixed",
+   "human_return": "Insufficient Evidence",
+   "human_theme": "Unreliable fulfilment",
+   "rating": "3",
+   "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=58660c88-3944-4a01-99cf-6926cd488118",
+   "source": "Google Play Store",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Low",
+   "engine_themes": [
+    "scheduling issues",
+    "service reliability"
+   ],
+   "engine_problem": "Services in a package are frequently rescheduled at the wrong time.",
+   "engine_evidence_quote": "it won't be at the right time as we booked.. it always reschedule the timing n worker",
+   "sentiment_match": false,
+   "return_match": false,
+   "match_status": "Non-match",
+   "error": null
+  },
+  {
+   "row_id": "ROW-00020",
+   "review_id": "PC-0039",
+   "review_text": "Service issue. I had booked a person named Anirban Bhattacharya from Kolkata to repair my washing machine, but the repair work was not done properly.\nNow I am calling him again. Earlier he told me that he had gone to Medinipur for SI Ghat and asked me to call on Sunday.\nToday I have called him at least ten times, but he is not answering my calls at all.\nI also sent messages he has not even seen the messages.\nMeanwhile, I am facing serious difficulties until my machine gets repaired. I am also trying to contact customer care and have attempted to speak with them many times, but I am unable to get in touch with anyone.",
+   "human_sentiment": "Negative",
+   "human_return": "Non-Return",
+   "human_theme": "Support access, refunds and resolution",
+   "rating": "1",
+   "source_url": "https://urban-company.pissedconsumer.com/service-issue-202601117041918.html",
+   "source": "PissedConsumer",
+   "engine_sentiment": "Negative",
+   "engine_return": "Non-Return",
+   "engine_return_basis": "Inferred",
+   "engine_return_confidence": "Medium",
+   "engine_themes": [
+    "poor repair quality",
+    "unresponsive professional"
+   ],
+   "engine_problem": "Repair work was improper and the professional is not answering calls.",
+   "engine_evidence_quote": "the repair work was not done properly. Now I am calling him again. ... Today I have called him at least ten times, but he is not answering my calls at all.",
+   "sentiment_match": true,
+   "return_match": true,
+   "match_status": "Full match",
+   "error": null
+  }
+ ],
+ "golden_id": "GS-20261125124532-590fa7",
+ "generated_at": "2026-11-25T12:45:53+00:00",
+ "usage": {
+  "requests": 4,
+  "successful_requests": 4,
+  "failed_requests": 0,
+  "input_tokens": 3852,
+  "output_tokens": 2508,
+  "neurons": 103.418,
+  "seconds": 58.49,
+  "by_purpose": {
+   "upl_gold590fa7_extract": {
+    "requests": 4,
+    "failed": 0,
+    "input_tokens": 3852,
+    "output_tokens": 2508,
+    "neurons": 103.418,
+    "seconds": 58.49
+   }
+  },
+  "processing_seconds": 20.3
+ },
+ "model": "@cf/google/gemma-4-26b-a4b-it"
+}

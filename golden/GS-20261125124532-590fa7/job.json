@@ -1,0 +1,37 @@
+{
+ "golden_id": "GS-20261125124532-590fa7",
+ "job_id": "JOB-e9431f0b",
+ "status": "completed",
+ "created_at": "2026-11-25T12:45:32+00:00",
+ "message": "Engine run on 20 of 20 reviews: 16 full matches, 2 partial, 2 non-matches.",
+ "rows": 20,
+ "started_at": "2026-11-25T12:45:32+00:00",
+ "updated_at": "2026-11-25T12:45:53+00:00",
+ "progress": {
+  "phase": "engine",
+  "done": 4,
+  "total": 4,
+  "message": "20 of 20 reviews read"
+ },
+ "finished_at": "2026-11-25T12:45:53+00:00",
+ "usage": {
+  "requests": 4,
+  "successful_requests": 4,
+  "failed_requests": 0,
+  "input_tokens": 3852,
+  "output_tokens": 2508,
+  "neurons": 103.418,
+  "seconds": 58.49,
+  "by_purpose": {
+   "upl_gold590fa7_extract": {
+    "requests": 4,
+    "failed": 0,
+    "input_tokens": 3852,
+    "output_tokens": 2508,
+    "neurons": 103.418,
+    "seconds": 58.49
+   }
+  },
+  "processing_seconds": 20.3
+ }
+}

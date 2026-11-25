@@ -1,0 +1,404 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "method": "Alternatives were identified by pattern rules and then each mention was read; only vetted mentions are counted. Mentions are separated into reported_use (the reviewer says they used, hired or switched), considering (actively deciding) and general_or_hypothetical (advice to others or a general comparison).",
+ "summary": {
+  "vetted_mentions_total": 76,
+  "reported_use": 26,
+  "considering": 27,
+  "general_or_hypothetical": 23
+ },
+ "alternatives": [
+  {
+   "alternative_id": "A1",
+   "alternative_type": "Competing platforms (Snabbit, Pronto, Yes Madam, NoBroker, Housejoy, Justdial and similar)",
+   "relevant_mentions": 33,
+   "reviews": [
+    "GP-0370",
+    "GP-0477",
+    "GP-0643",
+    "GP-0781",
+    "GP-0842",
+    "GP-0911",
+    "GP-0944",
+    "GP-1002",
+    "GP-1116",
+    "GP-1366",
+    "GP-1436",
+    "PC-0054",
+    "RD-0014",
+    "RD-0025",
+    "RD-0045",
+    "RD-0064",
+    "RD-0080",
+    "RD-0096",
+    "RD-0105",
+    "RD-0121",
+    "RD-0124",
+    "RD-0130",
+    "RD-0139",
+    "RD-0142",
+    "RD-0143",
+    "RD-0146",
+    "RD-0147",
+    "RD-0148",
+    "RD-0166",
+    "RD-0184",
+    "RD-0236",
+    "RD-0238",
+    "RD-0241"
+   ],
+   "by_tier": {
+    "reported_use": 8,
+    "considering": 18,
+    "general_or_hypothetical": 7
+   },
+   "by_source": {
+    "Google Play Store": 11,
+    "Reddit": 21,
+    "PissedConsumer": 1,
+    "ConsumerComplaints.in": 0
+   },
+   "service_categories": {
+    "Home Cleaning": 8,
+    "Salon & Beauty": 2,
+    "Massage & Spa": 2,
+    "Electrician": 2,
+    "AC Service & Repair": 2,
+    "Plumbing": 1
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 4,
+     "pct": 12.1
+    },
+    "Negative": {
+     "n": 9,
+     "pct": 27.3
+    },
+    "Neutral": {
+     "n": 20,
+     "pct": 60.6
+    },
+    "Mixed": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "reason_cues_in_text_indicative": {
+    "price / cost": 2,
+    "trust / reliability": 12,
+    "availability / speed": 4,
+    "quality / skill": 8,
+    "personal accountability": 0
+   },
+   "used_for": "House help (Snabbit, Pronto), massage at home, and AC installation (NoBroker), as named by reviewers.",
+   "why_customers_choose_it": [
+    "Urban Company had no slot or availability when the customer needed one (RD-0129, RD-0184).",
+    "Reliability: one reviewer says Snabbit gives much better service and reliability (GP-0477); another moved to Urban Company after repeated failed Snabbit bookings (GP-1116).",
+    "Price runs both ways: one reviewer says Urban Company is a little more than Pronto but was available instantly (GP-1366), another says its rates are high compared with Pronto and Snabbit (GP-1002).",
+    "No cash option: one reviewer says they are shifting to NoBroker because it offers cash (GP-0370)."
+   ],
+   "customer_reported_advantages": [
+    "Available when Urban Company is not.",
+    "Sometimes lower price, according to reviewers.",
+    "One masseur described as 'value for money' although 'not as professional as urban company' (RD-0130)."
+   ],
+   "customer_reported_disadvantages": [
+    "Competitors also fail: 'Booked NoBroker service, UPI transaction success, no service' (RD-0184).",
+    "'I had a bad experience with Pronto' (GP-0842).",
+    "Most Reddit mentions are consideration sets (which provider is worth it), not reported use."
+   ],
+   "evidence_ids": [
+    "EV184",
+    "EV185",
+    "EV186",
+    "EV021",
+    "EV187",
+    "EV188"
+   ]
+  },
+  {
+   "alternative_id": "A2",
+   "alternative_type": "Local / independent professionals and shops",
+   "relevant_mentions": 35,
+   "reviews": [
+    "GP-0340",
+    "GP-0341",
+    "GP-0342",
+    "GP-0374",
+    "GP-0396",
+    "GP-0426",
+    "GP-0473",
+    "GP-0793",
+    "GP-1111",
+    "GP-1126",
+    "GP-1151",
+    "GP-1423",
+    "GP-1428",
+    "GP-1529",
+    "GP-1605",
+    "PC-0026",
+    "PC-0126",
+    "PC-0156",
+    "PC-0173",
+    "RD-0035",
+    "RD-0044",
+    "RD-0053",
+    "RD-0107",
+    "RD-0115",
+    "RD-0123",
+    "RD-0125",
+    "RD-0144",
+    "RD-0152",
+    "RD-0158",
+    "RD-0169",
+    "RD-0171",
+    "RD-0181",
+    "RD-0228",
+    "RD-0235",
+    "RD-0237"
+   ],
+   "by_tier": {
+    "reported_use": 15,
+    "considering": 6,
+    "general_or_hypothetical": 14
+   },
+   "by_source": {
+    "Google Play Store": 15,
+    "Reddit": 16,
+    "PissedConsumer": 4,
+    "ConsumerComplaints.in": 0
+   },
+   "service_categories": {
+    "AC Service & Repair": 11,
+    "Appliance Repair": 4,
+    "Home Cleaning": 4,
+    "Electrician": 3,
+    "Painting": 3,
+    "Mobile / Laptop Repair": 1
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 2,
+     "pct": 5.7
+    },
+    "Negative": {
+     "n": 24,
+     "pct": 68.6
+    },
+    "Neutral": {
+     "n": 7,
+     "pct": 20.0
+    },
+    "Mixed": {
+     "n": 2,
+     "pct": 5.7
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "reason_cues_in_text_indicative": {
+    "price / cost": 4,
+    "trust / reliability": 10,
+    "availability / speed": 4,
+    "quality / skill": 7,
+    "personal accountability": 5
+   },
+   "used_for": "AC repair and gas refill, washing-machine repair, electrical and painting jobs, as named by reviewers.",
+   "why_customers_choose_it": [
+    "Price is the most cited reason: 'almost 4X than the local service provider' (GP-0340); a local repairer did a job for Rs 1,500 after a Rs 4,500-5,000 quote (GP-0342); a part sold for Rs 150 locally was billed at Rs 750 (PC-0126); local gas refill Rs 2,200 with 3-month warranty (RD-0169).",
+    "Personal accountability: 'local vendors are more effective and at least they try to build the relationship' (PC-0156)."
+   ],
+   "customer_reported_advantages": [
+    "Often cheaper for repairs and small jobs, according to reviewers.",
+    "Perceived as willing to build a relationship (PC-0156)."
+   ],
+   "customer_reported_disadvantages": [
+    "Perceived risk and no vetting: 'it feels super risky' (RD-0123).",
+    "Quality varies: a local AC mechanic 'even damaged it further' (RD-0228); 'I hired guys from society - and as expected - they were worse' (RD-0125)."
+   ],
+   "evidence_ids": [
+    "EV189",
+    "EV190",
+    "EV191",
+    "EV192",
+    "EV193",
+    "EV194",
+    "EV195",
+    "EV182"
+   ]
+  },
+  {
+   "alternative_id": "A3",
+   "alternative_type": "Brand service centres and brand technicians",
+   "relevant_mentions": 7,
+   "reviews": [
+    "GP-0241",
+    "GP-1488",
+    "PC-0076",
+    "RD-0006",
+    "RD-0188",
+    "RD-0204",
+    "RD-0205"
+   ],
+   "by_tier": {
+    "reported_use": 2,
+    "considering": 3,
+    "general_or_hypothetical": 2
+   },
+   "by_source": {
+    "Google Play Store": 2,
+    "Reddit": 4,
+    "PissedConsumer": 1,
+    "ConsumerComplaints.in": 0
+   },
+   "service_categories": {
+    "AC Service & Repair": 4,
+    "Water Purifier / RO": 2
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Negative": {
+     "n": 4,
+     "pct": 57.1
+    },
+    "Neutral": {
+     "n": 3,
+     "pct": 42.9
+    },
+    "Mixed": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "reason_cues_in_text_indicative": {
+    "price / cost": 0,
+    "trust / reliability": 1,
+    "availability / speed": 1,
+    "quality / skill": 3,
+    "personal accountability": 1
+   },
+   "used_for": "Warranty and repair of AC and appliances (LG, Samsung, Hitachi named).",
+   "why_customers_choose_it": [
+    "Customers fall back on the brand after Urban Company's service did not fix the problem and warranty had ended (GP-1488).",
+    "Visit charge can be lower: 'Visiting charges are 399 whereas Samsung charges 350' (GP-0241)."
+   ],
+   "customer_reported_advantages": [
+    "Brand warranty and genuine parts (implied; one reviewer cites a lower visit charge)."
+   ],
+   "customer_reported_disadvantages": [
+    "One reviewer found the service centre 'even more corrupt' than local mechanics, who were posing as official technicians (RD-0204)."
+   ],
+   "evidence_ids": [
+    "EV196",
+    "EV197",
+    "EV198"
+   ]
+  },
+  {
+   "alternative_id": "A4",
+   "alternative_type": "Friends, neighbours and family",
+   "relevant_mentions": 1,
+   "reviews": [
+    "CC-0145"
+   ],
+   "by_tier": {
+    "reported_use": 1,
+    "considering": 0,
+    "general_or_hypothetical": 0
+   },
+   "by_source": {
+    "Google Play Store": 0,
+    "Reddit": 0,
+    "PissedConsumer": 0,
+    "ConsumerComplaints.in": 1
+   },
+   "service_categories": {
+    "AC Service & Repair": 1
+   },
+   "sentiment": {
+    "Positive": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Negative": {
+     "n": 1,
+     "pct": 100.0
+    },
+    "Neutral": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Mixed": {
+     "n": 0,
+     "pct": 0.0
+    },
+    "Uncertain": {
+     "n": 0,
+     "pct": 0.0
+    }
+   },
+   "reason_cues_in_text_indicative": {
+    "price / cost": 0,
+    "trust / reliability": 0,
+    "availability / speed": 0,
+    "quality / skill": 0,
+    "personal accountability": 0
+   },
+   "used_for": "A neighbour's own technician (CC-0145) and a friend-recommended local painter (RD-0107, counted under local professionals). Referrals into Urban Company are in segments.json (discovery_channel).",
+   "why_customers_choose_it": [
+    "Trust in a known person's recommendation."
+   ],
+   "customer_reported_advantages": [
+    "One reviewer's neighbour had the same window-AC job done for Rs 2,200 against Rs 7,998 from Urban Company (CC-0145)."
+   ],
+   "customer_reported_disadvantages": [
+    "The friend-recommended painter turned into 'My Painting Nightmare' (RD-0107); only two cases, so no pattern can be claimed."
+   ],
+   "evidence_ids": [
+    "EV199",
+    "EV200",
+    "EV201"
+   ]
+  }
+ ],
+ "whatsapp_and_community_groups": {
+  "relevant_mentions": 0,
+  "rule_matches_all_other_uses": 12,
+  "finding": "No review describes using a WhatsApp group or society group to find a provider. The 10 pattern matches are WhatsApp used by Urban Company or professionals as a messaging channel. The closest evidence is that customers ask strangers on Reddit for recommendations.",
+  "reddit_posts_asking_for_recommendations": 119,
+  "evidence_ids": [
+   "EV202",
+   "EV203",
+   "EV204"
+  ]
+ },
+ "rule_based_mentions_unvetted": {
+  "Snabbit": 8,
+  "Pronto": 5,
+  "Yes Madam": 8,
+  "NoBroker": 26,
+  "Housejoy": 10,
+  "Justdial / Sulekha / other directories": 20,
+  "Brand / authorised service centre": 44,
+  "Local / independent professionals": 86,
+  "Neighbours / friends / family / colleagues": 21,
+  "WhatsApp / society / community groups": 12
+ },
+ "limitations": "Reddit posts are mostly questions, so many alternative mentions describe a consideration set rather than actual use; Google Play reviews rarely name alternatives."
+}

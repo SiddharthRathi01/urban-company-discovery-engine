@@ -1,0 +1,7 @@
+# Runtime packages (what the deployed site needs)
+fastapi>=0.110
+pydantic>=2
+pandas
+python-multipart>=0.0.9
+python-dotenv
+requests>=2.31

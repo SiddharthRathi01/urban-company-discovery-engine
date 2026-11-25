@@ -1,0 +1,929 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "questions": [
+  {
+   "question": "What do customers expect once a booking is complete?",
+   "summary": "Customers expect the booking to behave like a contract: the professional arrives when promised, does the work that was advertised and included, behaves professionally, charges the quoted price, and someone takes responsibility if it goes wrong. 143 reviews (5.7%) use explicit expectation or promise language ('expect', 'promised', 'advertised', 'assured', 'supposed to'). The gaps they describe are mostly about arrival (321 reviews), work quality (245), price (354) and recourse (468).",
+   "expectations": [
+    {
+     "expectation": "Arrive when promised and tell me if plans change",
+     "gap_evidence_reviews": 321,
+     "positive_evidence_reviews": 212
+    },
+    {
+     "expectation": "Do the work that was advertised and included, completely and properly",
+     "gap_evidence_reviews": 289,
+     "positive_evidence_reviews": 870
+    },
+    {
+     "expectation": "Professional, respectful and safe behaviour; hygiene",
+     "gap_evidence_reviews": 98,
+     "hygiene_or_safety_mentions": 39
+    },
+    {
+     "expectation": "Honest, transparent price; no surprise charges",
+     "gap_evidence_reviews": 354,
+     "positive_evidence_reviews": 40
+    },
+    {
+     "expectation": "Reachable support and accountability after the service",
+     "gap_evidence_reviews": 257,
+     "positive_evidence_reviews": 166
+    },
+    {
+     "expectation": "Warranty, rework and refunds that are honoured as promised",
+     "gap_evidence_reviews": 291
+    }
+   ],
+   "evidence_strength": "strong",
+   "gaps": [
+    "Reviews describe outcomes more than expectations; the expectation language is present in 5.7% of reviews.",
+    "Hygiene or safety wording appears in only 39 reviews (1.5%)."
+   ],
+   "evidence_ids": [
+    "EV356",
+    "EV246",
+    "EV357",
+    "EV358",
+    "EV359",
+    "EV360",
+    "EV361",
+    "EV362",
+    "EV363",
+    "EV364",
+    "EV365",
+    "EV366"
+   ],
+   "question_id": "Q1"
+  },
+  {
+   "question": "How do customers decide that a home service is needed, and when?",
+   "summary": "Only 77 reviews (3.0%) state why or when they decided to book; most reviews describe the outcome, so this answer rests on a small, mostly Reddit-based sample of vetted examples. Triggers fall into appliance breakdowns (an AC or TV stops working), moving or tenancy changes, festivals and personal events, health or age circumstances, pests and leakage, season (heat, rain) and time pressure. Urgent needs (a breakdown, a leak, an event tomorrow) coexist with planned and periodic ones (annual AC servicing, plans or subscriptions, pre-move deep cleaning).",
+   "triggers": [
+    {
+     "segment_id": "TRG01",
+     "trigger": "Appliance or equipment stops working",
+     "n_vetted_examples": 15,
+     "evidence_ids": [
+      "EV252",
+      "EV253",
+      "EV254",
+      "EV255"
+     ]
+    },
+    {
+     "segment_id": "TRG02",
+     "trigger": "Moving house, new home, tenancy change, renovation",
+     "n_vetted_examples": 14,
+     "evidence_ids": [
+      "EV256",
+      "EV257",
+      "EV258",
+      "EV259"
+     ]
+    },
+    {
+     "segment_id": "TRG03",
+     "trigger": "Festival, wedding or personal event",
+     "n_vetted_examples": 8,
+     "evidence_ids": [
+      "EV260",
+      "EV261",
+      "EV262",
+      "EV263"
+     ]
+    },
+    {
+     "segment_id": "TRG04",
+     "trigger": "Health, age or family circumstance",
+     "n_vetted_examples": 6,
+     "evidence_ids": [
+      "EV252",
+      "EV264",
+      "EV265"
+     ]
+    },
+    {
+     "segment_id": "TRG05",
+     "trigger": "Pests, smell or hygiene problem",
+     "n_vetted_examples": 6,
+     "evidence_ids": [
+      "EV266",
+      "EV267",
+      "EV268"
+     ]
+    },
+    {
+     "segment_id": "TRG06",
+     "trigger": "Leakage, seepage, drainage or water-quality problem",
+     "n_vetted_examples": 4,
+     "evidence_ids": [
+      "EV269",
+      "EV270",
+      "EV271"
+     ]
+    },
+    {
+     "segment_id": "TRG07",
+     "trigger": "Season or weather (heat, rain)",
+     "n_vetted_examples": 5,
+     "evidence_ids": [
+      "EV252",
+      "EV270",
+      "EV272"
+     ]
+    },
+    {
+     "segment_id": "TRG08",
+     "trigger": "Urgent or same-day need",
+     "n_vetted_examples": 8,
+     "evidence_ids": [
+      "EV273",
+      "EV274",
+      "EV275"
+     ]
+    },
+    {
+     "segment_id": "TRG09",
+     "trigger": "Working schedule, no time to do it themselves",
+     "n_vetted_examples": 4,
+     "evidence_ids": [
+      "EV276",
+      "EV277",
+      "EV278"
+     ]
+    },
+    {
+     "segment_id": "TRG10",
+     "trigger": "Planned, periodic or subscription use",
+     "n_vetted_examples": 8,
+     "evidence_ids": [
+      "EV279",
+      "EV280",
+      "EV146"
+     ]
+    },
+    {
+     "segment_id": "TRG11",
+     "trigger": "Considering a Native product purchase",
+     "n_vetted_examples": 14,
+     "evidence_ids": [
+      "EV271",
+      "EV281",
+      "EV282"
+     ]
+    }
+   ],
+   "evidence_strength": "weak",
+   "gaps": [
+    "Trigger statements are rare in reviews and complaints; Reddit posts are the richest source (people ask for help when a need arises).",
+    "Frequency of need cannot be estimated; examples show variety, not prevalence."
+   ],
+   "evidence_ids": [
+    "EV252",
+    "EV253",
+    "EV254",
+    "EV255",
+    "EV256",
+    "EV257",
+    "EV258",
+    "EV259",
+    "EV260",
+    "EV261",
+    "EV262",
+    "EV263"
+   ],
+   "question_id": "Q2"
+  },
+  {
+   "question": "Who or what do customers turn to when they need the same kind of service again, or a different one?",
+   "summary": "Customers who describe their next booking either stay with Urban Company (1,119 reviews, 44.3%, are classed as likely to return) or turn to local professionals, other platforms and brand service centres. Vetted alternative mentions: 76 reviews, of which 26 report actual use, 27 are considering and 23 are advice or general comparisons. Local and independent professionals are the most named alternative, mainly for repairs and small jobs where price and accountability matter; platforms appear mostly in Reddit consideration sets; brand service centres appear after warranty problems. Friends and family mostly act as the referral source into Urban Company.",
+   "alternatives": [
+    {
+     "alternative_id": "A1",
+     "type": "Competing platforms (Snabbit, Pronto, Yes Madam, NoBroker, Housejoy, Justdial and similar)",
+     "mentions": 33,
+     "by_tier": {
+      "reported_use": 8,
+      "considering": 18,
+      "general_or_hypothetical": 7
+     }
+    },
+    {
+     "alternative_id": "A2",
+     "type": "Local / independent professionals and shops",
+     "mentions": 35,
+     "by_tier": {
+      "reported_use": 15,
+      "considering": 6,
+      "general_or_hypothetical": 14
+     }
+    },
+    {
+     "alternative_id": "A3",
+     "type": "Brand service centres and brand technicians",
+     "mentions": 7,
+     "by_tier": {
+      "reported_use": 2,
+      "considering": 3,
+      "general_or_hypothetical": 2
+     }
+    },
+    {
+     "alternative_id": "A4",
+     "type": "Friends, neighbours and family",
+     "mentions": 1,
+     "by_tier": {
+      "reported_use": 1,
+      "considering": 0,
+      "general_or_hypothetical": 0
+     }
+    }
+   ],
+   "evidence_strength": "moderate",
+   "gaps": [
+    "Alternatives are named in a small share of reviews (vetted mentions 3.0% of the dataset); Google Play reviews seldom name them.",
+    "Return behaviour by category cannot be compared reliably (small counts)."
+   ],
+   "evidence_ids": [
+    "EV184",
+    "EV185",
+    "EV189",
+    "EV190",
+    "EV196",
+    "EV197",
+    "EV199",
+    "EV200"
+   ],
+   "question_id": "Q3"
+  },
+  {
+   "question": "How do customers describe why they did or did not book again, in their own words?",
+   "summary": "86.8% of reviews could be classed: 1,119 as Return (44.3%) and 1,074 as Non-Return (42.5%). Only 111 say it in the first person, 747 signal it (advising others against using the app, switching, distrust, or recommending with trust) and 1,335 are inferred from how positive or negative the review is. Reasons to return are mostly about the person who did the job (skill, politeness, punctuality, 'will definitely call her again') and general convenience ('my go to app'). Reasons for not returning are recourse and trust failures after a booking went wrong ('this is the last time I am taking service from you guys'), switching to named alternatives, and price. Notably 39.1% of customers who say they came back are themselves Negative or Mixed, which suggests habit or lack of alternatives can coexist with a poor experience.",
+   "distribution": [
+    {
+     "class": "Return",
+     "n": 1119,
+     "pct_of_dataset": 44.3,
+     "by_basis": {
+      "Stated": 92,
+      "Signalled": 456,
+      "Inferred": 571
+     }
+    },
+    {
+     "class": "Non-Return",
+     "n": 1074,
+     "pct_of_dataset": 42.5,
+     "by_basis": {
+      "Stated": 19,
+      "Signalled": 291,
+      "Inferred": 764
+     }
+    },
+    {
+     "class": "Insufficient Evidence",
+     "n": 334,
+     "pct_of_dataset": 13.2,
+     "by_basis": {
+      "Inferred": 134
+     }
+    }
+   ],
+   "reasons_to_return": [
+    "Skilled, polite, punctual professional",
+    "Convenience and breadth of services",
+    "Quick resolution when something went wrong",
+    "Trusted professional they can ask for again"
+   ],
+   "reasons_not_to_return": [
+    "Complaint not resolved or refund delayed",
+    "Repeated cancellations or no-shows",
+    "Price, fees and upselling",
+    "Safety or trust incident (theft, abuse, fraud)"
+   ],
+   "evidence_strength": "moderate",
+   "gaps": [
+    "Only 4.4% of reviews say it in the first person; most labels are predictions from sentiment, and customers who simply stopped booking leave no review."
+   ],
+   "evidence_ids": [
+    "EV077",
+    "EV079",
+    "EV066",
+    "EV076",
+    "EV065",
+    "EV059",
+    "EV148",
+    "EV151",
+    "EV159",
+    "EV157",
+    "EV164",
+    "EV149"
+   ],
+   "question_id": "Q4"
+  },
+  {
+   "question": "What do customers do outside the app: local providers, neighbours, family, WhatsApp groups?",
+   "summary": "Outside the app customers mainly use local and independent professionals (35 vetted reviews, 15 reporting actual use), other platforms (33), brand service centres (7) and, rarely, a neighbour's provider. They choose local providers for lower prices, direct accountability and small jobs, and say they fear risk and variable quality. No review describes a WhatsApp or society group used to find providers; the closest evidence is 119 Reddit posts that ask other users for experiences or recommendations.",
+   "evidence_strength": "moderate",
+   "gaps": [
+    "WhatsApp and neighbour networks are invisible in public reviews; absence of evidence is not evidence of absence."
+   ],
+   "evidence_ids": [
+    "EV189",
+    "EV367",
+    "EV032",
+    "EV368",
+    "EV193",
+    "EV369",
+    "EV191",
+    "EV192",
+    "EV194",
+    "EV195",
+    "EV370",
+    "EV199"
+   ],
+   "question_id": "Q5"
+  },
+  {
+   "question": "What separates customers who return from customers who do not, in their own accounts?",
+   "summary": "Among reviews that state or signal what the customer will do (Return 548, Non-Return 310) the clearest separators are recourse and price. Recourse failures (T3) appear in 40.0% of Non-Return reviews vs 4.0% of Return; price and fees (T2) in 25.5% vs 6.2%; fulfilment (T1) in 22.6% vs 2.2%. Return is about people: professional quality, punctuality and trust (T4) appear in 80.5% of Return reviews. Across all 2,193 classified reviews the same pattern holds (Non-Return 34.6% recourse; Return 4.3%), but those groups partly restate sentiment, so the stated and signalled groups are the stronger evidence. 39.1% of customers who say they came back are Negative or Mixed: loyal does not mean satisfied.",
+   "comparison": {
+    "groups": {
+     "all": 2527,
+     "return": 1119,
+     "non_return": 1074,
+     "return_stated_signalled": 548,
+     "non_return_stated_signalled": 310
+    },
+    "theme_prevalence_pct": {
+     "T1": {
+      "all": 12.7,
+      "return": 3.2,
+      "non_return": 23.1,
+      "return_stated_signalled": 2.2,
+      "non_return_stated_signalled": 22.6
+     },
+     "T2": {
+      "all": 14.0,
+      "return": 7.1,
+      "non_return": 20.8,
+      "return_stated_signalled": 6.2,
+      "non_return_stated_signalled": 25.5
+     },
+     "T3": {
+      "all": 18.5,
+      "return": 4.3,
+      "non_return": 34.6,
+      "return_stated_signalled": 4.0,
+      "non_return_stated_signalled": 40.0
+     },
+     "T4": {
+      "all": 51.2,
+      "return": 61.1,
+      "non_return": 47.9,
+      "return_stated_signalled": 80.5,
+      "non_return_stated_signalled": 71.9
+     },
+     "T5": {
+      "all": 6.4,
+      "return": 4.3,
+      "non_return": 8.1,
+      "return_stated_signalled": 4.0,
+      "non_return_stated_signalled": 6.5
+     }
+    },
+    "prevalence_pct": {
+     "cancelled": {
+      "label": "Cancelled by the company or professional",
+      "all": 5.0,
+      "return": 1.1,
+      "non_return": 9.6,
+      "return_stated_signalled": 1.1,
+      "non_return_stated_signalled": 10.3
+     },
+     "no_show": {
+      "label": "Professional did not show up",
+      "all": 3.2,
+      "return": 0.5,
+      "non_return": 6.7,
+      "return_stated_signalled": 0.4,
+      "non_return_stated_signalled": 5.5
+     },
+     "late": {
+      "label": "Late or delayed",
+      "all": 3.5,
+      "return": 1.4,
+      "non_return": 6.0,
+      "return_stated_signalled": 1.3,
+      "non_return_stated_signalled": 5.8
+     },
+     "price_high": {
+      "label": "Prices too high or rising",
+      "all": 7.9,
+      "return": 4.2,
+      "non_return": 10.6,
+      "return_stated_signalled": 3.1,
+      "non_return_stated_signalled": 11.6
+     },
+     "fees_charges": {
+      "label": "Platform, visit and cancellation fees; policy rigidity",
+      "all": 5.3,
+      "return": 2.3,
+      "non_return": 9.0,
+      "return_stated_signalled": 2.6,
+      "non_return_stated_signalled": 10.6
+     },
+     "overcharge_upsell": {
+      "label": "Extra charges and parts upselling",
+      "all": 3.4,
+      "return": 1.6,
+      "non_return": 5.5,
+      "return_stated_signalled": 1.8,
+      "non_return_stated_signalled": 8.4
+     },
+     "support_unreachable": {
+      "label": "Support unreachable (bot, no number)",
+      "all": 7.4,
+      "return": 1.6,
+      "non_return": 14.2,
+      "return_stated_signalled": 0.9,
+      "non_return_stated_signalled": 14.5
+     },
+     "refund_payment": {
+      "label": "Refund and payment problems",
+      "all": 4.9,
+      "return": 1.1,
+      "non_return": 9.6,
+      "return_stated_signalled": 1.1,
+      "non_return_stated_signalled": 12.6
+     },
+     "unresolved": {
+      "label": "Complaint unresolved, no follow-up",
+      "all": 3.6,
+      "return": 0.4,
+      "non_return": 7.4,
+      "return_stated_signalled": 0.7,
+      "non_return_stated_signalled": 10.6
+     },
+     "warranty_rework": {
+      "label": "Warranty and rework not honoured",
+      "all": 3.9,
+      "return": 0.4,
+      "non_return": 8.4,
+      "return_stated_signalled": 0.7,
+      "non_return_stated_signalled": 10.3
+     },
+     "poor_quality": {
+      "label": "Poor or incomplete work",
+      "all": 9.7,
+      "return": 2.9,
+      "non_return": 17.9,
+      "return_stated_signalled": 2.9,
+      "non_return_stated_signalled": 21.6
+     },
+     "damage_theft": {
+      "label": "Damage or theft",
+      "all": 2.8,
+      "return": 0.8,
+      "non_return": 5.6,
+      "return_stated_signalled": 1.1,
+      "non_return_stated_signalled": 8.4
+     },
+     "conduct_safety": {
+      "label": "Rude conduct, safety, rating pressure",
+      "all": 3.9,
+      "return": 1.3,
+      "non_return": 7.2,
+      "return_stated_signalled": 1.6,
+      "non_return_stated_signalled": 12.3
+     },
+     "trust_fraud": {
+      "label": "Trust, fraud or dishonesty",
+      "all": 5.6,
+      "return": 0.7,
+      "non_return": 12.3,
+      "return_stated_signalled": 1.3,
+      "non_return_stated_signalled": 38.7
+     },
+     "pos_quality_pro": {
+      "label": "Skilled, professional, courteous work (positive)",
+      "all": 34.4,
+      "return": 54.5,
+      "non_return": 18.5,
+      "return_stated_signalled": 73.2,
+      "non_return_stated_signalled": 29.0
+     },
+     "pos_punctual": {
+      "label": "Punctual and prompt (positive)",
+      "all": 8.4,
+      "return": 12.2,
+      "non_return": 5.9,
+      "return_stated_signalled": 19.0,
+      "non_return_stated_signalled": 6.1
+     },
+     "pos_convenience": {
+      "label": "Convenience and ease (positive)",
+      "all": 8.9,
+      "return": 10.8,
+      "non_return": 8.0,
+      "return_stated_signalled": 15.5,
+      "non_return_stated_signalled": 14.2
+     },
+     "pos_support_resolution": {
+      "label": "Support or resolution that worked (positive)",
+      "all": 6.6,
+      "return": 6.2,
+      "non_return": 7.8,
+      "return_stated_signalled": 8.9,
+      "non_return_stated_signalled": 12.6
+     }
+    },
+    "return_share_by_segment": {
+     "service_category": [
+      {
+       "segment": "Home Cleaning",
+       "n": 298,
+       "return_pct": 32.9,
+       "non_return_pct": 55.0,
+       "insufficient_pct": 12.1,
+       "return_pct_of_classified": 37.4
+      },
+      {
+       "segment": "AC Service & Repair",
+       "n": 150,
+       "return_pct": 29.3,
+       "non_return_pct": 61.3,
+       "insufficient_pct": 9.3,
+       "return_pct_of_classified": 32.4
+      },
+      {
+       "segment": "Salon & Beauty",
+       "n": 145,
+       "return_pct": 46.2,
+       "non_return_pct": 35.9,
+       "insufficient_pct": 17.9,
+       "return_pct_of_classified": 56.3
+      },
+      {
+       "segment": "Water Purifier / RO",
+       "n": 87,
+       "return_pct": 12.6,
+       "non_return_pct": 56.3,
+       "insufficient_pct": 31.0,
+       "return_pct_of_classified": 18.3
+      },
+      {
+       "segment": "Appliance Repair",
+       "n": 82,
+       "return_pct": 23.2,
+       "non_return_pct": 73.2,
+       "insufficient_pct": 3.7,
+       "return_pct_of_classified": 24.1
+      },
+      {
+       "segment": "Plumbing",
+       "n": 44,
+       "return_pct": 45.5,
+       "non_return_pct": 47.7,
+       "insufficient_pct": 6.8,
+       "return_pct_of_classified": 48.8
+      },
+      {
+       "segment": "Massage & Spa",
+       "n": 43,
+       "return_pct": 41.9,
+       "non_return_pct": 30.2,
+       "insufficient_pct": 27.9,
+       "return_pct_of_classified": 58.1
+      },
+      {
+       "segment": "Electrician",
+       "n": 32,
+       "return_pct": 25.0,
+       "non_return_pct": 56.2,
+       "insufficient_pct": 18.8,
+       "return_pct_of_classified": 30.8
+      },
+      {
+       "segment": "Painting",
+       "n": 32,
+       "return_pct": 18.8,
+       "non_return_pct": 62.5,
+       "insufficient_pct": 18.8,
+       "return_pct_of_classified": 23.1
+      },
+      {
+       "segment": "Pest Control",
+       "n": 32,
+       "return_pct": 18.8,
+       "non_return_pct": 59.4,
+       "insufficient_pct": 21.9,
+       "return_pct_of_classified": 24.0
+      }
+     ],
+     "source": [
+      {
+       "segment": "Google Play Store",
+       "n": 1950,
+       "return_pct": 56.3,
+       "non_return_pct": 33.1,
+       "insufficient_pct": 10.6,
+       "return_pct_of_classified": 63.0
+      },
+      {
+       "segment": "Reddit",
+       "n": 251,
+       "return_pct": 4.0,
+       "non_return_pct": 47.4,
+       "insufficient_pct": 48.6,
+       "return_pct_of_classified": 7.8
+      },
+      {
+       "segment": "PissedConsumer",
+       "n": 165,
+       "return_pct": 5.5,
+       "non_return_pct": 92.7,
+       "insufficient_pct": 1.8,
+       "return_pct_of_classified": 5.6
+      },
+      {
+       "segment": "ConsumerComplaints.in",
+       "n": 161,
+       "return_pct": 1.2,
+       "non_return_pct": 97.5,
+       "insufficient_pct": 1.2,
+       "return_pct_of_classified": 1.3
+      }
+     ],
+     "city": [
+      {
+       "segment": "Delhi",
+       "n": 42,
+       "return_pct": 2.4,
+       "non_return_pct": 78.6,
+       "insufficient_pct": 19.0,
+       "return_pct_of_classified": 2.9
+      },
+      {
+       "segment": "Gurugram",
+       "n": 25,
+       "return_pct": 8.0,
+       "non_return_pct": 60.0,
+       "insufficient_pct": 32.0,
+       "return_pct_of_classified": 11.8
+      },
+      {
+       "segment": "Hyderabad",
+       "n": 19,
+       "return_pct": 5.3,
+       "non_return_pct": 84.2,
+       "insufficient_pct": 10.5,
+       "return_pct_of_classified": 5.9
+      },
+      {
+       "segment": "Bengaluru",
+       "n": 17,
+       "return_pct": 11.8,
+       "non_return_pct": 88.2,
+       "insufficient_pct": 0.0,
+       "return_pct_of_classified": 11.8
+      }
+     ]
+    },
+    "caution": "The all-classified groups include Inferred labels, which come from sentiment, so some of the gap restates sentiment. The Stated + Signalled groups are smaller but do not rest on sentiment alone.",
+    "top_leaving_drivers": [
+     {
+      "issue": "Trust, fraud or dishonesty",
+      "code": "trust_fraud",
+      "non_return_pct": 38.7,
+      "return_pct": 1.3,
+      "gap_points": 37.4
+     },
+     {
+      "issue": "Poor or incomplete work",
+      "code": "poor_quality",
+      "non_return_pct": 21.6,
+      "return_pct": 2.9,
+      "gap_points": 18.7
+     },
+     {
+      "issue": "Support unreachable (bot, no number)",
+      "code": "support_unreachable",
+      "non_return_pct": 14.5,
+      "return_pct": 0.9,
+      "gap_points": 13.6
+     },
+     {
+      "issue": "Refund and payment problems",
+      "code": "refund_payment",
+      "non_return_pct": 12.6,
+      "return_pct": 1.1,
+      "gap_points": 11.5
+     },
+     {
+      "issue": "Rude conduct, safety, rating pressure",
+      "code": "conduct_safety",
+      "non_return_pct": 12.3,
+      "return_pct": 1.6,
+      "gap_points": 10.7
+     },
+     {
+      "issue": "Complaint unresolved, no follow-up",
+      "code": "unresolved",
+      "non_return_pct": 10.6,
+      "return_pct": 0.7,
+      "gap_points": 9.9
+     }
+    ],
+    "top_staying_drivers": [
+     {
+      "issue": "Skilled, professional, courteous work (positive)",
+      "code": "pos_quality_pro",
+      "return_pct": 73.2,
+      "non_return_pct": 29.0,
+      "gap_points": 44.2
+     },
+     {
+      "issue": "Punctual and prompt (positive)",
+      "code": "pos_punctual",
+      "return_pct": 19.0,
+      "non_return_pct": 6.1,
+      "gap_points": 12.9
+     },
+     {
+      "issue": "Convenience and ease (positive)",
+      "code": "pos_convenience",
+      "return_pct": 15.5,
+      "non_return_pct": 14.2,
+      "gap_points": 1.3
+     },
+     {
+      "issue": "Support or resolution that worked (positive)",
+      "code": "pos_support_resolution",
+      "return_pct": 8.9,
+      "non_return_pct": 12.6,
+      "gap_points": -3.7
+     }
+    ]
+   },
+   "evidence_strength": "moderate",
+   "gaps": [
+    "Inferred labels come from sentiment, so differences between all Return and all Non-Return reviews partly restate sentiment.",
+    "A positive rating is not treated as proof of repeat booking, and a negative one is not treated as proof of non-return: both only count when the wording agrees or there is a clear signal."
+   ],
+   "evidence_ids": [
+    "EV077",
+    "EV079",
+    "EV066",
+    "EV148",
+    "EV151",
+    "EV159"
+   ],
+   "question_id": "Q6"
+  },
+  {
+   "question": "How do these patterns differ by service category, city, household type and acquisition channel?",
+   "summary": "Service category is named in 39.7% of reviews and city in 7.4%, so comparisons use small groups and should be read with sample sizes. By category: Home Cleaning (n=298): over-indexes on 'poor or incomplete work' (21.8% of its reviews vs 9.7% overall); AC Service & Repair (n=150): over-indexes on 'damage or theft' (13.3% of its reviews vs 2.8% overall); Salon & Beauty (n=145): over-indexes on 'late or delayed' (6.2% of its reviews vs 3.5% overall); Water Purifier / RO (n=87): over-indexes on 'native product installation and after-sales' (82.8% of its reviews vs 3.7% overall); Appliance Repair (n=82): over-indexes on 'warranty and rework not honoured' (19.5% of its reviews vs 3.9% overall). By city (n>=8): 9 cities qualify; the largest are Delhi (n=42), Gurugram (n=25), Hyderabad (n=19), Bengaluru (n=17). Source matters more than any other segment: PissedConsumer reviews are 61.8% about recourse and 48.5% about fulfilment, against 11.8% and 9.4% on Google Play. Household type and discovery channel are stated in only a few dozen reviews: lone dwellers and women raise safety, elderly and pet households raise urgency and conduct, newcomers and tenants use the platform for moves, and referrals, ads/YouTube, Reddit research and Amazon/Flipkart purchases of Native products are the discovery routes that appear.",
+   "evidence_strength": "weak",
+   "gaps": [
+    "Household type and discovery channel are described in about 1-3% of reviews.",
+    "City is explicit in 8.5% of reviews; Delhi and Gurugram are the most named cities, mostly on Reddit and complaint sites."
+   ],
+   "evidence_ids": [
+    "EV283",
+    "EV252",
+    "EV264",
+    "EV249",
+    "EV293",
+    "EV295",
+    "EV298",
+    "EV300",
+    "EV248",
+    "EV305"
+   ],
+   "question_id": "Q7"
+  },
+  {
+   "question": "What unmet needs emerge consistently across conversations?",
+   "summary": "The most frequent unmet needs are fast, fair refunds and payment-failure recovery (121), reachable human support (88), warranty / rework / after-sales that is honoured (84), app usability, location handling and information clarity (67), reliable arrival: no last-minute cancellation, eta, alternate professional (62), professional training / tools / consumables / 2-person jobs (61). They are mostly experiential failures (support, refunds, warranty, reliable arrival, price clarity) rather than missing features; explicit feature requests (single-bathroom cleaning, pay-after-service, female technicians, new categories) are fewer but specific.",
+   "unmet_needs": [
+    {
+     "unmet_need_id": "N02",
+     "name": "Fast, fair refunds and payment-failure recovery",
+     "n_reviews": 121,
+     "pct_of_dataset": 4.8,
+     "linked_opportunity": "O3"
+    },
+    {
+     "unmet_need_id": "N01",
+     "name": "Reachable human support (call/phone/helpline instead of bot)",
+     "n_reviews": 88,
+     "pct_of_dataset": 3.5,
+     "linked_opportunity": "O2"
+    },
+    {
+     "unmet_need_id": "N03",
+     "name": "Warranty / rework / after-sales that is honoured",
+     "n_reviews": 84,
+     "pct_of_dataset": 3.3,
+     "linked_opportunity": "O5"
+    },
+    {
+     "unmet_need_id": "N12",
+     "name": "App usability, location handling and information clarity",
+     "n_reviews": 67,
+     "pct_of_dataset": 2.7,
+     "linked_opportunity": "O6"
+    },
+    {
+     "unmet_need_id": "N04",
+     "name": "Reliable arrival: no last-minute cancellation, ETA, alternate professional",
+     "n_reviews": 62,
+     "pct_of_dataset": 2.5,
+     "linked_opportunity": "O1"
+    },
+    {
+     "unmet_need_id": "N07",
+     "name": "Professional training / tools / consumables / 2-person jobs",
+     "n_reviews": 61,
+     "pct_of_dataset": 2.4,
+     "linked_opportunity": "O6"
+    },
+    {
+     "unmet_need_id": "N11",
+     "name": "Coverage in tier-2/3 cities and more localities",
+     "n_reviews": 45,
+     "pct_of_dataset": 1.8,
+     "linked_opportunity": "O8"
+    },
+    {
+     "unmet_need_id": "N08",
+     "name": "Flexible / granular packages (single bathroom, add-ons, partial jobs, longer duration)",
+     "n_reviews": 44,
+     "pct_of_dataset": 1.7,
+     "linked_opportunity": "O7"
+    },
+    {
+     "unmet_need_id": "N05",
+     "name": "Fair cancellation / reschedule policy",
+     "n_reviews": 40,
+     "pct_of_dataset": 1.6,
+     "linked_opportunity": "O1"
+    },
+    {
+     "unmet_need_id": "N06",
+     "name": "Upfront total price / no surprise charges",
+     "n_reviews": 34,
+     "pct_of_dataset": 1.3,
+     "linked_opportunity": "O4"
+    },
+    {
+     "unmet_need_id": "N09",
+     "name": "Choice of professional / continuity / gender / language",
+     "n_reviews": 33,
+     "pct_of_dataset": 1.3,
+     "linked_opportunity": "O9"
+    },
+    {
+     "unmet_need_id": "N10",
+     "name": "New service categories requested",
+     "n_reviews": 18,
+     "pct_of_dataset": 0.7,
+     "linked_opportunity": "O7"
+    },
+    {
+     "unmet_need_id": "N13",
+     "name": "Payment flexibility (pay after service / cash / COD)",
+     "n_reviews": 14,
+     "pct_of_dataset": 0.6,
+     "linked_opportunity": "O3"
+    },
+    {
+     "unmet_need_id": "N14",
+     "name": "Rating pressure / tip prompts from professionals",
+     "n_reviews": 10,
+     "pct_of_dataset": 0.4,
+     "linked_opportunity": "O6"
+    }
+   ],
+   "evidence_strength": "strong",
+   "gaps": [
+    "Counts are indicative: need flags are rule-based with 50-95% measured precision (see unmet_needs.json)."
+   ],
+   "evidence_ids": [
+    "EV241",
+    "EV242",
+    "EV041",
+    "EV243",
+    "EV244",
+    "EV245",
+    "EV246",
+    "EV247"
+   ],
+   "question_id": "Q8"
+  }
+ ]
+}

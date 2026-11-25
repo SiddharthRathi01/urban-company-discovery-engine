@@ -1,0 +1,28 @@
+{
+ "golden_id": "GS-20261125124532-590fa7",
+ "name": "Golden data set",
+ "filename": "Untitled spreadsheet - Sheet1.csv",
+ "created_at": "2026-11-25T12:45:32+00:00",
+ "sha256": "950f5365b3efb19edcd5f8e4b05b681948cea51da8b18fc7ec34a376e8ab81ef",
+ "primary": true,
+ "summary": {
+  "rows_in_file": 20,
+  "accepted": 20,
+  "rejected": 0,
+  "with_sentiment_label": 20,
+  "with_return_label": 20,
+  "with_problem_label": 20
+ },
+ "column_mapping": {
+  "text": "comment",
+  "id": "id",
+  "human_sentiment": "your sentiment",
+  "human_return": "return label",
+  "human_theme": "your problem label",
+  "rating": "stars",
+  "source_url": "source_url",
+  "source": "source"
+ },
+ "issues": [],
+ "issue_counts": {}
+}

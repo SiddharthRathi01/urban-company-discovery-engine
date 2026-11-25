@@ -1,0 +1,310 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "dataset_reviews": 2527,
+ "sources": [
+  {
+   "source": "Google Play Store",
+   "kind": "App-store reviews",
+   "reviews": 1950,
+   "how": "Public review pages; individual review URL kept for every row.",
+   "what_it_adds": "Broad, short, rated reviews: the only source with many positive voices.",
+   "sentiment_pct": {
+    "Positive": 45.6,
+    "Negative": 37.1,
+    "Neutral": 4.9,
+    "Mixed": 12.0
+   }
+  },
+  {
+   "source": "Reddit",
+   "kind": "Discussion posts",
+   "reviews": 251,
+   "how": "Public discussion posts where people ask for help; posts only, no comments.",
+   "what_it_adds": "How people decide, compare and ask for help; mostly questions, no star ratings.",
+   "sentiment_pct": {
+    "Positive": 1.6,
+    "Negative": 27.9,
+    "Neutral": 68.1,
+    "Mixed": 2.0
+   }
+  },
+  {
+   "source": "PissedConsumer",
+   "kind": "Complaint site",
+   "reviews": 165,
+   "how": "Public complaint pages with an individual URL per complaint.",
+   "what_it_adds": "Long, detailed escalations: what happens after a failed complaint.",
+   "sentiment_pct": {
+    "Positive": 0.0,
+    "Negative": 97.6,
+    "Neutral": 1.2,
+    "Mixed": 1.2
+   }
+  },
+  {
+   "source": "ConsumerComplaints.in",
+   "kind": "Complaint site",
+   "reviews": 161,
+   "how": "Public complaint pages with an individual URL per complaint.",
+   "what_it_adds": "Indian consumer-forum complaints, often naming a city and booking.",
+   "sentiment_pct": {
+    "Positive": 0.0,
+    "Negative": 98.8,
+    "Neutral": 1.2,
+    "Mixed": 0.0
+   }
+  }
+ ],
+ "funnel": [
+  {
+   "step": "Records collected",
+   "n": 3788,
+   "note": "all collection passes, before any de-duplication"
+  },
+  {
+   "step": "Unique after de-duplication",
+   "n": 3731,
+   "note": "57 duplicates removed (same record, same author-date-text, or identical text)"
+  },
+  {
+   "step": "Kept after traceability and relevance checks",
+   "n": 2527,
+   "note": "846 removed for having no individual URL (Apple App Store and older complaint-site entries), 358 removed as off-topic, spam, professional-side or out of scope"
+  }
+ ],
+ "pipeline": [
+  {
+   "id": "S1",
+   "title": "Collect public feedback",
+   "what": "Gathered Play Store reviews, Reddit posts and two complaint sites; only public pages, no logged-in Urban Company pages.",
+   "numbers": "3,788 records collected",
+   "where": "scripts/stage_a_build.py"
+  },
+  {
+   "id": "S2",
+   "title": "Clean and de-duplicate",
+   "what": "Removed exact and near-exact duplicates, spam, professional-side posts and off-topic items; every removal is logged.",
+   "numbers": "57 duplicates, 358 off-topic or out of scope removed",
+   "where": "scripts/stage_a_build.py, stage_c_finalize.py"
+  },
+  {
+   "id": "S3",
+   "title": "Keep only traceable reviews",
+   "what": "A review is kept only if it has its own source URL, so every quote can be opened at its source.",
+   "numbers": "846 untraceable records excluded; 2,527 kept",
+   "where": "scripts/stage_c_finalize.py"
+  },
+  {
+   "id": "S4",
+   "title": "Label sentiment",
+   "what": "A word-list score gave a first label; unclear cases were read and corrected by the analyst (Claude). A random sample was re-checked.",
+   "numbers": "184 of 190 sample labels agreed (97%)",
+   "where": "scripts/stage_b_sentiment.py"
+  },
+  {
+   "id": "S5",
+   "title": "Code problems, behaviour and needs",
+   "what": "Phrase rules flag 26 problem and praise codes, return behaviour, alternatives and 14 unmet needs; the matched text was read and hand-curated.",
+   "numbers": "5 themes, 3 return classes, 14 needs",
+   "where": "scripts/step2_*.py"
+  },
+  {
+   "id": "S6",
+   "title": "Check every quote",
+   "what": "Each quote shown on the site is tested to be word-for-word in the original review, with its source, URL and date.",
+   "numbers": "370 of 370 quotes verified",
+   "where": "scripts/analysis_lib.py, tests/"
+  },
+  {
+   "id": "S7",
+   "title": "Score and rank opportunities",
+   "what": "Nine opportunities are scored on frequency, severity, evidence strength, repeat-booking relevance and an analyst impact judgement.",
+   "numbers": "9 opportunities, scored 0-100",
+   "where": "scripts/build_analysis.py"
+  },
+  {
+   "id": "S8",
+   "title": "Serve and explore",
+   "what": "The results are stored as JSON files, served by a read-only API and shown on this website.",
+   "numbers": "14 data files, 50+ API endpoints",
+   "where": "backend/api, frontend/"
+  }
+ ],
+ "bias": {
+  "negative_voice": {
+   "title": "Public posts over-represent bad experiences",
+   "facts": [
+    "44.1% of all reviews are Negative; 326 reviews come from complaint sites that are almost entirely Negative.",
+    "Google Play is 77.2% of the data and the only source with many positive reviews (45.6% Positive)."
+   ],
+   "what_we_did": [
+    "Added a further sample of detailed 4-5 star Google Play reviews, so that positive experiences carry real weight (Positive is now 35.4% of all reviews).",
+    "Showed sentiment per source instead of one blended mood, so complaint-site negativity is never read as the average customer.",
+    "Reported theme sizes two ways: pooled and with the four sources weighted equally, so a pattern that exists only on complaint sites is visible.",
+    "Kept positive reviews in every theme (T4 holds the praise as well as the failures) and compared returning with non-returning customers.",
+    "Read theme percentages as shares of the feedback, never as shares of all customers."
+   ],
+   "equal_weight": {
+    "pooled": {
+     "T1": 12.7,
+     "T2": 14.0,
+     "T3": 18.5,
+     "T4": 51.2,
+     "T5": 6.4
+    },
+    "equal_weight_across_4_sources": {
+     "T1": 22.2,
+     "T2": 14.1,
+     "T3": 36.6,
+     "T4": 55.4,
+     "T5": 6.5
+    }
+   }
+  },
+  "silent_churn": {
+   "title": "Customers who simply never came back leave no trace",
+   "facts": [
+    "86.8% of reviews (2,193 of 2,527) are placed as Return (1,119) or Non-Return (1,074); 13.2% stay Insufficient Evidence.",
+    "How each label was decided: 111 stated in the first person, 747 signalled (advising against the app, switching, distrust, or recommending), 1,335 inferred from sentiment and star rating."
+   ],
+   "what_we_did": [
+    "Placed every review as Return, Non-Return or Insufficient Evidence, and recorded how it was decided (stated, signalled or inferred) and how sure we are.",
+    "Kept first-person statements and clear signals apart from sentiment-based inference, so the strongest evidence is never blended with the weakest.",
+    "Treated comparisons that use inferred labels as partly circular; the stated and signalled groups carry the findings.",
+    "Looked for loyal-but-unhappy customers: 39% of customers who say they came back are themselves Negative or Mixed.",
+    "Never reported a return rate: labels describe reviews, not all customers."
+   ],
+   "gap": "Silent churners cannot be seen in public posts, so the true non-return share is probably higher than shown. The next step is first-party booking data: compare customers who rebooked within 90 days with those who did not, and run exit surveys."
+  }
+ },
+ "validation": {
+  "sentiment": {
+   "sample": 190,
+   "agreed": 184,
+   "agreement_pct": 97,
+   "queue_read_individually": 1923,
+   "labels_changed_by_analyst": 985,
+   "note": "Agreement is between the word-list draft and the analyst's reading; it is not a human-labelled accuracy test."
+  },
+  "quotes": {
+   "verified": 370,
+   "total": 370,
+   "note": "Every quote is an exact extract of the original review text (whitespace aside)."
+  },
+  "urls": {
+   "individually_verified": 2276,
+   "reddit_permalinks_unverified": 251,
+   "missing": 0,
+   "note": "Every review links to its own page; the text of most was opened and matched against that page."
+  },
+  "rule_precision": [
+   {
+    "issue": "Cancelled by the company or professional",
+    "code": "cancelled",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Professional did not show up",
+    "code": "no_show",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Late or delayed",
+    "code": "late",
+    "precision_pct": 88
+   },
+   {
+    "issue": "No slots / professional unavailable",
+    "code": "slot_unavailable",
+    "precision_pct": 100
+   },
+   {
+    "issue": "Prices too high or rising",
+    "code": "price_high",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Platform, visit and cancellation fees; policy rigidity",
+    "code": "fees_charges",
+    "precision_pct": 100
+   },
+   {
+    "issue": "Extra charges and parts upselling",
+    "code": "overcharge_upsell",
+    "precision_pct": 100
+   },
+   {
+    "issue": "Support unreachable (bot, no number)",
+    "code": "support_unreachable",
+    "precision_pct": 75
+   },
+   {
+    "issue": "Refund and payment problems",
+    "code": "refund_payment",
+    "precision_pct": 100
+   },
+   {
+    "issue": "Complaint unresolved, no follow-up",
+    "code": "unresolved",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Poor or incomplete work",
+    "code": "poor_quality",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Damage or theft",
+    "code": "damage_theft",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Rude conduct, safety, rating pressure",
+    "code": "conduct_safety",
+    "precision_pct": 88
+   },
+   {
+    "issue": "Trust, fraud or dishonesty",
+    "code": "trust_fraud",
+    "precision_pct": 100
+   }
+  ],
+  "rule_precision_note": "Share of 6-8 randomly read matches per rule that really showed the issue. A spot-check, not a full accuracy test.",
+  "tests": {
+   "automated_tests": 75,
+   "covers": "master dataset shape, quotes verbatim, every ID resolves, API contract, upload validation"
+  }
+ },
+ "golden_set": {
+  "status": "not_run",
+  "title": "Golden set (hand-labelled comparison)",
+  "note": "A hand-labelled golden set, human agreement scores and accuracy tests belong to Step 3 and have not been run. No accuracy figure is claimed on this site."
+ },
+ "limitations": {
+  "coding": "Issue, return, alternative and need flags are phrase rules, not a trained classifier; they can miss paraphrases and mis-fire on similar words. Measured precision (6-8 random matches per code): cancelled by the company or professional 88%, professional did not show up 88%, late or delayed 88%, no slots / professional unavailable 100%, prices too high or rising 88%, platform, visit and cancellation fees; policy rigidity 100%, extra charges and parts upselling 100%, support unreachable 75%, refund and payment problems 100%, complaint unresolved, no follow-up 88%, poor or incomplete work 88%, damage or theft 88%, rude conduct, safety, rating pressure 88%, trust, fraud or dishonesty 100%.",
+  "sentiment": "Sentiment labels come from a lexicon draft plus analyst review of unclear cases (97% agreement on a 150-review check); they are not human-validated.",
+  "multi_label_counting": "Theme counts overlap by design; do not add them.",
+  "small_groups": "Only 111 reviews state return behaviour in the first person; household and discovery evidence are only a few dozen reviews. These are too small for statistical claims.",
+  "no_llm": "These results were not produced by an LLM. An LLM backend (backend/) exists for the upload workflow and later steps.",
+  "not_validated": "Step 3 (Golden Set, human labelling, accuracy and agreement) has not been run."
+ },
+ "tiles": [
+  {
+   "value": "3,788",
+   "label": "records collected from public sources"
+  },
+  {
+   "value": "2,527",
+   "label": "traceable reviews analysed, each with its source URL"
+  },
+  {
+   "value": "370/370",
+   "label": "quotes checked word-for-word against the original review"
+  },
+  {
+   "value": "100%",
+   "label": "of results trace back to a review ID and its source"
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "schema_version": "1.0",
+ "generated_at": "2026-11-25T16:33:26+00:00",
+ "product": "Urban Company",
+ "business_metric": "Percentage of customers who complete another booking within 90 days",
+ "dataset": {
+  "reviews_analysed": 2527,
+  "master_file": "output/urban_company_reviews_master.csv",
+  "date_range": {
+   "earliest": "2015-12-18",
+   "latest": "2026-11-24"
+  },
+  "by_source": [
+   {
+    "source": "Google Play Store",
+    "n": 1950,
+    "pct": 77.2
+   },
+   {
+    "source": "Reddit",
+    "n": 251,
+    "pct": 9.9
+   },
+   {
+    "source": "PissedConsumer",
+    "n": 165,
+    "pct": 6.5
+   },
+   {
+    "source": "ConsumerComplaints.in",
+    "n": 161,
+    "pct": 6.4
+   }
+  ],
+  "sentiment": {
+   "Positive": {
+    "n": 894,
+    "pct": 35.4
+   },
+   "Negative": {
+    "n": 1114,
+    "pct": 44.1
+   },
+   "Neutral": {
+    "n": 270,
+    "pct": 10.7
+   },
+   "Mixed": {
+    "n": 241,
+    "pct": 9.5
+   },
+   "Uncertain": {
+    "n": 8,
+    "pct": 0.3
+   }
+  },
+  "rating": {
+   "rated_reviews": 2042,
+   "mean": 3.58,
+   "pct_1_2_star": 24.4,
+   "distribution": {
+    "1": 273,
+    "2": 228,
+    "3": 300,
+    "4": 519,
+    "5": 722
+   }
+  },
+  "service_category_stated": 1002,
+  "city_stated": 188
+ },
+ "headline_metrics": {
+  "themes": [
+   {
+    "theme_id": "T4",
+    "name": "Service quality, professional conduct and trust (good and bad)",
+    "review_count": 1293,
+    "pct_of_dataset": 51.2
+   },
+   {
+    "theme_id": "T3",
+    "name": "Support access, refunds and problem resolution (including warranty and Native after-sales)",
+    "review_count": 468,
+    "pct_of_dataset": 18.5
+   },
+   {
+    "theme_id": "T1",
+    "name": "Unreliable fulfilment: cancellations, no-shows, delays and missing slots",
+    "review_count": 321,
+    "pct_of_dataset": 12.7
+   },
+   {
+    "theme_id": "T2",
+    "name": "Price, fees and policy rigidity",
+    "review_count": 354,
+    "pct_of_dataset": 14.0
+   },
+   {
+    "theme_id": "T5",
+    "name": "Coverage gaps, missing services and app friction",
+    "review_count": 161,
+    "pct_of_dataset": 6.4
+   }
+  ],
+  "return_behaviour": [
+   {
+    "class": "Return",
+    "n": 1119,
+    "pct_of_dataset": 44.3,
+    "by_basis": {
+     "Stated": 92,
+     "Signalled": 456,
+     "Inferred": 571
+    }
+   },
+   {
+    "class": "Non-Return",
+    "n": 1074,
+    "pct_of_dataset": 42.5,
+    "by_basis": {
+     "Stated": 19,
+     "Signalled": 291,
+     "Inferred": 764
+    }
+   },
+   {
+    "class": "Insufficient Evidence",
+    "n": 334,
+    "pct_of_dataset": 13.2,
+    "by_basis": {
+     "Inferred": 134
+    }
+   }
+  ],
+  "top_findings": [
+   {
+    "finding_id": "F1",
+    "title": "When something goes wrong, customers cannot reach a person, get their money back or get the work fixed",
+    "reviews": 468
+   },
+   {
+    "finding_id": "F2",
+    "title": "Price and fees feel unpredictable and higher than local alternatives, especially for small jobs",
+    "reviews": 354
+   },
+   {
+    "finding_id": "F3",
+    "title": "Booked services are cancelled, delayed or never attended, and customers pay the cost",
+    "reviews": 321
+   }
+  ],
+  "top_opportunities": [
+   {
+    "opportunity_id": "O6",
+    "title": "Quality, conduct and safety assurance",
+    "priority": "High",
+    "score": 0.931
+   },
+   {
+    "opportunity_id": "O1",
+    "title": "Arrival guarantee and proactive recovery",
+    "priority": "High",
+    "score": 0.903
+   },
+   {
+    "opportunity_id": "O2",
+    "title": "Human-reachable support with first-contact resolution",
+    "priority": "High",
+    "score": 0.903
+   },
+   {
+    "opportunity_id": "O4",
+    "title": "All-in price lock and on-site upsell guardrails",
+    "priority": "Medium",
+    "score": 0.874
+   },
+   {
+    "opportunity_id": "O5",
+    "title": "One-tap rework and Native after-sales",
+    "priority": "Medium",
+    "score": 0.793
+   }
+  ],
+  "reviews_with_at_least_one_theme": 1820
+ },
+ "method": {
+  "summary": "Phrase-rule coding of every review (26 codes: 22 problems and 4 kinds of praise, return-behaviour classes, alternatives and 14 unmet needs), with the matched text read and checked by an AI-assisted analyst; every count and score is computed in code. The same engine runs live on an uploaded file, where an LLM reads each comment.",
+  "validation": "Rule precision was spot-checked on 6-8 random matches per code. The engine was also compared with a 20-comment golden set labelled by hand (see the AI Evidence Log and the Golden data set page)."
+ },
+ "files": [
+  "overview.json",
+  "themes.json",
+  "findings.json",
+  "questions.json",
+  "behaviour.json",
+  "alternatives.json",
+  "segments.json",
+  "unmet_needs.json",
+  "opportunities.json",
+  "evidence.json",
+  "limitations.json",
+  "reviews.json",
+  "trust.json",
+  "manifest.json"
+ ]
+}

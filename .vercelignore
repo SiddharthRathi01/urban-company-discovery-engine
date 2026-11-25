@@ -1,0 +1,13 @@
+.python
+.node
+.pytest_cache
+.vscode
+frontend/node_modules
+frontend/dist
+raw
+llm_data
+uploads
+analysis_pilot
+analysis_test
+docs/_evidence_log.html
+**/__pycache__
