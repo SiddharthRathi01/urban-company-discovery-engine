@@ -16,14 +16,3 @@ An AI-powered discovery engine that reads public customer feedback about Urban C
 | `docs/` | The AI Evidence Log (PDF), backend notes and the deployment guide |
 | `scripts/` | The collection, cleaning, analysis and report-building scripts |
 | `tests/` | Automated tests |
-
-## Run it on your computer
-```
-python -m pip install -r requirements-dev.txt
-cd frontend && npm install && npm run build && cd ..
-python -m uvicorn backend.api.main:app --port 8000
-```
-Open http://localhost:8000. To use the live AI features, copy `.env.example` to `.env` and add your Cloudflare Workers AI account ID and token (never commit `.env`).
-
-## Deploy
-See `docs/DEPLOY.md` (Vercel).
