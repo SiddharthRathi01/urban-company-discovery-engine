@@ -1,0 +1,259 @@
+{
+ "note": "Written by the AI ahead of time from the reviews; every quote checked to be verbatim. Rebuild with scripts/build_ask_ready.py after the analysis or prompts change.",
+ "answers": {
+  "do customers get refunds on time": {
+   "query": "Do customers get refunds on time?",
+   "headline": "No, customers report difficulty receiving refunds",
+   "answer": "Customers report that their paid money is not refunded after cancellations. Some users also claim the company does not refund advance payments.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "GP-0004",
+     "quote": "my booking cancle but my paid money not refund untill",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=a35ecc8a-db7e-4c8a-9f5f-c7af3b57d555",
+     "review_date": "2026-11-23",
+     "sentiment_label": "Negative"
+    },
+    {
+     "review_id": "GP-0140",
+     "quote": "they do not refund the amount also",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=7ccf9b18-2168-4ee7-b41b-ae83e27a87f4",
+     "review_date": "2026-11-21",
+     "sentiment_label": "Negative"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 672,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  },
+  "is the pricing fair": {
+   "query": "Is the pricing fair?",
+   "headline": "Mixed: reviews report both transparent and high pricing",
+   "answer": "Some customers find the pricing transparent and affordable. However, others describe the services as expensive, inflated, or weirdly priced.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "GP-0567",
+     "quote": "Convenience on tap, honest professionals and transparent pricing.",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=050bba6a-b207-4059-a047-0624b67bbeec",
+     "review_date": "2026-11-07",
+     "sentiment_label": "Positive"
+    },
+    {
+     "review_id": "RD-0126",
+     "quote": "need some affordable house cleaning which isn’t as weirdly priced as urban company.",
+     "source": "Reddit",
+     "source_url": "https://www.reddit.com/r/delhi/comments/1ojt3c7/cleaning_services_in_delhi/",
+     "review_date": "2025-10-30",
+     "sentiment_label": "Negative"
+    },
+    {
+     "review_id": "GP-1650",
+     "quote": "Prices are high and even with plus membership.. the discount is capped at 150 max..",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=fd989843-740a-40e1-a1f2-41a83de1ca3a",
+     "review_date": "2022-10-18",
+     "sentiment_label": "Negative"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 94,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  },
+  "what do customers say about customer support": {
+   "query": "What do customers say about customer support?",
+   "headline": "Mixed: Customers report both full support and poor assistance.",
+   "answer": "Some customers receive full support until problems are resolved. However, others report unhelpful chat bots, lack of call options, and inability to resolve warranty or booking issues.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "GP-0226",
+     "quote": "gives the customer full support until the problems are resolved to the satisfaction of the customer.",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=22f498d9-9dac-45ea-aea4-0aa0f1d15ae4",
+     "review_date": "2026-11-20",
+     "sentiment_label": "Positive"
+    },
+    {
+     "review_id": "GP-0405",
+     "quote": "helpline number no way to reach urban company just a bot in chat.horrible customer support",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=25b48c88-c3d1-4805-8757-9bac9c925ded",
+     "review_date": "2026-11-15",
+     "sentiment_label": "Negative"
+    },
+    {
+     "review_id": "PC-0026",
+     "quote": "there is no customer support call option you're stuck chatting with telecallers who are equally unhelpful",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/worst-service-202605257226616.html",
+     "review_date": "2026-05-25",
+     "sentiment_label": "Negative"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 550,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  },
+  "why do people like urban company": {
+   "query": "Why do people like Urban Company?",
+   "headline": "Punctual, well-mannered employees and great home transformations",
+   "answer": "Customers appreciate the punctuality and polite behavior of employees. Some also report being very satisfied with how their homes look after services.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "GP-1668",
+     "quote": "I like your punctuality & well mannered employees.",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=2b8fc1f5-4a88-49bf-875e-f5351edc5556",
+     "review_date": "2026-11-11",
+     "sentiment_label": "Positive"
+    },
+    {
+     "review_id": "GP-1753",
+     "quote": "I can't express my views that how looks now my entire home will look like",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=a65f970f-7da7-4166-becc-702e72bcf684",
+     "review_date": "2026-08-14",
+     "sentiment_label": "Positive"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 1120,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  },
+  "how do customers react when a professional doesnt turn up": {
+   "query": "How do customers react when a professional doesn't turn up?",
+   "headline": "Customers feel disappointed and ignored",
+   "answer": "Customers report feeling disappointed when professionals fail to show up. Some also feel the company does not care about these missed appointments.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "GP-0235",
+     "quote": "what is the use of providing booking service when no one turns out and even Urban company doesn't care",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=d55ada20-854e-46fe-af2c-217f33442ac5",
+     "review_date": "2026-11-19",
+     "sentiment_label": "Negative"
+    },
+    {
+     "review_id": "GP-2058",
+     "quote": "Truly disappointing service. The professional din't turn up for the appointment.",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=3fe6e8b6-9ce9-4905-aed6-0016e74f5823",
+     "review_date": "2020-05-10",
+     "sentiment_label": "Negative"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 474,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  },
+  "do customers trust the professionals who come home": {
+   "query": "Do customers trust the professionals who come home?",
+   "headline": "Mixed: Reports of theft and unprofessionalism versus convenience",
+   "answer": "Reviews show significant trust issues due to theft and unprofessionalism. However, some customers find the service convenient and rebook good professionals.",
+   "evidence_strength": "moderate",
+   "citations": [
+    {
+     "review_id": "PC-0082",
+     "quote": "Urgent: Follow-Up on Theft Incident by Service Professional and Lack of Response from Urban Company.",
+     "source": "PissedConsumer",
+     "source_url": "https://urban-company.pissedconsumer.com/urgent-follow-up-on-theft-incident-by-service-professional-and-lack-of-response-from-urban-company-202403195716620.html",
+     "review_date": "2024-03-19",
+     "sentiment_label": "Negative"
+    },
+    {
+     "review_id": "GP-1916",
+     "quote": "Very convenient ! Getting things done at home are at your finger tips.",
+     "source": "Google Play Store",
+     "source_url": "https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap&reviewId=efefaf74-c595-439d-8acd-1707fd681307",
+     "review_date": "2023-06-24",
+     "sentiment_label": "Positive"
+    }
+   ],
+   "reviews_considered": 8,
+   "reviews_matching": 732,
+   "citations_dropped_unverifiable": 0,
+   "model": "@cf/google/gemma-4-26b-a4b-it",
+   "provider": "cloudflare_workers_ai",
+   "cached": false
+  }
+ },
+ "briefs": {
+  "Q1": {
+   "question_id": "Q1",
+   "headline": "Customers expect service reliability, accurate pricing, and clear recourse for issues",
+   "answer": "Users view bookings as contracts requiring punctual arrivals, advertised work quality, and consistent pricing. They also seek accountability and recourse when service promises are not met.",
+   "cached": true,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q2": {
+   "question_id": "Q2",
+   "headline": "Service triggers range from urgent appliance breakdowns to planned seasonal maintenance",
+   "answer": "Triggers include appliance failures, moving, seasonal changes, and upcoming events. Needs vary between urgent repairs and scheduled periodic services, though findings are based on a small sample.",
+   "cached": false,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q3": {
+   "question_id": "Q3",
+   "headline": "Customers choose between Urban Company, local professionals, and brand service centres",
+   "answer": "Users often switch to local independent professionals for small repairs or brand centres for warranty issues. Other platforms are primarily considered through community discussions on Reddit.",
+   "cached": true,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q4": {
+   "question_id": "Q4",
+   "headline": "Service quality drives returns while trust failures and pricing deter repeat bookings",
+   "answer": "Repeat bookings are driven by professional service providers and platform convenience. However, customers may return despite negative experiences due to habit or limited alternatives.",
+   "cached": true,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q5": {
+   "question_id": "Q5",
+   "headline": "Customers prefer local independent professionals for lower costs and direct accountability",
+   "answer": "Users primarily seek local providers and other platforms to save money and ensure reliability for small tasks. Evidence suggests customers value the direct relationships and accountability offered by independent technicians.",
+   "cached": false,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q6": {
+   "question_id": "Q6",
+   "headline": "Recourse failures and pricing issues drive churn while professional quality drives retention",
+   "answer": "Returning customers prioritize professional quality, punctuality, and trust. Conversely, non-returning customers frequently cite issues with recourse, pricing, and fulfillment. Note that some returning customers express negative or mixed sentiments.",
+   "cached": true,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q7": {
+   "question_id": "Q7",
+   "headline": "Service categories show distinct pain points and review source impacts sentiment.",
+   "answer": "Specific categories over-index on issues like incomplete work, damage, or installation. Review source is a significant driver of feedback type, though category comparisons rely on small sample sizes.",
+   "cached": false,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  },
+  "Q8": {
+   "question_id": "Q8",
+   "headline": "Unmet needs center on experiential failures and service reliability issues.",
+   "answer": "Customers primarily struggle with refund processes, payment recovery, and accessing human support. Issues also persist regarding warranty fulfillment, arrival reliability, and pricing transparency.",
+   "cached": true,
+   "model": "@cf/google/gemma-4-26b-a4b-it"
+  }
+ }
+}

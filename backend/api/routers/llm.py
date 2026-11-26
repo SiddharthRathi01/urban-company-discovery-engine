@@ -1,6 +1,7 @@
 """Cloudflare Workers AI endpoints: provider status, usage tracking, single-review analysis and grounded answers for Ask Questions."""
+import json
 import logging
-import re
+import os
 import re
 
 from fastapi import APIRouter, Query
@@ -10,7 +11,7 @@ from backend import csv_analysis, prompts
 from backend.data import verify_quote
 from backend.llm import DailyLimitReached, LLMFailure, LLMFatal, get_tracker
 
-from .. import llm_service
+from .. import llm_service, settings
 from ..responses import ApiError, envelope
 from ..store import store
 from .analysis import source_meta
@@ -87,17 +88,44 @@ def _clean(text, limit):
     return t
 
 
+# ------------------------------------------------------------------------------------------------ ready answers
+# The suggested questions on the Ask page and the eight discovery questions are answered ahead of time (scripts/build_ask_ready.py), so they open
+# instantly instead of waiting for the model. Typed questions still go to the model.
+_READY = {"loaded": False, "data": {}}
+
+
+def _norm_q(q):
+    return re.sub(r"[^a-z0-9 ]+", "", " ".join(str(q).lower().split())).strip()
+
+
+def _ready(kind, key):
+    if os.environ.get("ASK_READY_DISABLED") == "1":
+        return None
+    if not _READY["loaded"]:
+        path = settings.ANALYSIS_DIR / "ask_ready.json"
+        try:
+            _READY["data"] = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+        except (OSError, ValueError):
+            _READY["data"] = {}
+        _READY["loaded"] = True
+    hit = (_READY["data"].get(kind) or {}).get(key)
+    return dict(hit, cached=True, prepared=True) if hit else None
+
+
 @router.get("/ask/answer", tags=["ask"], summary="Short grounded answer written by Cloudflare Workers AI from the retrieved real reviews, with verified citations")
 def ask_answer(q: str = Query(..., min_length=3, max_length=200)):
+    ready = _ready("answers", _norm_q(q))
+    if ready:
+        return envelope(dict(ready, query=q), {**source_meta(), "note": "Prepared answer: written by the AI from the reviews ahead of time; every quote was checked to be verbatim."})
     llm = need_llm()
     toks, scored = _search(q)
     if not scored:
         return envelope({"query": q, "answer": None, "headline": None, "evidence_strength": "insufficient", "citations": [], "reviews_considered": 0, "reviews_matching": 0, "reason": "no_match"}, source_meta())
-    top = _select(scored, 10)
+    top = _select(scored, 8)
     reviews = {r["record_id"]: r for _, _, _, r, _ in top}
     blocks = [f"[{r['record_id']}] ({r['source']}, {r['sentiment_label']})\n{_excerpt(r, hit)}" for _, _, _, r, hit in top]
     user = f"Question: {q}\n\nReviews:\n\n" + "\n\n".join(blocks)
-    parsed, meta = llm_errors(lambda: llm.call_json("ask_answer", prompts.ASK_SYSTEM, user, _validate_answer, max_tokens=900))
+    parsed, meta = llm_errors(lambda: llm.call_json("ask_answer", prompts.ASK_SYSTEM, user, _validate_answer, max_tokens=450))
     if parsed.get("in_scope") is False:
         return envelope({"query": q, "answer": None, "headline": None, "evidence_strength": "insufficient", "citations": [], "reviews_considered": 0, "reviews_matching": 0, "reason": "out_of_scope"}, source_meta())
     citations, dropped = [], 0
@@ -132,6 +160,9 @@ def question_brief(question_id: str):
     q = next((x for x in store.get("questions")["questions"] if x["question_id"] == question_id), None)
     if not q:
         raise ApiError(404, "question_not_found", f"No discovery question {question_id}.", {"question_id": question_id})
+    ready = _ready("briefs", question_id)
+    if ready:
+        return envelope(ready, {**source_meta(), "note": "Prepared summary written by the AI ahead of time; numbers stay in the full analysed answer."})
     llm = need_llm()
     source_text = q["summary"]
     quotes = store.expand_evidence(q.get("evidence_ids") or [])[:5]

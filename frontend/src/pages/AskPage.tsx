@@ -85,7 +85,7 @@ function KeywordFallback({ q }: { q: string }) {
 
 function FreeAnswer({ q, onTry }: { q: string; onTry: (s: string) => void }) {
   const d = useApi<AskAnswer>("/ask/answer", { q });
-  if (d.loading) return <Shimmer label="Reading the reviews" />;
+  if (d.loading) return <><Shimmer label="Writing a short answer" /><KeywordFallback q={q} /></>;   // real matching comments appear at once while the AI writes
   if (d.error) {
     const msg = d.error.code === "llm_not_configured" ? "The AI provider is not configured, so only matching reviews are shown." : d.error.code === "no_searchable_words" ? d.error.message : "The AI answer is unavailable right now. Matching reviews are shown instead.";
     return (

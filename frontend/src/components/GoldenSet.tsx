@@ -165,7 +165,7 @@ function GoldenUpload() {
   return (
     <>
       <Card title="Test the engine on your own hand-labelled comments" accent="blue" className="golden__upload">
-        <p className="gcard__sub">Upload a CSV with the comment text and your own labels, and the engine will read every comment and compare. Your file is used for this visit only: nothing is stored, the official golden set above is never changed, and your result disappears when you leave or close this tab.</p>
+        <p className="gcard__sub">Upload a CSV with the comment text and your own labels, and the engine will read every comment and compare.</p>
         <div className="upload__row">
           <label className="btn btn--primary">Choose a CSV file<input ref={input} type="file" accept=".csv,text/csv" hidden onChange={(e) => e.target.files?.[0] && choose(e.target.files[0])} /></label>
           <span className="gcard__sub">{file ? file.name : "No file chosen"}</span>

@@ -150,12 +150,9 @@ export default function EvidencePage() {
                 <Kpi tone="amber" label="Source URLs" value={num(d.validation.urls.individually_verified)} sub="reviews opened and matched to their page" />
                 <Kpi tone="blue" label="Automated tests" value={d.validation.tests.automated_tests} sub={d.validation.tests.covers} />
               </div>
-              <div className="grid2">
+              <div>
                 <Card title="Problem-rule precision" sub={d.validation.rule_precision_note}>
                   <div className="prec">{d.validation.rule_precision.map((p) => <div key={p.code} className="prec__row"><span>{p.issue}</span><div className="hbar"><i style={{ width: `${p.precision_pct}%`, background: p.precision_pct >= 85 ? "var(--pos)" : "var(--amber)" }} /><span>{p.precision_pct}%</span></div></div>)}</div>
-                </Card>
-                <Card title="Sentiment labelling" sub={d.validation.sentiment.note}>
-                  <p className="gcard__sub">A word-list score gave a first label for every review. {num(d.validation.sentiment.queue_read_individually)} unclear reviews were read individually and {num(d.validation.sentiment.labels_changed_by_analyst)} labels were changed. A random sample of {d.validation.sentiment.sample} was then re-read: {d.validation.sentiment.agreed} agreed ({d.validation.sentiment.agreement_pct}%).</p>
                 </Card>
               </div>
             </Section>

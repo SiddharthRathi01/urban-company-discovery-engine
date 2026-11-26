@@ -146,7 +146,7 @@ export function BubbleChart({ items, onPick, selected }: { items: Opportunity[];
 export function HeatGrid({ rows, cols, cell }: { rows: { key: string; label: string; n: number }[]; cols: { key: string; label: string }[]; cell: (rowKey: string, colKey: string) => number }) {
   const max = Math.max(1, ...rows.flatMap((r) => cols.map((c) => cell(r.key, c.key))));
   return (
-    <div className="heat" style={{ gridTemplateColumns: `minmax(150px, 1.4fr) repeat(${cols.length}, minmax(64px, 1fr))` }}>
+    <div className="heat" style={{ gridTemplateColumns: `minmax(88px, 1.3fr) repeat(${cols.length}, minmax(0, 1fr))` }}>
       <span />
       {cols.map((c) => <span key={c.key} className="heat__col">{c.label}</span>)}
       {rows.map((r) => (

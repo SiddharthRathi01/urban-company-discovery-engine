@@ -117,7 +117,7 @@ export default function OpportunitiesSection({ onOpen }: { onOpen: (t: DrawerTar
   const opps = useApi<Opportunity[]>("/opportunities");
   const [pick, setPick] = useState<string | null>(null);
   return (
-    <Section id="opportunities" eyebrow="1 · What to fix first" title="Where to act first" lede="Nine opportunity areas, ranked, each written as a product manager would: the problem, why it happens, what to build, why it should lift repeat booking, and how we would know. Open one for the full brief and the real comments behind it.">
+    <Section id="opportunities" eyebrow="1 · What to fix first" title="Where to act first" lede="Nine opportunity areas, ranked: the problem, why it happens, what to build, why it should lift repeat booking, and how we would know. Open one for the full brief and the real comments behind it.">
       <Async state={opps}>
         {(items) => (
           <>

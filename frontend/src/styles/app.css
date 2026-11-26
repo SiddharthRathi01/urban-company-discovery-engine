@@ -405,3 +405,5 @@ details.more { margin-top: 1.1rem; } details.more summary { cursor: pointer; col
 .evlog__text { flex: 1 1 22rem; min-width: 0; } .evlog__text h3 { margin: 0 0 0.3rem; font-size: 1.35rem; } .evlog__text p { margin: 0; color: var(--text-soft); line-height: 1.6; max-width: 56ch; }
 .evlog__actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
 @media (max-width: 640px) { .evlog { padding: 1.3rem 1.2rem; } .evlog__actions .btn { width: 100%; text-align: center; } }
+/* heat tables always fit inside their card */
+.heat { min-width: 0; } .heat__cell { font-size: 0.74rem; min-width: 0; padding: 0 2px; } .heat__col, .heat__row { min-width: 0; overflow-wrap: anywhere; }

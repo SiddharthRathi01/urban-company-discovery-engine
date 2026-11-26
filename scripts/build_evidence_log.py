@@ -109,43 +109,47 @@ def card(r, n):
 <p class="note">Sentiment {"matched" if r["sentiment_match"] else "differed"} · Return / Non-Return {"matched" if r["return_match"] else "differed"}</p></div>'''
 
 
-font = ROOT / "frontend" / "node_modules" / "@fontsource-variable" / "plus-jakarta-sans" / "files" / "plus-jakarta-sans-latin-wght-normal.woff2"
-font_face = f'@font-face{{font-family:"Plus Jakarta Sans";src:url("{font.as_uri()}") format("woff2");font-weight:200 800;font-style:normal}}' if font.exists() else ""
+FONTS = ROOT / "scripts" / "fonts"          # Manrope (headings) and Inter (text), SIL Open Font Licence
+font_face = "".join(f'@font-face{{font-family:"{fam}";src:url("{(FONTS / file).as_uri()}") format("woff2");font-weight:100 900;font-style:normal}}'
+                    for fam, file in (("Manrope", "manrope-latin-wght-normal.woff2"), ("Inter", "inter-latin-wght-normal.woff2")) if (FONTS / file).exists())
 
 CSS = font_face + """
-@page { size: A4; margin: 15mm 14mm 17mm 14mm; @bottom-left { content: "AI Evidence Log  ·  Urban Company Discovery Engine"; font: 500 7.8pt 'Plus Jakarta Sans', Arial, sans-serif; color: #7a7fa3; } @bottom-right { content: "Page " counter(page); font: 500 7.8pt 'Plus Jakarta Sans', Arial, sans-serif; color: #7a7fa3; } }
-:root { --navy:#141a45; --violet:#6d4cff; --blue:#2f7dff; --amber:#f08a24; --green:#0f9d74; --red:#e0476b; --ink:#1b2040; --soft:#5d6388; --tint:#f4f2ff; --line:#e1def5; }
+@page { size: A4; margin: 15mm 14mm 17mm 14mm; @bottom-left { content: "AI Evidence Log  ·  Urban Company Discovery Engine"; font: 500 7.6pt Inter, Arial, sans-serif; color: #6b7c80; } @bottom-right { content: "Page " counter(page); font: 600 7.6pt Inter, Arial, sans-serif; color: #0e7c7b; } }
+:root { --teal:#0e7c7b; --teal2:#14b8a6; --mint:#e7f6f3; --coral:#f2735b; --sun:#f5b83d; --green:#20a464; --rose:#e5484d; --ink:#1d2b33; --soft:#5d6f76; --line:#dbe8e5; --paper:#fbfdfc; }
 * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-body { font: 400 9.4pt/1.55 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif; color: var(--ink); margin: 0; }
-.cover { margin: -15mm -14mm 6mm; padding: 15mm 14mm 9mm; color: #fff; background: radial-gradient(120% 140% at 0% 0%, #6d4cff 0%, #2b2c87 45%, #141a45 100%); }
-.cover .eb { font-size: 8pt; letter-spacing: .22em; text-transform: uppercase; color: #c9c2ff; font-weight: 700; }
-.cover h1 { font-size: 30pt; line-height: 1.05; margin: 3mm 0 1.5mm; font-weight: 800; letter-spacing: -.02em; }
-.cover h1 span { background: linear-gradient(90deg, #ffffff, #ffc98a); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.cover p { margin: 0; color: #d9d6ff; font-size: 10.5pt; }
-.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 7mm; }
-.kpi { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22); border-radius: 3.2mm; padding: 3mm 3.4mm; }
-.kpi b { display: block; font-size: 17pt; font-weight: 800; letter-spacing: -.02em; } .kpi small { color: #dcd8ff; font-size: 7.6pt; }
-h2 { display: flex; align-items: center; gap: 2.6mm; font-size: 13.5pt; font-weight: 800; color: var(--navy); margin: 8mm 0 2.4mm; padding-bottom: 1.8mm; border-bottom: 1.6px solid var(--line); break-after: avoid; letter-spacing: -.01em; }
-h2 .no { display: inline-grid; place-items: center; width: 7mm; height: 7mm; border-radius: 50%; color: #fff; font-size: 9.5pt; background: linear-gradient(135deg, #6d4cff, #2f7dff); flex: none; }
-h3 { font-size: 10.4pt; font-weight: 800; color: var(--violet); margin: 4.2mm 0 1.4mm; break-after: avoid; }
-p { margin: 0 0 2mm; } ul { margin: 0 0 2.4mm; padding-left: 4.6mm; } li { margin-bottom: 1.3mm; } li::marker { color: var(--violet); }
-table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 2mm 0 3.4mm; font-size: 8.8pt; break-inside: avoid; border: 1px solid var(--line); border-radius: 2.6mm; overflow: hidden; }
-th { background: linear-gradient(90deg, #1b2160, #3a2fa6); color: #fff; text-align: left; padding: 2.1mm 2.6mm; font-weight: 700; font-size: 8pt; letter-spacing: .03em; }
-td { padding: 1.9mm 2.6mm; border-top: 1px solid var(--line); vertical-align: top; } tbody tr:nth-child(even) td { background: #faf9ff; } tbody tr:first-child td { border-top: 0; }
-.bar { height: 2.2mm; border-radius: 99px; background: #ece9ff; min-width: 26mm; } .bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #6d4cff, #2f7dff); }
-table.conf td, table.conf th { text-align: center; font-size: 8.3pt; } table.conf td:first-child, table.conf th:first-child { text-align: left; } .hit { display: inline-block; min-width: 6mm; border-radius: 1.4mm; background: #dcf5ec; color: var(--green); font-weight: 800; }
-.seg { display: flex; height: 7mm; border-radius: 99px; overflow: hidden; margin: 2.2mm 0 3mm; gap: .6mm; } .seg span { display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 9pt; }
-.box { background: var(--tint); border-left: 1.4mm solid var(--violet); border-radius: 0 2.6mm 2.6mm 0; padding: 3mm 4mm; margin: 2.6mm 0 3.4mm; break-inside: avoid; }
-.box.amber { background: #fff4e6; border-left-color: var(--amber); }
+body { font: 400 9.3pt/1.6 Inter, 'Segoe UI', Arial, sans-serif; color: var(--ink); margin: 0; }
+h1, h2, h3, .kpi b, .tile b, .exh b { font-family: Manrope, Inter, Arial, sans-serif; }
+.cover { margin: -15mm -14mm 6mm; padding: 15mm 14mm 9mm; color: #fff; background: linear-gradient(125deg, #0b5f5e 0%, #0e7c7b 45%, #13a596 100%); position: relative; }
+.cover .eb { font-size: 7.8pt; letter-spacing: .24em; text-transform: uppercase; color: #bff0e8; font-weight: 700; }
+.cover h1 { font-size: 31pt; line-height: 1.05; margin: 3mm 0 1.5mm; font-weight: 800; letter-spacing: -.02em; }
+.cover h1 span { color: #ffd38a; }
+.cover p { margin: 0; color: #dff6f1; font-size: 10.4pt; }
+.cover .live { display: inline-block; margin-top: 3.2mm; padding: 1.2mm 3.4mm; border-radius: 99px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.35); color: #fff; font-weight: 600; font-size: 8.6pt; text-decoration: none; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin-top: 6mm; }
+.kpi { background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.26); border-radius: 3.2mm; padding: 3mm 3.4mm; }
+.kpi b { display: block; font-size: 17pt; font-weight: 800; letter-spacing: -.02em; } .kpi small { color: #d6f3ed; font-size: 7.6pt; }
+h2 { display: flex; align-items: center; gap: 2.6mm; font-size: 13.6pt; font-weight: 800; color: var(--ink); margin: 8mm 0 2.4mm; padding-bottom: 1.8mm; border-bottom: 1.6px solid var(--line); break-after: avoid; letter-spacing: -.01em; }
+h2 .no { display: inline-grid; place-items: center; width: 7mm; height: 7mm; border-radius: 2mm; color: #fff; font-size: 9.5pt; background: var(--coral); flex: none; }
+h3 { font-size: 10.6pt; font-weight: 800; color: var(--teal); margin: 4.2mm 0 1.4mm; break-after: avoid; }
+p { margin: 0 0 2mm; } ul { margin: 0 0 2.4mm; padding-left: 4.6mm; } li { margin-bottom: 1.3mm; } li::marker { color: var(--coral); }
+table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 2mm 0 3.4mm; font-size: 8.7pt; break-inside: avoid; border: 1px solid var(--line); border-radius: 2.6mm; overflow: hidden; }
+th { background: var(--teal); color: #fff; text-align: left; padding: 2.1mm 2.6mm; font-weight: 600; font-size: 7.9pt; letter-spacing: .03em; }
+td { padding: 1.9mm 2.6mm; border-top: 1px solid var(--line); vertical-align: top; } tbody tr:nth-child(even) td { background: #f4faf8; } tbody tr:first-child td { border-top: 0; }
+.bar { height: 2.2mm; border-radius: 99px; background: var(--mint); min-width: 26mm; } .bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--teal), var(--teal2)); }
+table.conf td, table.conf th { text-align: center; font-size: 8.2pt; } table.conf td:first-child, table.conf th:first-child { text-align: left; } .hit { display: inline-block; min-width: 6mm; border-radius: 1.4mm; background: #dcf3e6; color: var(--green); font-weight: 800; }
+.seg { display: flex; height: 7mm; border-radius: 99px; overflow: hidden; margin: 2.2mm 0 3mm; gap: .6mm; } .seg span { display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 9pt; font-family: Manrope, Inter, sans-serif; }
+.box { background: var(--mint); border-left: 1.4mm solid var(--teal); border-radius: 0 2.6mm 2.6mm 0; padding: 3mm 4mm; margin: 2.6mm 0 3.4mm; break-inside: avoid; }
+.box.amber { background: #fff6e3; border-left-color: var(--sun); }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; break-inside: avoid; } .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin: 2mm 0 3mm; }
-.tile { border: 1px solid var(--line); border-radius: 3mm; padding: 3mm 3.4mm; background: #fff; break-inside: avoid; } .tile b { display: block; font-size: 14pt; color: var(--violet); font-weight: 800; letter-spacing: -.02em; } .tile small { color: var(--soft); font-size: 8pt; }
-.lab { font-size: 7.2pt; text-transform: uppercase; letter-spacing: .1em; color: var(--soft); font-weight: 800; margin: 2.4mm 0 .8mm; } .soft { color: var(--soft); font-size: 8.6pt; } .note { color: var(--soft); font-size: 8.4pt; font-style: italic; margin: 1mm 0 .6mm; }
+.tile { border: 1px solid var(--line); border-radius: 3mm; padding: 3mm 3.4mm; background: var(--paper); break-inside: avoid; } .tile b { display: block; font-size: 15pt; font-weight: 800; letter-spacing: -.02em; }
+.three .tile:nth-child(1) b { color: var(--green); } .three .tile:nth-child(2) b { color: #c98a10; } .three .tile:nth-child(3) b { color: var(--coral); } .tile small { color: var(--soft); font-size: 8pt; }
+.lab { font-size: 7.1pt; text-transform: uppercase; letter-spacing: .1em; color: var(--soft); font-weight: 700; margin: 2.4mm 0 .8mm; } .soft { color: var(--soft); font-size: 8.5pt; } .note { color: var(--soft); font-size: 8.3pt; font-style: italic; margin: 1mm 0 .6mm; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
-.ex { border: 1px solid var(--line); border-radius: 3.2mm; padding: 3.2mm 4mm 2.2mm; margin: 0 0 3.6mm; break-inside: avoid; } .exh { display: flex; justify-content: space-between; align-items: center; } .exh b { color: var(--navy); font-weight: 800; }
-.qt { color: #2b3060; font-size: 9.2pt; }
-.pill { display: inline-block; padding: .6mm 2.6mm; border-radius: 99px; font-size: 7.6pt; font-weight: 800; } .pill.ok { background: #dcf5ec; color: var(--green); } .pill.mid { background: #e3ecff; color: var(--blue); } .pill.low { background: #ffe3ea; color: var(--red); }
-a { color: var(--blue); font-weight: 700; text-decoration: none; border-bottom: 1px solid #b9cdf7; } code { font-family: Consolas, monospace; font-size: 8.2pt; background: #efedff; padding: 0 1.2mm; border-radius: 1mm; }
-.llm { display: inline-block; font-size: 7.6pt; font-weight: 800; color: var(--violet); background: #ece8ff; border-radius: 99px; padding: .4mm 2.4mm; margin-left: 1.5mm; }
+.ex { border: 1px solid var(--line); border-radius: 3.2mm; padding: 3.2mm 4mm 2.2mm; margin: 0 0 3.6mm; break-inside: avoid; background: var(--paper); } .exh { display: flex; justify-content: space-between; align-items: center; } .exh b { color: var(--ink); font-weight: 800; }
+.qt { color: #24434a; font-size: 9.1pt; }
+.pill { display: inline-block; padding: .6mm 2.6mm; border-radius: 99px; font-size: 7.5pt; font-weight: 700; } .pill.ok { background: #dcf3e6; color: var(--green); } .pill.mid { background: #fff0cf; color: #a86f00; } .pill.low { background: #fde3dd; color: #c4462f; }
+td a { white-space: nowrap; } a { color: var(--teal); font-weight: 700; text-decoration: none; border-bottom: 1px solid #a6d8d3; } code { font-family: Consolas, monospace; font-size: 8.1pt; background: var(--mint); padding: 0 1.2mm; border-radius: 1mm; }
+.llm { display: inline-block; font-size: 7.4pt; font-weight: 700; color: #c4462f; background: #fde3dd; border-radius: 99px; padding: .4mm 2.4mm; margin-left: 1.5mm; }
 """
 
 # ------------------------------------------------------------------ content
@@ -171,6 +175,7 @@ body = f"""
   <div class="eb">Urban Company Discovery Engine</div>
   <h1>AI <span>Evidence Log</span></h1>
   <p>How the engine reads customer feedback, what it found, and how that was checked.</p>
+  <a class="live" href="{SITE}">Live app: {SITE.replace("https://", "")}</a>
   <div class="kpis">
     <div class="kpi"><b>{num(N)}</b><small>public reviews analysed</small></div>
     <div class="kpi"><b>{len(D['by_source'])}</b><small>sources, every review linked to its page</small></div>
@@ -220,7 +225,7 @@ body = f"""
 
 {sec(4, "Validation: human labels and engine results")}
 <p>To test the engine against human judgement, a golden set of {n_g} comments from the dataset ({E(src_text)}) was read and labelled by hand before the engine saw them: sentiment, Return / Non-Return and a short problem label. The engine then analysed the same {n_g} comments and its answers were compared with the hand labels, comment by comment.</p>
-{segbar([("Full match", mc["Full match"], "#0f9d74"), ("Partial match", mc["Partial match"], "#2f7dff"), ("Non-match", mc["Non-match"], "#9aa0c4")])}
+{segbar([("Full match", mc["Full match"], "#20a464"), ("Partial match", mc["Partial match"], "#f5b83d"), ("Non-match", mc["Non-match"], "#f2735b")])}
 <div class="three">
   <div class="tile"><b>{mc['Full match']}</b><small>Full match: every label agrees</small></div>
   <div class="tile"><b>{mc['Partial match']}</b><small>Partial match: some labels agree</small></div>
@@ -263,6 +268,7 @@ body = f"""
 
 {sec(8, "Supporting artifacts")}
 {table(["Artifact", "What it is", "Open"], [
+    ["<b>Live app</b>", "The Discovery Engine website: overview, analysis, AI Evidence Log, golden data set, workflow and Ask Questions", f'<a href="{SITE}">Open the app</a>'],
     ["<b>Dataset</b>", f"urban_company_reviews_master.csv: {num(N)} reviews, each with its source link", link("/downloads/dataset", "Download CSV")],
     ["<b>Golden set</b>", f"golden_data_set.csv: the {n_g} comments labelled by hand (results: {mc['Full match']} full, {mc['Partial match']} partial, {mc['Non-match']} non-match)", link("/downloads/golden-set", "Download CSV")],
     ["<b>Runnable workflow</b>", "Google Colab notebook: the same six steps, runnable on the built-in dataset or your own CSV", f'<a href="{COLAB}">Open in Colab</a>'],

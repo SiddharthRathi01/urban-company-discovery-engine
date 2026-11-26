@@ -187,3 +187,13 @@ def test_downloads_serve_only_the_listed_project_files(client):
     assert "attachment" in client.get("/downloads/evidence-log.pdf?download=true").headers["content-disposition"]
     assert client.get("/downloads/dataset").headers["content-disposition"].startswith("attachment")
     assert "CLOUDFLARE" not in client.get("/downloads/..%2F.env").text and client.get("/downloads/secrets").status_code == 404
+
+
+def test_ready_answers_need_no_ai_call(client):
+    from pathlib import Path
+    ready = json.loads((Path(__file__).resolve().parents[1] / "analysis" / "ask_ready.json").read_text(encoding="utf-8"))
+    q = next(iter(ready["answers"].values()))["query"]
+    d = client.get("/api/v1/ask/answer", params={"q": q}).json()["data"]
+    assert d["prepared"] is True and d["answer"] and d["citations"]
+    b = client.get("/api/v1/questions/Q4/brief").json()["data"]
+    assert b["prepared"] is True and b["headline"]
