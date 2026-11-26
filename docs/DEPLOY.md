@@ -12,7 +12,7 @@ The whole product is one Vercel project: the built website (static files) and th
 1. Put the project in a GitHub repository (the `.env` file is already git-ignored; never upload it).
 2. In Vercel: **Add New → Project → import the repository**. Leave the framework as "Other". `vercel.json` already sets the build command, the output folder and the function.
 3. In **Settings → Environment Variables** add `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` (and optionally `CLOUDFLARE_MODEL`). These stay on the server; the website never sees them.
-4. Deploy. Vercel gives the project an address such as `https://your-project.vercel.app`.
+4. Deploy. The live address is https://urban-company-discovery-engine.vercel.app
 5. Rebuild the AI Evidence Log so its links use that address, then redeploy:
    `SITE_URL=https://your-project.vercel.app .python\python.exe scripts\build_evidence_log.py`
 6. Optional: for a one-click "Open in Colab" button, put the repository on GitHub and link

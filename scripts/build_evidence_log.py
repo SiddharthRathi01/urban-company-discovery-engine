@@ -2,7 +2,7 @@
 Every figure is read from analysis/*.json or from the evaluated golden set, and the key counts are re-counted from the master dataset and the rule files
 before anything is written (the script stops if they disagree). Rendering uses headless Chrome.
 
-Links in the PDF point at SITE_URL (default http://localhost:8000). After deployment run:  SITE_URL=https://your-site .python/python.exe scripts/build_evidence_log.py"""
+Links in the PDF point at SITE_URL (default: the live site). After deployment run:  SITE_URL=https://your-site .python/python.exe scripts/build_evidence_log.py"""
 import html
 import json
 import os
@@ -14,7 +14,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-SITE = os.environ.get("SITE_URL", "http://localhost:8000").rstrip("/")
+SITE = os.environ.get("SITE_URL", "https://urban-company-discovery-engine.vercel.app").rstrip("/")
 PROJECT = json.loads((ROOT / "frontend" / "src" / "project.json").read_text(encoding="utf-8"))
 COLAB = f"https://colab.research.google.com/github/{PROJECT['github_repo']}/blob/main/{PROJECT['notebook_path']}"
 A = lambda n: json.loads((ROOT / "analysis" / f"{n}.json").read_text(encoding="utf-8"))
