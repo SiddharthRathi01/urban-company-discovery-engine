@@ -30,10 +30,13 @@ def error_body(code, message, details=None):
 async def lifespan(app):
     ok = store.preload()
     log.info("precomputed analysis preloaded from %s (%s)", settings.ANALYSIS_DIR, "ok" if ok else "INCOMPLETE")
-    settings.UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
-    upload_storage.recover_interrupted_jobs()
-    settings.GOLDEN_DIR.mkdir(parents=True, exist_ok=True)
-    golden_store.recover_interrupted()
+    # On a serverless host the project folder is read-only; none of these housekeeping steps may stop the site from starting.
+    for step in (lambda: settings.UPLOAD_DIR.mkdir(parents=True, exist_ok=True), upload_storage.recover_interrupted_jobs,
+                 lambda: settings.GOLDEN_DIR.mkdir(parents=True, exist_ok=True), golden_store.recover_interrupted):
+        try:
+            step()
+        except OSError as exc:
+            log.warning("start-up step skipped: %s", exc)
     yield
 
 
