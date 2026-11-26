@@ -4,9 +4,9 @@
 .vscode
 frontend/node_modules
 frontend/dist
-raw
-llm_data
-uploads
+/raw
+/llm_data
+/uploads
 analysis_pilot
 analysis_test
 docs/_evidence_log.html

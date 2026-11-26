@@ -4,15 +4,15 @@ __pycache__/
 analysis_pilot/
 analysis_test/
 analysis/cache/
-uploads/
+/uploads/
 .pytest_cache/
 .node/
 frontend/node_modules/
 frontend/dist/
-llm_data/
+/llm_data/
 
 # not needed to run or deploy the site
-raw/
+/raw/
 .vscode/
 *.pkl
 *.pyc
