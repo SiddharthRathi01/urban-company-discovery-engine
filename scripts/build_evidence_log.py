@@ -98,15 +98,25 @@ obs = [
 ]
 
 
+# Why the person rejected or corrected the AI's reading (the golden-set labeller's reasoning, confirmed by the project owner).
+WHY = {
+    "GP-0116": ("Rejected", "It is a feature request. It says nothing about how a booking went or whether the customer will book again, so the AI's Positive and Return reading claims more than the comment says. Kept: Neutral, Insufficient Evidence."),
+    "GP-1127": ("Rejected", "The customer complains about rescheduling but is still on a monthly package and gives no sign of leaving, so a Non-Return reading goes too far. Kept: Mixed, Insufficient Evidence."),
+    "GP-0852": ("Corrected", "“Everything is great” plus a suggestion is a happy customer making a wish, not a mixed experience. Corrected the sentiment to Positive; the Return reading was right."),
+}
+
+
 def card(r, n):
     txt = " ".join(r["review_text"].split())
+    why = WHY.get(r["review_id"])
+    why_html = f'<div class="box"><b>{why[0]}, and why.</b> {E(why[1])}</div>' if why else ""
     tone = {"Partial match": "mid", "Non-match": "low"}.get(r["match_status"], "ok")
     basis_txt = f' ({E(r["engine_return_basis"])})' if r["engine_return_basis"] not in (None, "None") else ""
     return f'''<div class="ex"><div class="exh"><b>{n}. {E(r["review_id"])}</b><span class="pill {tone}">{E(r["match_status"])}</span></div>
 <p class="lab">Customer comment</p><p class="qt">“{E(txt[:330])}{"…" if len(txt) > 330 else ""}”</p>
 <div class="two"><div><p class="lab">Human labels</p><p>Sentiment <b>{E(r["human_sentiment"] or "–")}</b><br>Return / Non-Return <b>{E(r["human_return"] or "–")}</b></p></div>
 <div><p class="lab">Engine</p><p>Sentiment <b>{E(r["engine_sentiment"] or "–")}</b><br>Return / Non-Return <b>{E(r["engine_return"] or "–")}</b>{basis_txt}<br><span class="soft">Themes: {E(", ".join(r["engine_themes"]) or "–")}</span></p></div></div>
-<p class="note">Sentiment {"matched" if r["sentiment_match"] else "differed"} · Return / Non-Return {"matched" if r["return_match"] else "differed"}</p></div>'''
+<p class="note">Sentiment {"matched" if r["sentiment_match"] else "differed"} · Return / Non-Return {"matched" if r["return_match"] else "differed"}</p>{why_html}</div>'''
 
 
 FONTS = ROOT / "scripts" / "fonts"          # Manrope (headings) and Inter (text), SIL Open Font Licence
@@ -275,8 +285,8 @@ body = f"""
     ["<b>This log</b>", "AI Evidence Log (PDF)", link("/downloads/evidence-log.pdf", "Open PDF")],
 ])}
 
-{sec(9, "Where the human label differed from the engine")}
-<p>These are the {len(non_full)} golden-set comments that were not a full match. They show where the engine took a different reading from the person who labelled the comment.</p>
+{sec(9, "Where we rejected or corrected the AI, and why")}
+<p>These are the {len(non_full)} golden-set comments where the AI’s reading differed from the hand label. In {len(WHY)} of them we rejected or corrected the AI’s reading and kept the human one; the reason is given under each.</p>
 {"".join(card(r, i) for i, r in enumerate(non_full, 1))}
 <div class="box amber"><b>Keep in mind.</b> These are the comments that were not a full match in a {n_g}-comment sample. They show where a person and the engine read a comment differently; they are not a measure of how often the engine is wrong, and the labels are one person's reading.</div>
 """
