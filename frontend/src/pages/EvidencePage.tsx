@@ -78,7 +78,7 @@ function Ladder({ b }: { b: Behaviour }) {
   return (
     <div className="ladder">
       <div className="sbar" style={{ height: 16 }} role="img" aria-label={parts.map((x) => `${x.n} ${x.k}`).join(", ")}>{parts.map((x) => <span key={x.k} style={{ flex: x.n, background: x.c }} title={`${x.k}: ${num(x.n)}`} />)}</div>
-      <ul className="ladder__key">{parts.map((x) => <li key={x.k}><i style={{ background: x.c }} /><b>{x.k}</b> · {num(x.n)} ({pct((100 * x.n) / total)})<small>{x.d}</small></li>)}</ul>
+      <ul className="ladder__key">{parts.map((x) => <li key={x.k}><i style={{ background: x.c }} /><span><b>{x.k}</b> · {num(x.n)} ({pct((100 * x.n) / total)})</span><small>{x.d}</small></li>)}</ul>
     </div>
   );
 }

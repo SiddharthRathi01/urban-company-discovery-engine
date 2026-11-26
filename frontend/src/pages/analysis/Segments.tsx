@@ -32,7 +32,7 @@ function Vetted({ dimension, title, lede }: { dimension: string; title: string; 
     <Card title={title} sub={lede}>
       <Async state={s}>
         {(items) => (
-          <div className="vet">
+          <div className="vet vet--cols">
             {items.map((x) => (
               <div key={x.segment_id}>
                 <button type="button" className={`vet__row ${open === x.segment_id ? "is-open" : ""}`} onClick={() => setOpen(open === x.segment_id ? null : x.segment_id)} aria-expanded={open === x.segment_id}>
@@ -57,7 +57,7 @@ export default function SegmentsSection() {
         <Card title="By service category (at least 30 reviews)"><Heat dimension="service_category" min={30} /></Card>
         <Card title="By city (at least 8 reviews)"><Heat dimension="city" min={8} /></Card>
       </div>
-      <div className="grid2">
+      <div className="stack2">
         <Vetted dimension="household_type" title="By household type: examples" lede="Open a row to read the reviews. These are vetted examples, not prevalence." />
         <Vetted dimension="discovery_channel" title="By how they found Urban Company: examples" lede="Referral, ads, research and marketplace purchases that customers mention." />
       </div>

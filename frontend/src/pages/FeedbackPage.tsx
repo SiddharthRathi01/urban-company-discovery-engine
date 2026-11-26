@@ -86,7 +86,7 @@ export default function FeedbackPage() {
       </Section>
 
       <Section id="mood" eyebrow="2 · How people feel" title="Are people happy or unhappy?" lede="Each review is marked positive, neutral, mixed or negative from the words the customer used (and their star rating, where there is one). Click a row to read the reviews.">
-        <div className="grid2">
+        <div className="grid2 grid2--fill">
           <Card title="Mood by source" sub="Complaint sites are almost entirely negative by design; Google Play is the only source with many positive voices. Read each source on its own.">
             <Async state={bySource}>{(rows) => <><MoodBars rows={rows} onPick={(r) => setDrawer({ title: r.label, subtitle: `${num(r.n)} reviews from this source`, base: { source: r.key } })} /><SentimentLegend /></>}</Async>
           </Card>

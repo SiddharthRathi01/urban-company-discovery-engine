@@ -26,7 +26,9 @@ function OwnWords({ slug, title, tone }: { slug: string; title: string; tone: "p
           const by = Object.fromEntries(c.evidence_quotes.map((e) => [e.evidence_id, e]));
           const pick = (ids: string[] = [], k: number) => ids.slice(0, k).map((i) => by[i]).filter(Boolean);
           const stated = pick(c.representative_evidence_ids, 3);
-          const sig = Object.entries(c.signalled_reasons ?? {}).filter(([, v]) => v.evidence_ids.length).map(([k, v]) => [k, v.n, pick(v.evidence_ids, 1)] as const);
+          const reasons = Object.entries(c.signalled_reasons ?? {}).filter(([, v]) => v.evidence_ids.length);
+          const per = Math.max(1, Math.floor(3 / Math.max(1, reasons.length)));   // both sides show about three signalled comments
+          const sig = reasons.map(([k, v]) => [k, v.n, pick(v.evidence_ids, per)] as const);
           const inferred = pick(c.inferred_evidence_ids, 2);
           return (
             <>
@@ -111,7 +113,7 @@ export default function BehaviourSection() {
               </div>
               <p className="callout callout--amber">{cmp.caution} {d.stated_returners_dissatisfied.n} of {d.stated_returners_dissatisfied.of} ({pct(d.stated_returners_dissatisfied.pct, 0)}) customers who say they came back are themselves Negative or Mixed: loyal, but unhappy.</p>
 
-              <div className="grid3">
+              <div className="grid3 grid3--lead">
                 {([["By service category", cmp.return_share_by_segment.service_category], ["By source", cmp.return_share_by_segment.source], ["By city", cmp.return_share_by_segment.city]] as const).map(([title, rows]) => (
                   <Card key={title} title={title} sub="Return / Non-Return share of each group's reviews (rest is Insufficient).">
                     <div className="legend"><span><i style={{ background: C_RETURN }} />Return</span><span><i style={{ background: C_NON }} />Non-Return</span><span><i style={{ background: C_INS }} />Insufficient</span></div>
